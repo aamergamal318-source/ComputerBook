@@ -1,0 +1,379 @@
+/* ===== GRADE 9 - PURPLE/NAVY THEME =====
+   Computer Workbooks Pro - الصف التاسع
+*/
+
+:root {
+  --primary: #4527A0;
+  --primary-light: #7C4DFF;
+  --primary-very-light: #EDE7F6;
+  --primary-dark: #311B92;
+}
+
+.cover { background: linear-gradient(160deg, #1A237E 0%, #311B92 30%, #4527A0 60%, #7C4DFF 100%); color: white; }
+.page-header { background: linear-gradient(135deg, #4527A0, #7C4DFF); }
+.page-num { background: #EDE7F6; color: #4527A0; border: 1px solid #B39DDB; }
+.info-box { background: #EDE7F6; border-right-color: #4527A0; }
+.info-box h4 { color: #311B92; }
+.note-box { background: #E3F2FD; border-right: 4px solid #1565C0; color: #0D47A1; }
+.think-box { border-top-color: #4527A0; }
+.section-title { color: #311B92; border-bottom-color: #7C4DFF; }
+.lesson-goal { background: #EDE7F6; border-right-color: #4527A0; color: #311B92; }
+.card { border-top-color: #4527A0; border-color: #B39DDB; }
+.card h5 { color: #311B92; }
+.styled-table th { background: #4527A0; }
+.styled-table td { border-bottom-color: #B39DDB; }
+.styled-table tr:nth-child(even) td { background: #EDE7F6; }
+.steps li::before { background: #4527A0; }
+.objectives li::before { color: #4527A0; }
+.toc-item { border-bottom-color: #B39DDB; }
+.toc-unit { color: #311B92; }
+.toc-page { background: #4527A0; }
+.num-badge { background: #4527A0; }
+.unit-big-header .unit-number { color: #4527A0; }
+.unit-big-header .unit-title { color: #311B92; }
+.highlight-item { background: #EDE7F6; color: #311B92; }
+.mini-card { background: #EDE7F6; color: #311B92; }
+.key-term { background: #B39DDB; color: #311B92; }
+.assessment-table th { background: #4527A0; }
+.assessment-table td { border-color: #B39DDB; }
+.rubric-table th { background: #4527A0; }
+.ai-box { background: linear-gradient(135deg, #EDE7F6, #D1C4E9); border-color: #7C4DFF; }
+.ai-box .ai-title { color: #311B92; }
+.ai-prompt-example { background: #1A237E; color: #B3E5FC; }
+.certificate-section { border-color: #4527A0; }
+.certificate-section h3 { color: #311B92; }
+.progress-bar-fill { background: #4527A0; }
+.formula-box { background: #1A237E; color: #B39DDB; }
+.divider { background: #4527A0; }
+
+/* ===== GRADE 9 SPECIFIC COMPONENTS ===== */
+
+/* Career Cards */
+.career-card {
+  background: white;
+  border: 1px solid #B39DDB;
+  border-radius: 10px;
+  border-top: 4px solid #4527A0;
+  padding: 13px;
+}
+.career-card h5 { color: #311B92; font-size: 13px; margin-bottom: 6px; }
+.career-card .career-icon { font-size: 24px; margin-bottom: 5px; text-align: center; display: block; }
+
+/* Careers Grid */
+.careers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 12px 0;
+}
+
+/* Phase Box */
+.phase-box {
+  background: #EDE7F6;
+  border-right: 5px solid #4527A0;
+  border-radius: 6px;
+  padding: 10px 14px;
+  margin: 8px 0;
+}
+
+.phase-box .phase-title {
+  color: #311B92;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+/* Comparison Visual */
+.slide-compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 10px 0;
+}
+
+.slide-bad {
+  background: #FFEBEE;
+  border: 2px solid #EF5350;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.slide-good {
+  background: #E8F5E9;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.slide-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+  padding: 3px;
+  border-radius: 4px;
+  margin-bottom: 7px;
+}
+
+.slide-bad .slide-label { background: #EF5350; color: white; }
+.slide-good .slide-label { background: #4CAF50; color: white; }
+
+/* Ethics box */
+.ethics-box {
+  background: #FFF3E0;
+  border: 2px solid #FF8F00;
+  border-radius: 8px;
+  padding: 12px 15px;
+  margin: 10px 0;
+}
+
+.ethics-box .ethics-title {
+  color: #E65100;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.ethics-do {
+  color: #1B5E20;
+  font-weight: 600;
+}
+
+.ethics-dont {
+  color: #B71C1C;
+  font-weight: 600;
+}
+
+/* Milestone Timeline */
+.timeline {
+  position: relative;
+  padding-right: 25px;
+  margin: 10px 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  right: 10px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #B39DDB;
+}
+
+.timeline-item {
+  position: relative;
+  padding: 6px 25px 6px 0;
+  margin-bottom: 6px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  right: 4px;
+  top: 12px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #4527A0;
+  border: 2px solid white;
+  box-shadow: 0 0 0 2px #4527A0;
+}
+
+.timeline-item .tl-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #4527A0;
+}
+
+.timeline-item .tl-desc {
+  font-size: 12px;
+  color: #444;
+}
+
+/* Skill Rating Table */
+.skill-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11.5px;
+  margin: 8px 0;
+}
+
+.skill-table th {
+  background: #4527A0;
+  color: white;
+  padding: 7px 8px;
+  text-align: center;
+}
+
+.skill-table td {
+  padding: 5px 8px;
+  border: 1px solid #B39DDB;
+  text-align: center;
+}
+
+.skill-table td:first-child {
+  text-align: right;
+  font-weight: 600;
+}
+
+.skill-table tr:nth-child(even) {
+  background: #EDE7F6;
+}
+
+.skill-cat-header {
+  background: #D1C4E9 !important;
+  color: #311B92 !important;
+  font-weight: 700 !important;
+  text-align: right !important;
+  font-size: 12px !important;
+}
+
+/* Rating circle */
+.rating-circle {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid #B39DDB;
+  display: inline-block;
+  margin: 0 2px;
+  vertical-align: middle;
+}
+
+/* File structure */
+.file-tree {
+  background: #1A237E;
+  color: #B3E5FC;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+  direction: ltr;
+  text-align: left;
+  margin: 8px 0;
+  line-height: 1.8;
+}
+
+/* Permission badge */
+.perm-badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  margin: 2px;
+}
+
+.perm-view { background: #E3F2FD; color: #1565C0; border: 1px solid #90CAF9; }
+.perm-comment { background: #FFF8E1; color: #E65100; border: 1px solid #FFCC02; }
+.perm-edit { background: #E8F5E9; color: #2E7D32; border: 1px solid #A5D6A7; }
+.perm-manage { background: #EDE7F6; color: #4527A0; border: 1px solid #B39DDB; }
+
+/* Chart type cards */
+.chart-card {
+  background: white;
+  border: 1px solid #B39DDB;
+  border-radius: 8px;
+  border-right: 4px solid #4527A0;
+  padding: 10px 12px;
+  margin: 5px 0;
+}
+
+.chart-card .chart-name { font-size: 12.5px; font-weight: 700; color: #311B92; }
+.chart-card .chart-use { font-size: 12px; color: #555; }
+.chart-card .chart-icon { font-size: 20px; margin-left: 8px; float: left; }
+
+/* Project phase number */
+.phase-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #4527A0;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  margin-left: 8px;
+  flex-shrink: 0;
+}
+
+.phase-row {
+  display: flex;
+  align-items: flex-start;
+  margin: 8px 0;
+}
+
+.phase-row .phase-content {
+  flex: 1;
+}
+
+.phase-row .phase-content strong {
+  color: #311B92;
+  font-size: 12.5px;
+}
+
+.phase-row .phase-content p {
+  font-size: 12px;
+  color: #555;
+  margin: 3px 0 0 0;
+}
+
+/* Score badge */
+.score-badge {
+  background: #4527A0;
+  color: white;
+  padding: 3px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* Glossary table */
+.glossary-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11.5px;
+  margin: 8px 0;
+}
+
+.glossary-table th {
+  background: #4527A0;
+  color: white;
+  padding: 7px 10px;
+  text-align: right;
+}
+
+.glossary-table td {
+  padding: 5px 10px;
+  border-bottom: 1px solid #B39DDB;
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.glossary-table tr:nth-child(even) td {
+  background: #EDE7F6;
+}
+
+.glossary-table .en-term {
+  font-family: "Courier New", monospace;
+  color: #4527A0;
+  font-weight: 600;
+  direction: ltr;
+  text-align: left;
+}
+
+/* Warning box */
+.warning-box {
+  background: #FFEBEE;
+  border: 2px solid #EF5350;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin: 8px 0;
+  font-size: 12.5px;
+}
+
+.warning-box::before {
+  content: "⚠️ ";
+  font-size: 14px;
+}

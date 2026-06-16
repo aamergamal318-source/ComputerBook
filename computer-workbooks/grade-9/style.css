@@ -1,0 +1,925 @@
+/* ============================================================
+   Grade 9 Computer Workbook - Advanced Level
+   Purple / Navy Theme  |  RTL Arabic  |  A4 Print-Ready
+   ============================================================ */
+
+/* ---------- Reset & Base ---------- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', 'Arial', 'Tahoma', sans-serif;
+  direction: rtl;
+  background: #BDBDBD;
+  color: #1A1A2E;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* ---------- Print Setup ---------- */
+@page {
+  size: A4;
+  margin: 15mm;
+}
+
+@media print {
+  body { background: white; }
+  .page { margin: 0; box-shadow: none; page-break-after: always; }
+  .no-print { display: none; }
+}
+
+/* ---------- Page Wrapper ---------- */
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 15mm;
+  margin: 0 auto 20px auto;
+  background: white;
+  page-break-after: always;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.18);
+}
+
+/* ---------- Cover Page ---------- */
+.cover-page {
+  background: linear-gradient(160deg, #311B92 0%, #4527A0 45%, #7C4DFF 100%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20mm 15mm;
+}
+
+.cover-logo-circle {
+  width: 90px;
+  height: 90px;
+  background: rgba(255,255,255,0.15);
+  border: 3px solid rgba(255,255,255,0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  margin: 0 auto 18px auto;
+}
+
+.cover-grade-badge {
+  background: #FFD600;
+  color: #311B92;
+  font-size: 28px;
+  font-weight: 900;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 14px auto;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+}
+
+.cover-title {
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin: 10px 0 6px 0;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.cover-subtitle {
+  font-size: 18px;
+  color: #D1C4E9;
+  margin-bottom: 6px;
+}
+
+.cover-level-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  border: 2px solid rgba(255,255,255,0.6);
+  border-radius: 30px;
+  padding: 6px 24px;
+  font-size: 15px;
+  margin: 10px 0;
+  letter-spacing: 2px;
+}
+
+.cover-divider {
+  width: 120px;
+  height: 3px;
+  background: linear-gradient(to right, transparent, #FFD600, transparent);
+  margin: 16px auto;
+}
+
+.cover-info {
+  font-size: 14px;
+  color: #EDE7F6;
+  margin-top: 8px;
+  line-height: 2;
+}
+
+.cover-bottom-strip {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 12px;
+  background: linear-gradient(to right, #FFD600, #FF9100, #FFD600);
+}
+
+.cover-decorative-circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.08;
+  background: white;
+}
+
+/* ---------- Page Header ---------- */
+.page-header {
+  background: linear-gradient(135deg, #311B92, #4527A0, #7C4DFF);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.page-header h2 {
+  font-size: 16px;
+  font-weight: 800;
+  flex: 1;
+}
+
+.page-header .unit-icon {
+  font-size: 22px;
+}
+
+.page-header .unit-tag {
+  background: rgba(255,255,255,0.2);
+  border-radius: 12px;
+  padding: 2px 12px;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+/* ---------- Section Title ---------- */
+.section-title {
+  color: #4527A0;
+  font-size: 14px;
+  font-weight: 800;
+  border-right: 4px solid #7C4DFF;
+  padding-right: 10px;
+  margin: 14px 0 8px 0;
+}
+
+.subsection-title {
+  color: #311B92;
+  font-size: 13px;
+  font-weight: 700;
+  margin: 10px 0 6px 0;
+}
+
+/* ---------- Info Box ---------- */
+.info-box {
+  background: #F3E5F5;
+  border-right: 5px solid #7C4DFF;
+  border-radius: 0 8px 8px 0;
+  padding: 12px 16px;
+  margin: 10px 0;
+}
+
+.info-box strong {
+  color: #4527A0;
+  display: block;
+  margin-bottom: 4px;
+  font-size: 13px;
+}
+
+/* ---------- Activity Box ---------- */
+.activity-box {
+  border: 2px dashed #FF9100;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin: 12px 0;
+  background: #FFF8E1;
+}
+
+.activity-box .activity-title {
+  color: #E65100;
+  font-weight: 800;
+  font-size: 13px;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ---------- Note Box ---------- */
+.note-box {
+  background: #EDE7F6;
+  border: 1px solid #B39DDB;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin: 10px 0;
+  font-size: 12px;
+  color: #311B92;
+}
+
+.note-box::before {
+  content: "💡 ملاحظة: ";
+  font-weight: 800;
+  color: #4527A0;
+}
+
+/* ---------- Question Box ---------- */
+.question-box {
+  background: #ECEFF1;
+  border: 1px solid #B0BEC5;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin: 10px 0;
+}
+
+.question-box .q-title {
+  color: #37474F;
+  font-weight: 800;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+/* ---------- AI Box ---------- */
+.ai-box {
+  background: linear-gradient(135deg, #EDE7F6, #D1C4E9);
+  border: 2px solid #7C4DFF;
+  border-radius: 10px;
+  padding: 14px;
+  margin: 12px 0;
+}
+
+.ai-box .ai-title {
+  color: #311B92;
+  font-weight: 800;
+  font-size: 13px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ---------- Formula / Code Box ---------- */
+.formula-box {
+  background: #1A237E;
+  color: #B39DDB;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  margin: 8px 0;
+  direction: ltr;
+  text-align: left;
+}
+
+.formula-box .comment {
+  color: #7C4DFF;
+  font-style: italic;
+}
+
+/* ---------- Chart Box ---------- */
+.chart-box {
+  background: #F3F4F6;
+  border: 1px solid #D1C4E9;
+  border-radius: 8px;
+  padding: 14px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.chart-box .chart-title {
+  font-weight: 700;
+  color: #4527A0;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+/* Simple bar chart visual */
+.bar-chart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 8px;
+  height: 80px;
+  padding: 0 10px;
+  direction: ltr;
+}
+
+.bar {
+  background: linear-gradient(to top, #311B92, #7C4DFF);
+  border-radius: 4px 4px 0 0;
+  min-width: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 4px;
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.bar-label {
+  font-size: 10px;
+  color: #555;
+  margin-top: 3px;
+  text-align: center;
+}
+
+/* Pie chart visual (CSS only) */
+.pie-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.pie-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+}
+
+.pie-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ---------- Cards Grid ---------- */
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.cards-grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.card {
+  background: white;
+  border: 1px solid #E0E0E0;
+  border-top: 4px solid #7C4DFF;
+  border-radius: 6px;
+  padding: 10px 12px;
+  box-shadow: 0 2px 6px rgba(69,39,160,0.08);
+}
+
+.card .card-title {
+  color: #4527A0;
+  font-weight: 800;
+  font-size: 12px;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.card p, .card li {
+  font-size: 11px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.card-accent {
+  border-top-color: #FF9100;
+}
+
+.card-green {
+  border-top-color: #00897B;
+}
+
+.card-red {
+  border-top-color: #C62828;
+}
+
+/* ---------- Styled Table ---------- */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+  font-size: 12px;
+}
+
+.styled-table thead tr {
+  background: linear-gradient(135deg, #311B92, #4527A0);
+  color: white;
+}
+
+.styled-table thead th {
+  padding: 8px 10px;
+  text-align: right;
+  font-weight: 700;
+  border: none;
+}
+
+.styled-table tbody tr:nth-child(even) {
+  background: #F3E5F5;
+}
+
+.styled-table tbody tr:nth-child(odd) {
+  background: #FAFAFA;
+}
+
+.styled-table tbody td {
+  padding: 7px 10px;
+  border-bottom: 1px solid #E0E0E0;
+  color: #333;
+}
+
+.styled-table tbody tr:hover {
+  background: #EDE7F6;
+}
+
+/* ---------- Steps List ---------- */
+.steps-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.steps-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+.step-num {
+  background: #4527A0;
+  color: white;
+  min-width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.steps-list li .step-text {
+  padding-top: 2px;
+  line-height: 1.6;
+}
+
+/* ---------- Check List ---------- */
+.check-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0;
+}
+
+.check-list li {
+  padding: 5px 0;
+  font-size: 12px;
+  border-bottom: 1px dotted #D1C4E9;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.check-list li::before {
+  content: "☐";
+  color: #7C4DFF;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.check-list li.checked::before {
+  content: "☑";
+  color: #00897B;
+}
+
+/* ---------- Bullet Lists ---------- */
+.purple-list {
+  padding-right: 0;
+  list-style: none;
+  margin: 8px 0;
+}
+
+.purple-list li {
+  font-size: 12px;
+  padding: 3px 0;
+  padding-right: 18px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.purple-list li::before {
+  content: "◆";
+  color: #7C4DFF;
+  position: absolute;
+  right: 0;
+  font-size: 9px;
+  top: 5px;
+}
+
+/* ---------- Two-column layout ---------- */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 10px 0;
+}
+
+/* ---------- Highlight spans ---------- */
+.highlight {
+  background: #EDE7F6;
+  color: #4527A0;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.highlight-orange {
+  background: #FFF3E0;
+  color: #E65100;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.highlight-green {
+  background: #E8F5E9;
+  color: #2E7D32;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.highlight-red {
+  background: #FFEBEE;
+  color: #C62828;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+/* ---------- Emoji header ---------- */
+.emoji-header {
+  font-size: 14px;
+  color: #4527A0;
+  font-weight: 800;
+  margin: 12px 0 6px 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ---------- Rating Row (self-assessment) ---------- */
+.rating-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  gap: 6px;
+  align-items: center;
+  padding: 4px 0;
+  border-bottom: 1px dotted #D1C4E9;
+  font-size: 11px;
+}
+
+.rating-cell {
+  text-align: center;
+  width: 60px;
+}
+
+.rating-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.badge-adv { background: #C8E6C9; color: #1B5E20; }
+.badge-mid { background: #FFF9C4; color: #F57F17; }
+.badge-beg { background: #FFCDD2; color: #B71C1C; }
+
+/* ---------- Glossary term ---------- */
+.glossary-term {
+  border-bottom: 1px solid #E0E0E0;
+  padding: 6px 0;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.term-ar {
+  font-weight: 800;
+  color: #4527A0;
+}
+
+.term-en {
+  font-size: 10px;
+  color: #7C4DFF;
+  display: block;
+}
+
+/* ---------- TOC ---------- */
+.toc-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 8px;
+  border-bottom: 1px dotted #D1C4E9;
+  font-size: 12px;
+}
+
+.toc-item:nth-child(odd) { background: #F9F5FF; }
+
+.toc-unit {
+  font-weight: 800;
+  color: #4527A0;
+  background: #EDE7F6;
+  padding: 6px 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6px 0 2px 0;
+  font-size: 12px;
+}
+
+.toc-page {
+  background: #7C4DFF;
+  color: white;
+  border-radius: 10px;
+  padding: 1px 8px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+/* ---------- Page Number ---------- */
+.page-num {
+  position: absolute;
+  bottom: 8mm;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #EDE7F6;
+  color: #4527A0;
+  font-weight: 800;
+  font-size: 11px;
+  padding: 3px 14px;
+  border-radius: 12px;
+  border: 1px solid #B39DDB;
+}
+
+/* ---------- Objective List ---------- */
+.objective-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 6px 0;
+  border-bottom: 1px dotted #EDE7F6;
+  font-size: 12px;
+}
+
+.obj-num {
+  background: linear-gradient(135deg, #4527A0, #7C4DFF);
+  color: white;
+  min-width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+/* ---------- Do / Don't columns ---------- */
+.do-dont {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 10px 0;
+}
+
+.do-box {
+  background: #E8F5E9;
+  border: 2px solid #43A047;
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+.dont-box {
+  background: #FFEBEE;
+  border: 2px solid #E53935;
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+.do-box .box-title { color: #1B5E20; font-weight: 800; margin-bottom: 6px; font-size: 13px; }
+.dont-box .box-title { color: #B71C1C; font-weight: 800; margin-bottom: 6px; font-size: 13px; }
+
+.do-box li, .dont-box li {
+  font-size: 11px;
+  padding: 3px 0;
+  line-height: 1.5;
+  list-style: none;
+  border-bottom: 1px dotted rgba(0,0,0,0.1);
+}
+
+.do-box li::before { content: "✓ "; color: #2E7D32; font-weight: 800; }
+.dont-box li::before { content: "✗ "; color: #C62828; font-weight: 800; }
+
+/* ---------- Certificate Style ---------- */
+.certificate {
+  border: 4px double #7C4DFF;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  background: linear-gradient(135deg, #F9F5FF, #EDE7F6);
+  margin: 10px 0;
+}
+
+/* ---------- Rubric ---------- */
+.rubric-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  gap: 4px;
+  padding: 5px 6px;
+  font-size: 11px;
+  border-bottom: 1px solid #E0E0E0;
+  align-items: center;
+}
+
+.rubric-header {
+  background: linear-gradient(135deg, #311B92, #4527A0);
+  color: white;
+  font-weight: 700;
+  border-radius: 4px 4px 0 0;
+}
+
+/* ---------- Progress Bar ---------- */
+.progress-bar-wrap {
+  background: #E0E0E0;
+  border-radius: 6px;
+  height: 10px;
+  margin: 4px 0;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background: linear-gradient(to right, #311B92, #7C4DFF);
+  height: 100%;
+  border-radius: 6px;
+}
+
+/* ---------- Career Card ---------- */
+.career-card {
+  background: white;
+  border: 1px solid #D1C4E9;
+  border-right: 5px solid #4527A0;
+  border-radius: 6px;
+  padding: 10px 12px;
+  margin: 8px 0;
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.career-icon {
+  font-size: 26px;
+  text-align: center;
+}
+
+.career-title {
+  font-weight: 800;
+  color: #4527A0;
+  font-size: 13px;
+}
+
+.career-en {
+  font-size: 10px;
+  color: #7C4DFF;
+}
+
+.career-body {
+  font-size: 11px;
+  color: #444;
+  margin-top: 4px;
+  line-height: 1.6;
+}
+
+/* ---------- Timeline ---------- */
+.timeline {
+  border-right: 3px solid #7C4DFF;
+  padding-right: 16px;
+  margin: 10px 0;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  right: -22px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  background: #7C4DFF;
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #7C4DFF;
+}
+
+.timeline-date {
+  font-weight: 800;
+  color: #4527A0;
+  font-size: 11px;
+}
+
+/* ---------- Signature Box ---------- */
+.signature-box {
+  border-top: 2px dashed #7C4DFF;
+  margin-top: 10px;
+  padding-top: 6px;
+  text-align: center;
+  font-size: 11px;
+  color: #666;
+}
+
+/* ---------- Review Badge ---------- */
+.review-mc {
+  background: #EDE7F6;
+  border-right: 4px solid #7C4DFF;
+  border-radius: 0 6px 6px 0;
+  padding: 6px 12px;
+  margin: 5px 0;
+  font-size: 12px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px;
+}
+
+.q-number {
+  background: #4527A0;
+  color: white;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+/* ---------- Inline prompt example ---------- */
+.prompt-example {
+  background: #1A237E;
+  color: #E8EAF6;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  margin: 8px 0;
+  direction: rtl;
+  border-right: 4px solid #FFD600;
+}
+
+.prompt-example .prompt-label {
+  color: #FFD600;
+  font-weight: 800;
+  font-size: 10px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* ---------- Utility classes ---------- */
+p { margin: 5px 0; font-size: 12px; line-height: 1.7; }
+ul, ol { padding-right: 18px; }
+ul li, ol li { font-size: 12px; line-height: 1.7; margin-bottom: 2px; }
+strong { color: #311B92; }

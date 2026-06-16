@@ -1,0 +1,667 @@
+/* ===== SHARED PRINT STYLES =====
+   Computer Workbooks Project - Print CSS
+   Used by all grade workbooks
+*/
+@charset "UTF-8";
+
+@page {
+  size: A4 portrait;
+  margin: 14mm 15mm 16mm 15mm;
+}
+
+@page :first {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #f0f0f0;
+}
+
+body {
+  font-family: "Noto Sans Arabic", "Segoe UI", "Tahoma", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.65;
+  direction: rtl;
+  text-align: right;
+  color: #222;
+}
+
+/* ===== WORKBOOK WRITING AREAS ===== */
+.school-strip {
+  border: 1px solid rgba(0,0,0,0.18);
+  background: rgba(0,0,0,0.025);
+  border-radius: 6px;
+  padding: 7px 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 12.5px;
+}
+
+.cover .cover-school {
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 16px;
+}
+
+.cover .cover-author {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 8px;
+  background: rgba(255,255,255,0.18);
+  border: 1px solid rgba(255,255,255,0.45);
+  padding: 7px 22px;
+}
+
+.term-row {
+  margin: 6px 0;
+}
+
+.lesson-text {
+  margin: 5px 0 7px 0;
+  font-size: 12.5px;
+  line-height: 1.58;
+}
+
+.tight-cols {
+  gap: 10px;
+  margin: 6px 0;
+}
+
+.compact-steps li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 12px;
+  line-height: 1.48;
+}
+
+.write-label {
+  border: 1px solid rgba(0,0,0,0.2);
+  border-bottom: 0;
+  padding: 4px 8px;
+  font-weight: 700;
+  font-size: 12px;
+  margin-top: 5px;
+  border-radius: 6px 6px 0 0;
+  background: rgba(0,0,0,0.035);
+}
+
+.answer-space {
+  border: 1px solid rgba(0,0,0,0.2);
+  padding: 6px 9px;
+  margin: 0 0 7px 0;
+  background: rgba(255,255,255,0.82);
+  border-radius: 0 0 6px 6px;
+}
+
+.answer-line {
+  height: 16px;
+  border-bottom: 1px dotted #777;
+}
+
+.creative-box {
+  padding: 8px 11px;
+  margin: 7px 0;
+  background: #FFF3E0;
+  border: 2px solid #FF8F00;
+  border-radius: 8px;
+}
+
+.creative-title {
+  color: #E65100;
+  font-weight: 800;
+  font-size: 12.8px;
+  margin-bottom: 4px;
+}
+
+.creative-title::before {
+  content: "* ";
+}
+
+.mini-question {
+  margin-top: auto !important;
+  padding: 8px 10px !important;
+}
+
+.mini-question h4 {
+  margin-bottom: 4px;
+}
+
+.mini-question li {
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.toc-compact .toc-item {
+  padding: 3px 7px;
+  font-size: 10.8px;
+  line-height: 1.35;
+}
+
+.toc-compact + .toc-item,
+.toc-compact + .toc-item + .toc-item,
+.toc-compact + .toc-item + .toc-item + .toc-item {
+  padding: 4px 7px;
+  font-size: 11px;
+}
+
+/* ===== PAGE LAYOUT ===== */
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 14mm 15mm 18mm 15mm;
+  margin: 0 auto 15px auto;
+  background: white;
+  page-break-after: always;
+  break-after: page;
+  position: relative;
+  overflow: hidden;
+}
+
+.page:last-child {
+  page-break-after: auto;
+}
+
+/* ===== PAGE NUMBER ===== */
+.page-num {
+  position: absolute;
+  bottom: 7mm;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  padding: 2px 14px;
+  border-radius: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* ===== COVER PAGE ===== */
+.cover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 297mm;
+  padding: 0;
+}
+
+.cover .grade-badge {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 52px;
+  font-weight: 900;
+  margin: 15px auto;
+  border: 4px solid rgba(255,255,255,0.6);
+  background: rgba(255,255,255,0.2);
+}
+
+.cover h1 {
+  font-size: 40px;
+  font-weight: 900;
+  margin: 12px 0;
+  text-shadow: 2px 3px 6px rgba(0,0,0,0.25);
+  letter-spacing: 1px;
+}
+
+.cover h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 8px 0;
+  opacity: 0.92;
+}
+
+.cover .cover-subtitle {
+  font-size: 17px;
+  margin: 8px 0;
+  opacity: 0.85;
+}
+
+.cover .cover-year {
+  margin-top: 28px;
+  font-size: 19px;
+  background: rgba(255,255,255,0.18);
+  padding: 10px 35px;
+  border-radius: 25px;
+  border: 1px solid rgba(255,255,255,0.4);
+}
+
+.cover .cover-decoration {
+  margin: 18px 0;
+  font-size: 28px;
+  letter-spacing: 12px;
+  opacity: 0.7;
+}
+
+.cover .cover-footer {
+  position: absolute;
+  bottom: 20mm;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.75;
+  width: 100%;
+}
+
+/* ===== PAGE HEADER ===== */
+.page-header {
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header h2 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.page-header .unit-label {
+  font-size: 11.5px;
+  opacity: 0.88;
+  background: rgba(255,255,255,0.18);
+  padding: 3px 10px;
+  border-radius: 10px;
+}
+
+/* ===== SECTION TITLE ===== */
+.section-title {
+  font-size: 16px;
+  font-weight: 700;
+  border-bottom: 2.5px solid;
+  padding-bottom: 5px;
+  margin: 15px 0 10px 0;
+}
+
+.lesson-goal {
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 10px;
+  padding: 5px 12px;
+  border-radius: 5px;
+  background: rgba(0,0,0,0.04);
+  border-right: 3px solid;
+}
+
+/* ===== INFO BOXES ===== */
+.info-box {
+  border-right: 5px solid;
+  border-radius: 6px;
+  padding: 11px 14px;
+  margin: 10px 0;
+}
+
+.info-box h4 {
+  font-size: 13.5px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.info-box p, .info-box li {
+  font-size: 12.5px;
+  line-height: 1.7;
+  margin: 3px 0;
+}
+
+/* ===== ACTIVITY BOX ===== */
+.activity-box {
+  background: #FFFDE7;
+  border: 2px dashed #F9A825;
+  border-radius: 8px;
+  padding: 12px 15px;
+  margin: 10px 0;
+}
+
+.activity-box .activity-title {
+  color: #E65100;
+  font-size: 13.5px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.activity-box .activity-title::before {
+  content: "🎯 ";
+}
+
+.activity-box p, .activity-box li {
+  font-size: 12.5px;
+  line-height: 1.7;
+  color: #4E342E;
+}
+
+/* ===== NOTE BOX ===== */
+.note-box {
+  border-radius: 6px;
+  padding: 9px 13px;
+  margin: 8px 0;
+  font-size: 12.5px;
+  line-height: 1.65;
+}
+
+.note-box::before {
+  content: "💡 ";
+  font-size: 14px;
+}
+
+/* ===== CHALLENGE BOX ===== */
+.challenge-box {
+  background: #FFF3E0;
+  border: 2px solid #FF8F00;
+  border-radius: 8px;
+  padding: 12px 15px;
+  margin: 10px 0;
+}
+
+.challenge-box .challenge-title {
+  color: #E65100;
+  font-size: 13.5px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.challenge-box .challenge-title::before {
+  content: "🏆 ";
+}
+
+/* ===== THINK BOX ===== */
+.think-box {
+  background: #F8F9FA;
+  border: 1px solid #DEE2E6;
+  border-top: 4px solid;
+  border-radius: 6px;
+  padding: 11px 14px;
+  margin: 10px 0;
+}
+
+.think-box::before {
+  content: "🤔 فكّر: ";
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.think-box p {
+  font-size: 12.5px;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+/* ===== QUESTION BOX ===== */
+.question-box {
+  background: #F8EFF9;
+  border: 1px solid #CE93D8;
+  border-radius: 8px;
+  padding: 12px 15px;
+  margin: 10px 0;
+}
+
+.question-box h4 {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #6A1B9A;
+  margin-bottom: 8px;
+}
+
+.question-box ol, .question-box ul {
+  padding-right: 20px;
+  margin: 0;
+}
+
+.question-box li {
+  font-size: 12.5px;
+  color: #444;
+  margin-bottom: 7px;
+  line-height: 1.6;
+}
+
+/* ===== CARDS GRID ===== */
+.cards-grid {
+  display: grid;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.cards-grid-2 { grid-template-columns: 1fr 1fr; }
+.cards-grid-3 { grid-template-columns: 1fr 1fr 1fr; }
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 11px 13px;
+  border-top: 3.5px solid;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.card h5 {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.card p, .card li {
+  font-size: 12px;
+  color: #555;
+  line-height: 1.65;
+  margin: 2px 0;
+}
+
+/* ===== TABLES ===== */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+  font-size: 12.5px;
+}
+
+.styled-table th {
+  color: white;
+  padding: 8px 10px;
+  text-align: right;
+  font-weight: 700;
+}
+
+.styled-table td {
+  padding: 7px 10px;
+  border-bottom: 1px solid;
+  color: #333;
+}
+
+/* ===== STEPS ===== */
+.steps {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0;
+  counter-reset: step-counter;
+}
+
+.steps li {
+  counter-increment: step-counter;
+  padding: 7px 38px 7px 0;
+  font-size: 12.5px;
+  color: #333;
+  line-height: 1.65;
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+
+.steps li::before {
+  content: counter(step-counter);
+  position: absolute;
+  right: 0;
+  top: 6px;
+  color: white;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* ===== OBJECTIVES ===== */
+.objectives {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0;
+}
+
+.objectives li {
+  padding: 5px 28px 5px 0;
+  font-size: 12.5px;
+  color: #333;
+  line-height: 1.65;
+  position: relative;
+}
+
+.objectives li::before {
+  content: "✓";
+  position: absolute;
+  right: 0;
+  font-weight: 900;
+  font-size: 14px;
+}
+
+/* ===== TOC ===== */
+.toc-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 10px;
+  border-bottom: 1px dotted;
+  font-size: 12.5px;
+  color: #333;
+}
+
+.toc-item:nth-child(odd) {
+  background: rgba(0,0,0,0.02);
+}
+
+.toc-unit {
+  font-weight: 700;
+}
+
+.toc-page {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 10px;
+  color: white;
+}
+
+/* ===== FORMULA / CODE BOX ===== */
+.formula-box {
+  background: #1A237E;
+  color: #B3E5FC;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-family: "Courier New", Consolas, monospace;
+  font-size: 13px;
+  margin: 8px 0;
+  direction: ltr;
+  text-align: left;
+  letter-spacing: 0.5px;
+}
+
+/* ===== ASSESSMENT TABLE ===== */
+.assessment-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.assessment-table th {
+  color: white;
+  padding: 8px;
+  text-align: center;
+}
+
+.assessment-table td {
+  padding: 7px 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.check-cell {
+  font-size: 20px;
+  color: #ccc;
+}
+
+/* ===== RUBRIC TABLE ===== */
+.rubric-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11.5px;
+  margin: 10px 0;
+}
+
+.rubric-table th {
+  color: white;
+  padding: 7px 8px;
+  text-align: center;
+}
+
+.rubric-table td {
+  padding: 6px 8px;
+  border: 1px solid #ddd;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* ===== DIVIDER ===== */
+.divider {
+  border: none;
+  height: 2px;
+  margin: 12px 0;
+  border-radius: 2px;
+  opacity: 0.3;
+}
+
+/* ===== PRINT MEDIA ===== */
+@media print {
+  body { background: white; }
+  .page {
+    width: 180mm;
+    min-height: 267mm;
+    height: 267mm;
+    padding: 0;
+    box-shadow: none;
+    margin: 0;
+    page-break-after: always;
+  }
+
+  .cover {
+    width: 210mm;
+    min-height: 297mm;
+    height: 297mm;
+  }
+}
+
+@media screen {
+  .page {
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+    margin-bottom: 20px;
+  }
+}

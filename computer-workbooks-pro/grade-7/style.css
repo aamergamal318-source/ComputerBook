@@ -1,0 +1,201 @@
+/* ===== Grade 7 - Blue Theme =====
+   Overrides for the shared print.css and components.css
+*/
+
+:root {
+  --primary: #1565C0;
+  --primary-light: #42A5F5;
+  --primary-very-light: #E3F2FD;
+  --primary-dark: #0D47A1;
+  --accent: #1976D2;
+}
+
+/* ===== COVER ===== */
+.cover {
+  background: linear-gradient(160deg, #0D47A1 0%, #1565C0 45%, #42A5F5 100%);
+  color: white;
+}
+
+/* ===== PAGE HEADER ===== */
+.page-header {
+  background: linear-gradient(135deg, #1565C0, #42A5F5);
+}
+
+/* ===== PAGE NUMBER ===== */
+.page-num {
+  background: #E3F2FD;
+  color: #1565C0;
+  border: 1px solid #BBDEFB;
+}
+
+/* ===== INFO BOX ===== */
+.info-box {
+  background: #E3F2FD;
+  border-right-color: #1565C0;
+}
+
+.info-box h4 {
+  color: #0D47A1;
+}
+
+/* ===== NOTE BOX ===== */
+.note-box {
+  background: #E8F5E9;
+  border-right: 4px solid #2E7D32;
+  color: #1B5E20;
+}
+
+/* ===== THINK BOX ===== */
+.think-box {
+  border-top-color: #1565C0;
+}
+
+/* ===== SECTION TITLE ===== */
+.section-title {
+  color: #0D47A1;
+  border-bottom-color: #42A5F5;
+}
+
+/* ===== LESSON GOAL ===== */
+.lesson-goal {
+  background: #E3F2FD;
+  border-right-color: #1565C0;
+  color: #0D47A1;
+}
+
+/* ===== CARDS ===== */
+.card {
+  border-top-color: #1565C0;
+  border-color: #BBDEFB;
+}
+
+.card h5 {
+  color: #0D47A1;
+}
+
+/* ===== STYLED TABLE ===== */
+.styled-table th {
+  background: #1565C0;
+}
+
+.styled-table td {
+  border-bottom-color: #BBDEFB;
+}
+
+.styled-table tr:nth-child(even) td {
+  background: #E3F2FD;
+}
+
+/* ===== STEPS ===== */
+.steps li::before {
+  background: #1565C0;
+}
+
+/* ===== OBJECTIVES ===== */
+.objectives li::before {
+  color: #1565C0;
+}
+
+/* ===== TOC ===== */
+.toc-item {
+  border-bottom-color: #BBDEFB;
+}
+
+.toc-unit {
+  color: #0D47A1;
+}
+
+.toc-page {
+  background: #1565C0;
+}
+
+/* ===== NUM BADGE ===== */
+.num-badge {
+  background: #1565C0;
+}
+
+/* ===== UNIT BIG HEADER ===== */
+.unit-big-header .unit-number {
+  color: #1565C0;
+}
+
+.unit-big-header .unit-title {
+  color: #0D47A1;
+}
+
+/* ===== HIGHLIGHT / MINI CARDS ===== */
+.highlight-item {
+  background: #E3F2FD;
+  color: #0D47A1;
+}
+
+.mini-card {
+  background: #E3F2FD;
+  color: #0D47A1;
+}
+
+/* ===== KEY TERM ===== */
+.key-term {
+  background: #BBDEFB;
+  color: #0D47A1;
+}
+
+/* ===== ASSESSMENT TABLE ===== */
+.assessment-table th {
+  background: #1565C0;
+}
+
+.assessment-table td {
+  border-color: #BBDEFB;
+}
+
+/* ===== RUBRIC TABLE ===== */
+.rubric-table th {
+  background: #1565C0;
+}
+
+/* ===== QUESTION BOX ===== */
+.question-box h4 {
+  color: #0D47A1;
+}
+
+/* ===== AI BOX ===== */
+.ai-box {
+  background: #EDE7F6;
+  border-color: #7C4DFF;
+}
+
+/* ===== CERTIFICATE ===== */
+.certificate-section {
+  border-color: #1565C0;
+}
+
+.certificate-section h3 {
+  color: #0D47A1;
+}
+
+/* ===== PROGRESS BAR ===== */
+.progress-bar-fill {
+  background: #1565C0;
+}
+
+/* ===== CHALLENGE BOX ===== */
+.challenge-box {
+  background: #FFF3E0;
+  border-color: #FF8F00;
+}
+
+/* ===== DIVIDER ===== */
+.divider {
+  background: #1565C0;
+}
+
+/* ===== COMPARE TABLE (grade-level overrides) ===== */
+.compare-table th {
+  background: #1565C0;
+  color: white;
+}
+
+.compare-table tr:nth-child(even) td {
+  background: #E3F2FD;
+}

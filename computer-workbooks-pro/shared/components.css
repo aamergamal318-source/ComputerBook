@@ -1,0 +1,355 @@
+/* ===== SHARED COMPONENTS =====
+   Reusable UI components for all grade workbooks
+*/
+
+/* ===== GRADE THEMES (override in grade-specific CSS) ===== */
+/* Grade 7 Blue: #1565C0, #42A5F5, #E3F2FD, #0D47A1 */
+/* Grade 8 Green: #2E7D32, #66BB6A, #E8F5E9, #1B5E20 */
+/* Grade 9 Purple: #4527A0, #7C4DFF, #EDE7F6, #311B92 */
+
+/* ===== TWO-COLUMN LAYOUT ===== */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin: 10px 0;
+}
+
+.two-col-65 {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  gap: 14px;
+  margin: 10px 0;
+}
+
+/* ===== HIGHLIGHT ROW ===== */
+.highlight-row {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.highlight-item {
+  flex: 1;
+  min-width: 120px;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.highlight-item .h-icon {
+  font-size: 26px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.highlight-item .h-title {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.highlight-item .h-desc {
+  font-size: 11px;
+  margin-top: 3px;
+  opacity: 0.85;
+}
+
+/* ===== ICON LIST ===== */
+.icon-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0;
+}
+
+.icon-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 5px 0;
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.icon-list li .il-icon {
+  font-size: 16px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* ===== KEY TERM ===== */
+.key-term {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 2px 3px;
+}
+
+/* ===== COMPARISON TABLE ===== */
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.compare-table th {
+  padding: 8px;
+  text-align: center;
+  font-size: 12.5px;
+}
+
+.compare-table td {
+  padding: 7px 10px;
+  border-bottom: 1px solid #eee;
+  text-align: right;
+}
+
+.compare-table .feature-col {
+  font-weight: 600;
+  width: 35%;
+}
+
+/* ===== PROGRESS TRACKER ===== */
+.progress-row {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+  gap: 10px;
+}
+
+.progress-label {
+  font-size: 12px;
+  min-width: 120px;
+  text-align: right;
+}
+
+.progress-bar-bg {
+  flex: 1;
+  height: 10px;
+  background: #eee;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  border-radius: 5px;
+}
+
+/* ===== DEFINITION LIST ===== */
+.def-list {
+  margin: 8px 0;
+}
+
+.def-item {
+  padding: 6px 0;
+  border-bottom: 1px dashed #ddd;
+  font-size: 12.5px;
+}
+
+.def-term {
+  font-weight: 700;
+  display: inline;
+}
+
+.def-term::after {
+  content: ": ";
+}
+
+.def-desc {
+  color: #444;
+  display: inline;
+}
+
+/* ===== SCREENSHOT PLACEHOLDER ===== */
+.screenshot-box {
+  background: #f5f5f5;
+  border: 2px dashed #bbb;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  color: #666;
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.screenshot-box .ss-icon {
+  font-size: 32px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* ===== NUMBERED BADGE ===== */
+.num-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+/* ===== UNIT HEADER (big) ===== */
+.unit-big-header {
+  text-align: center;
+  padding: 20px 0 15px 0;
+}
+
+.unit-big-header .unit-number {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.75;
+  margin-bottom: 5px;
+}
+
+.unit-big-header .unit-title {
+  font-size: 28px;
+  font-weight: 900;
+  margin: 5px 0;
+}
+
+.unit-big-header .unit-desc {
+  font-size: 14px;
+  opacity: 0.85;
+  margin-top: 8px;
+}
+
+/* ===== MINI CARDS (3-up) ===== */
+.mini-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.mini-card {
+  border-radius: 8px;
+  padding: 10px 8px;
+  text-align: center;
+}
+
+.mini-card .mc-icon { font-size: 22px; margin-bottom: 4px; }
+.mini-card .mc-title { font-size: 12px; font-weight: 700; }
+.mini-card .mc-desc { font-size: 11px; margin-top: 3px; }
+
+/* ===== CERTIFICATE SECTION ===== */
+.certificate-section {
+  border: 3px double;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.certificate-section h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.certificate-section .cert-line {
+  border-bottom: 1px solid #999;
+  margin: 15px 20px;
+  height: 25px;
+}
+
+.signature-row {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.sig-box {
+  text-align: center;
+  font-size: 12px;
+}
+
+.sig-box .sig-line {
+  border-bottom: 1px solid #666;
+  width: 100px;
+  margin: 20px auto 5px auto;
+}
+
+/* ===== AI BOX ===== */
+.ai-box {
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 12px 15px;
+  margin: 10px 0;
+}
+
+.ai-box .ai-title {
+  font-size: 13.5px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.ai-box .ai-title::before {
+  content: "🤖 ";
+}
+
+.ai-prompt-example {
+  background: #1A1A2E;
+  color: #A8DADC;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+  margin: 8px 0;
+  direction: rtl;
+  text-align: right;
+  line-height: 1.6;
+}
+
+/* ===== SAFE / UNSAFE badges ===== */
+.badge-safe {
+  background: #E8F5E9;
+  color: #1B5E20;
+  border: 1px solid #4CAF50;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.badge-unsafe {
+  background: #FFEBEE;
+  color: #B71C1C;
+  border: 1px solid #EF5350;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* ===== SHORTCUT BADGE ===== */
+.shortcut {
+  background: #37474F;
+  color: #ECEFF1;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+  display: inline-block;
+  margin: 2px;
+  border-bottom: 2px solid #1A237E;
+}
+
+/* ===== SECTION DIVIDER ===== */
+.sec-divider {
+  text-align: center;
+  color: #aaa;
+  font-size: 18px;
+  margin: 12px 0;
+  letter-spacing: 6px;
+}
