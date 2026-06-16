@@ -1,0 +1,662 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>الجزء الأول: مبتدئ - دوسية الحاسوب</title><link rel="stylesheet" href="../shared/print.css"><link rel="stylesheet" href="../shared/components.css"><link rel="stylesheet" href="style.css"></head><body>
+  <section class="page cover">
+    <div class="cover-icons"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8"/><path d="M12 16v4"/></svg><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 9h.01M11 9h.01M15 9h.01M19 9h.01M7 13h.01M11 13h.01M15 13h.01M19 13h.01M8 17h8"/></svg><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="3" width="10" height="18" rx="5"/><path d="M12 7v4"/></svg><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h6l2 2h8v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/></svg><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 19H8a6 6 0 1 1 1.1-11.9A7 7 0 0 1 22 11.5 4.5 4.5 0 0 1 17.5 19z"/></svg></div>
+    <div class="grade-badge">1</div>
+    <h1>دوسية الحاسوب</h1>
+    <h2>الجزء الأول: مبتدئ</h2>
+    <div class="cover-subtitle">من التعرف على الحاسوب إلى أول ملف منظم</div>
+    <svg class="cover-hero" viewBox="0 0 420 210" role="img" aria-label="صورة تعليمية عن الحاسوب">
+    <rect x="15" y="138" width="390" height="18" rx="9" class="ci-shadow"/>
+    <g transform="translate(92 28)">
+      <rect x="0" y="0" width="190" height="112" rx="10" class="ci-screen"/>
+      <rect x="16" y="16" width="158" height="72" rx="5" class="ci-window"/>
+      <path d="M39 41h96M39 58h120M39 75h72" class="ci-line"/>
+      <rect x="74" y="112" width="42" height="18" rx="4" class="ci-dark"/>
+      <rect x="48" y="130" width="94" height="8" rx="4" class="ci-dark"/>
+    </g>
+    <g transform="translate(68 164)">
+      <rect width="206" height="32" rx="8" class="ci-keyboard"/>
+      <path d="M18 11h10M40 11h10M62 11h10M84 11h10M106 11h10M128 11h10M150 11h10M172 11h10M30 22h116" class="ci-keyline"/>
+    </g>
+    <g transform="translate(300 154)">
+      <rect width="38" height="52" rx="19" class="ci-mouse"/>
+      <path d="M19 9v16" class="ci-keyline"/>
+    </g>
+    <g transform="translate(28 72)">
+      <path d="M0 16h38l10 12h54v55H0z" class="ci-folder"/>
+      <path d="M18 48h58M18 64h42" class="ci-keyline"/>
+    </g>
+    <g transform="translate(292 38)">
+      <path d="M64 76H22A22 22 0 1 1 30 34 30 30 0 0 1 86 46 18 18 0 0 1 64 76z" class="ci-cloud"/>
+      <path d="M42 55h28M56 41v28" class="ci-keyline"/>
+    </g>
+    
+  </svg>
+    <div class="cover-logo-strip"><span><img src="../assets/logos/windows.svg" alt="Windows"><b>Windows</b></span><span><img src="../assets/logos/word.svg" alt="Word"><b>Word</b></span><span><img src="../assets/logos/gmail.svg" alt="Gmail"><b>Gmail</b></span><span><img src="../assets/logos/drive.svg" alt="Drive"><b>Drive</b></span></div>
+    <div class="cover-school">مدرسة حورة الشاملة</div>
+    <div class="cover-author">تجميع وترتيب: عامر جمل</div>
+    <div class="cover-decoration">افهم | جرّب | اكتب | أبدع</div>
+    <div class="cover-year">30 صفحة تدريبية قابلة للطباعة</div>
+    <div class="cover-footer">مساحات إجابة ومهمات للمبدعين داخل الدوسية</div>
+  </section>
+
+  <section class="page workbook-page">
+    <div class="page-header"><h2><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/></svg> كيف تعمل بهذه الدوسية؟</h2><span class="unit-label">مبتدئ</span></div>
+    <div class="school-strip"><strong>مدرسة حورة الشاملة</strong><span>تجميع وترتيب: عامر جمل</span></div>
+    <div class="highlight-row">
+      <div class="highlight-item"><span class="h-icon">01</span><div class="h-title">اقرأ</div><div class="h-desc">ابدأ بالهدف والمصطلحات.</div></div>
+      <div class="highlight-item"><span class="h-icon">02</span><div class="h-title">طبّق</div><div class="h-desc">نفّذ الخطوات على الجهاز.</div></div>
+      <div class="highlight-item"><span class="h-icon">03</span><div class="h-title">اكتب</div><div class="h-desc">استخدم مساحة الإجابة.</div></div>
+      <div class="highlight-item"><span class="h-icon">04</span><div class="h-title">راجع</div><div class="h-desc">صحح عملك قبل التسليم.</div></div>
+    </div>
+    <h3 class="section-title">فكرة الدوسية</h3>
+    <p>يبدأ هذا الجزء من الأساس: ما الحاسوب؟ كيف نشغله؟ كيف نحافظ عليه؟ كيف ننشئ ملفا ونكتبه ونحفظه ونشاركه بأمان؟ صمم للطالب الذي يحتاج خطوات واضحة ومساحة تدريب كثيرة.</p>
+    <div class="two-col">
+      <div class="info-box"><h4>ما الذي تحتاجه؟</h4><p>جهاز حاسوب، حساب مدرسي عند الحاجة، قلم للإجابة داخل الدوسية، وملف منظم لحفظ الأعمال.</p></div>
+      <div class="note-box">كل صفحة مصممة لتُملأ من الطالب: لا تكتف بالقراءة، اكتب إجابتك ونفذ التدريب العملي.</div>
+    </div>
+    <table class="styled-table"><tr><th>رمز الصفحة</th><th>ماذا يعني؟</th></tr><tr><td>تدريب سريع</td><td>مهمة قصيرة للتأكد من فهم المهارة.</td></tr><tr><td>مكان الإجابة</td><td>مساحة يكتب فيها الطالب خطواته أو ملاحظاته.</td></tr><tr><td>مهمة للمبدعين</td><td>تحدّ إضافي لمن يريد إنتاج عمل أجمل أو أعمق.</td></tr></table>
+    <div class="write-label">ملاحظات الطالب قبل البدء</div>
+    <div class="answer-space"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div>
+    <div class="page-num">2</div>
+  </section>
+
+  <section class="page workbook-page">
+    <div class="page-header"><h2><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg> الأهداف وخريطة المهارات</h2><span class="unit-label">تأسيس كامل من الصفر</span></div>
+    <ul class="objectives"><li>التعرف إلى مكونات الحاسوب ووظائفها.</li><li>استخدام الفأرة ولوحة المفاتيح والنوافذ بثقة.</li><li>إنشاء ملفات ومجلدات منظمة.</li><li>كتابة مستند بسيط وتنسيقه.</li><li>استخدام البريد و Drive بطريقة آمنة.</li><li>اتباع قواعد السلامة الرقمية وكلمات المرور.</li></ul>
+    <h3 class="section-title">قبل أن تبدأ</h3>
+    <div class="question-box"><h4>اختبار ذاتي قصير</h4><ol><li>اكتب اسم جزء واحد من الحاسوب تعرفه. <div class="answer-space"><div class="answer-line"></div></div></li><li>ما الفرق بين الملف والمجلد؟ <div class="answer-space"><div class="answer-line"></div></div></li><li>اذكر قاعدة أمان رقمية واحدة. <div class="answer-space"><div class="answer-line"></div></div></li></ol></div>
+    <div class="creative-box"><div class="creative-title">دفتر المتعلم المبدع</div><p>خصص آخر سطر في كل صفحة لفكرة صغيرة: اختصار تعلمته، خطأ صححته، أو سؤال تريد أن تسأله في الحصة القادمة.</p></div>
+    <div class="write-label">هدفي الشخصي في هذا الجزء</div>
+    <div class="answer-space"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div>
+    <div class="page-num">3</div>
+  </section>
+
+  <section class="page workbook-page">
+    <div class="page-header"><h2><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></svg> الفهرس</h2><span class="unit-label">30 صفحة</span></div>
+    <div class="toc-compact"><div class="toc-item"><span class="toc-unit"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8"/><path d="M12 16v4"/></svg>1. ما الحاسوب؟</span><span class="toc-page">5</span></div><div class="toc-item"><span class="toc-unit"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h6l2 2h8v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/></svg>2. مكونات الحاسوب الأساسية</span><span class="toc-page">6</span></div><div class="toc-item"><span class="toc-unit"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg>3. تشغيل الحاسوب وإغلاقه</span><span class="toc-page">7</span></div><div class="toc-item"><span class="toc-unit"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18v12H3z"/><path d="M12 16v5M8 21h8"/></svg>4. الفأرة والمؤشر</span><span class="toc-page">8</span></div><div class="toc-item"><span class="toc-unit"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 4v16M15 4v16"/></svg>5. لوحة المفاتيح</span><span class="toc-page">9</span></div><div class="toc-item"><span class="toc-unit"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 19H8a6 6 0 1 1 1.1-11.9A7 7 0 0 1 22 11.5 4.5 4.5 0 0 1 17.5 19z"/></svg>6. سطح المكتب والنوافذ</span><span class="toc-page">10</span></div><div class="toc-item"><span class="toc-unit"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>7. الملفات والمجلدات</span><span class="toc-page">11</span></div><div class="toc-item"><span class="toc-unit"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8V4H8"/><rect x="5" y="8" width="14" height="11" rx="2"/><path d="M2 14h3M19 14h3M9 13h.01M15 13h.01M10 17h4"/></svg>8. حفظ الملف وفتحه</span><span class="toc-page">12</span></div><div class="toc-item"><span class="toc-unit"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8"/><path d="M12 16v4"/></svg>9. الكتابة في Word</span><span class="toc-page">13</span></div><div class="toc-item"><span class="toc-unit"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h6l2 2h8v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/></svg>10. تنسيق النص</span><span class="toc-page">14</span></div><div class="toc-item"><span class="toc-unit"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg>11. القوائم والجداول البسيطة</span><span class="toc-page">15</span></div><div class="toc-item"><span class="toc-unit"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18v12H3z"/><path d="M12 16v5M8 21h8"/></svg>12. Google Docs</span><span class="toc-page">16</span></div><div class="toc-item"><span class="toc-unit"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 4v16M15 4v16"/></svg>13. البريد الإلكتروني</span><span class="toc-page">17</span></div><div class="toc-item"><span class="toc-unit"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 19H8a6 6 0 1 1 1.1-11.9A7 7 0 0 1 22 11.5 4.5 4.5 0 0 1 17.5 19z"/></svg>14. المرفقات في البريد</span><span class="toc-page">18</span></div><div class="toc-item"><span class="toc-unit"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>15. Google Drive</span><span class="toc-page">19</span></div><div class="toc-item"><span class="toc-unit"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8V4H8"/><rect x="5" y="8" width="14" height="11" rx="2"/><path d="M2 14h3M19 14h3M9 13h.01M15 13h.01M10 17h4"/></svg>16. المشاركة الآمنة</span><span class="toc-page">20</span></div><div class="toc-item"><span class="toc-unit"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8"/><path d="M12 16v4"/></svg>17. كلمات المرور</span><span class="toc-page">21</span></div><div class="toc-item"><span class="toc-unit"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h6l2 2h8v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/></svg>18. البحث الآمن</span><span class="toc-page">22</span></div><div class="toc-item"><span class="toc-unit"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg>19. السلامة الرقمية</span><span class="toc-page">23</span></div><div class="toc-item"><span class="toc-unit"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18v12H3z"/><path d="M12 16v5M8 21h8"/></svg>20. الذكاء الاصطناعي كمساعد</span><span class="toc-page">24</span></div><div class="toc-item"><span class="toc-unit"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 4v16M15 4v16"/></svg>21. نسخ ونقل وحذف ملف</span><span class="toc-page">25</span></div><div class="toc-item"><span class="toc-unit"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 19H8a6 6 0 1 1 1.1-11.9A7 7 0 0 1 22 11.5 4.5 4.5 0 0 1 17.5 19z"/></svg>22. مراجعة تأسيسية</span><span class="toc-page">26</span></div></div>
+    <div class="toc-item"><span class="toc-unit">مختبر المهارات ومهام المبدعين</span><span class="toc-page">27-28</span></div>
+    <div class="toc-item"><span class="toc-unit">المشروع النهائي</span><span class="toc-page">29</span></div>
+    <div class="toc-item"><span class="toc-unit">التقييم والخاتمة</span><span class="toc-page">30</span></div>
+    <div class="info-box"><h4>ملاحظة</h4><p>كل درس صفحة واحدة مركزة، وفيها مساحة كتابة حتى تصبح الدوسية قابلة للاستخدام ككراسة عمل لا كملف قراءة فقط.</p></div>
+    <div class="page-num">4</div>
+  </section>
+
+  <section class="page workbook-page lesson-page">
+    <div class="page-header"><h2><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/></svg> ما الحاسوب؟</h2><span class="unit-label">درس 1</span></div>
+    <div class="lesson-goal"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg> هدف الدرس: فهم معنى الحاسوب واستخداماته</div>
+    <div class="term-row"><span class="term-icon"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10 12 2H4v8l8 8 8-8z"/><path d="M7.5 7.5h.01"/><path d="m14 18 6-6"/></svg></span><span class="key-term">حاسوب</span><span class="key-term">بيانات</span><span class="key-term">برنامج</span></div>
+    <div class="app-logo-strip"><span class="app-logo app-powerpoint"><img src="../assets/logos/powerpoint.svg" alt="PowerPoint"><span>PowerPoint</span></span><span class="app-logo app-sheets"><img src="../assets/logos/sheets.svg" alt="Sheets"><span>Sheets</span></span></div>
+    <div class="lesson-visual visual-sheet" aria-hidden="true"><div class="visual-icon"><span></span></div><div class="visual-labels"><b>A1</b><b>SUM</b><b>رسم</b></div></div>
+    <p class="lesson-text">الحاسوب جهاز يستقبل بيانات، يعالجها، ثم يعرض نتيجة مفيدة. نستخدمه في الكتابة، التعلم، الرسم، البحث، وتنظيم الواجبات.</p>
+    <div class="two-col tight-cols">
+      <div>
+        <h3 class="section-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></svg> خطوات التطبيق</h3>
+        <ol class="steps compact-steps"><li>انظر إلى جهازك وحدد الشاشة.</li><li>اكتب استخدامين للحاسوب في المدرسة.</li><li>ناقش مع زميلك أين تظهر النتائج.</li><li>اكتب مثالا على برنامج تعرفه.</li></ol>
+      </div>
+      <div>
+        <div class="activity-box"><div class="activity-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg> تدريب سريع</div><p>ارسم دائرة في وسطها كلمة الحاسوب وحولها أربعة استخدامات.</p></div>
+        <div class="note-box">الحاسوب لا يفكر بدلا عنك؛ هو أداة تساعدك عندما تعطيه تعليمات واضحة.</div>
+      </div>
+    </div>
+    <div class="write-label">مكان الإجابة أو الملاحظات</div>
+    <div class="answer-space"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div>
+    
+    <div class="question-box mini-question"><h4><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3a3 3 0 0 0-3 3v1a3 3 0 0 0-2 5 3 3 0 0 0 2 5v1a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M15 3a3 3 0 0 1 3 3v1a3 3 0 0 1 2 5 3 3 0 0 1-2 5v1a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3z"/></svg> تحقق من فهمك</h4><ol><li>ما الشيء الذي يدخله المستخدم إلى الحاسوب؟</li><li>اذكر نتيجة يمكن أن يعرضها الحاسوب.</li></ol></div>
+    <div class="page-num">5</div>
+  </section>
+
+  <section class="page workbook-page lesson-page">
+    <div class="page-header"><h2><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/></svg> مكونات الحاسوب الأساسية</h2><span class="unit-label">درس 2</span></div>
+    <div class="lesson-goal"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg> هدف الدرس: تمييز أجزاء الجهاز</div>
+    <div class="term-row"><span class="term-icon"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10 12 2H4v8l8 8 8-8z"/><path d="M7.5 7.5h.01"/><path d="m14 18 6-6"/></svg></span><span class="key-term">شاشة</span><span class="key-term">فأرة</span><span class="key-term">لوحة مفاتيح</span></div>
+    
+    
+    <p class="lesson-text">يتكون الحاسوب من أجزاء نراها ونلمسها مثل الشاشة والفأرة ولوحة المفاتيح والسماعات، وأجزاء داخلية تساعد الجهاز على العمل.</p>
+    <div class="two-col tight-cols">
+      <div>
+        <h3 class="section-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></svg> خطوات التطبيق</h3>
+        <ol class="steps compact-steps"><li>حدد كل جزء أمامك.</li><li>اكتب وظيفة كل جزء.</li><li>قارن بين الفأرة ولوحة المفاتيح.</li><li>اسأل المعلم عن جزء داخلي لا نراه.</li></ol>
+      </div>
+      <div>
+        <div class="activity-box"><div class="activity-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg> تدريب سريع</div><p>املأ جدولا: اسم الجزء، وظيفته، متى أستخدمه.</p></div>
+        <div class="note-box">لا تفتح صندوق الجهاز أو تحرك الأسلاك دون إذن.</div>
+      </div>
+    </div>
+    <div class="write-label">مكان الإجابة أو الملاحظات</div>
+    <div class="answer-table"><table><tr><th>العنصر</th><th>إجابتي</th><th>ملاحظة</th></tr><tr><td>ما تعلمته</td><td></td><td></td></tr><tr><td>خطوة طبقتها</td><td></td><td></td></tr><tr><td>خطأ صححته</td><td></td><td></td></tr></table></div>
+    
+    <div class="question-box mini-question"><h4><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3a3 3 0 0 0-3 3v1a3 3 0 0 0-2 5 3 3 0 0 0 2 5v1a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M15 3a3 3 0 0 1 3 3v1a3 3 0 0 1 2 5 3 3 0 0 1-2 5v1a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3z"/></svg> تحقق من فهمك</h4><ol><li>أي جزء نستخدمه للكتابة؟</li><li>أي جزء يعرض لنا الصور والنصوص؟</li></ol></div>
+    <div class="page-num">6</div>
+  </section>
+
+  <section class="page workbook-page lesson-page">
+    <div class="page-header"><h2><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/></svg> تشغيل الحاسوب وإغلاقه</h2><span class="unit-label">درس 3</span></div>
+    <div class="lesson-goal"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg> هدف الدرس: اتباع خطوات تشغيل وإغلاق آمنة</div>
+    <div class="term-row"><span class="term-icon"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10 12 2H4v8l8 8 8-8z"/><path d="M7.5 7.5h.01"/><path d="m14 18 6-6"/></svg></span><span class="key-term">تشغيل</span><span class="key-term">إغلاق</span><span class="key-term">حفظ</span></div>
+    
+    
+    <p class="lesson-text">التشغيل الصحيح يبدأ بالتأكد من المكان ثم الضغط على زر التشغيل. الإغلاق الصحيح يحمي الملفات والبرامج من التلف.</p>
+    <div class="two-col tight-cols">
+      <div>
+        <h3 class="section-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></svg> خطوات التطبيق</h3>
+        <ol class="steps compact-steps"><li>اجلس بطريقة مريحة.</li><li>شغل الجهاز وانتظر سطح المكتب.</li><li>افتح برنامجا ثم أغلقه.</li><li>استخدم أمر إيقاف التشغيل.</li></ol>
+      </div>
+      <div>
+        <div class="activity-box"><div class="activity-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg> تدريب سريع</div><p>رتب خطوات التشغيل والإغلاق في قائمة مرقمة.</p></div>
+        <div class="note-box">احفظ عملك قبل الإغلاق دائما.</div>
+      </div>
+    </div>
+    <div class="write-label">مكان الإجابة أو الملاحظات</div>
+    <div class="check-answer"><div>□ نفذت الخطوات بالترتيب</div><div>□ حفظت عملي باسم واضح</div><div>□ راجعت النتيجة قبل التسليم</div><div>□ كتبت سؤالا للمعلم إن احتجت</div></div><div class="answer-space"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div>
+    
+    <div class="question-box mini-question"><h4><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3a3 3 0 0 0-3 3v1a3 3 0 0 0-2 5 3 3 0 0 0 2 5v1a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M15 3a3 3 0 0 1 3 3v1a3 3 0 0 1 2 5 3 3 0 0 1-2 5v1a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3z"/></svg> تحقق من فهمك</h4><ol><li>لماذا لا نفصل الكهرباء فجأة؟</li><li>ماذا نفعل قبل إغلاق الجهاز؟</li></ol></div>
+    <div class="page-num">7</div>
+  </section>
+
+  <section class="page workbook-page lesson-page">
+    <div class="page-header"><h2><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/></svg> الفأرة والمؤشر</h2><span class="unit-label">درس 4</span></div>
+    <div class="lesson-goal"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg> هدف الدرس: استخدام النقر والسحب بدقة</div>
+    <div class="term-row"><span class="term-icon"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10 12 2H4v8l8 8 8-8z"/><path d="M7.5 7.5h.01"/><path d="m14 18 6-6"/></svg></span><span class="key-term">مؤشر</span><span class="key-term">نقر</span><span class="key-term">سحب</span></div>
+    
+    <div class="lesson-visual visual-mouse" aria-hidden="true"><div class="visual-icon"><span></span></div><div class="visual-labels"><b>نقرة</b><b>سحب</b><b>تحديد</b></div></div>
+    <p class="lesson-text">الفأرة تساعدنا على اختيار العناصر وفتح البرامج وتحريك الملفات. المؤشر يوضح أين سيحدث النقر.</p>
+    <div class="two-col tight-cols">
+      <div>
+        <h3 class="section-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></svg> خطوات التطبيق</h3>
+        <ol class="steps compact-steps"><li>حرك المؤشر ببطء.</li><li>انقر نقرة واحدة على عنصر.</li><li>جرب النقر المزدوج لفتح برنامج.</li><li>اسحب أيقونة داخل مساحة آمنة.</li></ol>
+      </div>
+      <div>
+        <div class="activity-box"><div class="activity-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg> تدريب سريع</div><p>تدرب على رسم مسار بالقلم ثم حاول تحريكه بالفأرة.</p></div>
+        <div class="note-box">لا تضغط الأزرار بعنف؛ الدقة أهم من القوة.</div>
+      </div>
+    </div>
+    <div class="write-label">مكان الإجابة أو الملاحظات</div>
+    <div class="compare-answer"><div><strong>الخيار الأول</strong><div class="answer-space"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div></div><div><strong>الخيار الثاني</strong><div class="answer-space"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div></div></div>
+    <div class="creative-box"><div class="creative-title">مهمة للطلاب المبدعين</div><p>صمم لعبة ورقية صغيرة لتدريب زميلك على اتجاهات المؤشر.</p><div class="answer-space"><div class="answer-line"></div><div class="answer-line"></div></div></div>
+    <div class="question-box mini-question"><h4><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3a3 3 0 0 0-3 3v1a3 3 0 0 0-2 5 3 3 0 0 0 2 5v1a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M15 3a3 3 0 0 1 3 3v1a3 3 0 0 1 2 5 3 3 0 0 1-2 5v1a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3z"/></svg> تحقق من فهمك</h4><ol><li>ما الفرق بين النقر والنقر المزدوج؟</li><li>متى نستخدم السحب؟</li></ol></div>
+    <div class="page-num">8</div>
+  </section>
+
+  <section class="page workbook-page lesson-page">
+    <div class="page-header"><h2><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/></svg> لوحة المفاتيح</h2><span class="unit-label">درس 5</span></div>
+    <div class="lesson-goal"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg> هدف الدرس: معرفة المفاتيح المهمة</div>
+    <div class="term-row"><span class="term-icon"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10 12 2H4v8l8 8 8-8z"/><path d="M7.5 7.5h.01"/><path d="m14 18 6-6"/></svg></span><span class="key-term">Enter</span><span class="key-term">Backspace</span><span class="key-term">Shift</span></div>
+    
+    
+    <p class="lesson-text">لوحة المفاتيح تستخدم للكتابة وتنفيذ أوامر سريعة. من المفاتيح المهمة: Enter و Backspace و Shift و Space.</p>
+    <div class="two-col tight-cols">
+      <div>
+        <h3 class="section-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></svg> خطوات التطبيق</h3>
+        <ol class="steps compact-steps"><li>اكتب اسمك.</li><li>استخدم Space بين الكلمات.</li><li>استخدم Backspace لحذف حرف.</li><li>استخدم Shift لكتابة رمز أو حرف كبير عند الحاجة.</li></ol>
+      </div>
+      <div>
+        <div class="activity-box"><div class="activity-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg> تدريب سريع</div><p>اكتب جملة من خمس كلمات ثم صحح خطأين فيها.</p></div>
+        <div class="note-box">تعلم الاختصارات تدريجيا ولا تحفظها كلها في يوم واحد.</div>
+      </div>
+    </div>
+    <div class="write-label">مكان الإجابة أو الملاحظات</div>
+    <div class="design-space"><div class="design-grid"></div><div class="design-note">ارسم أو خطط هنا: اكتب قصة قصيرة لا تتجاوز ثلاثة أسطر باستخدام خمسة مفاتيح تعلمتها.</div></div>
+    
+    <div class="question-box mini-question"><h4><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3a3 3 0 0 0-3 3v1a3 3 0 0 0-2 5 3 3 0 0 0 2 5v1a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M15 3a3 3 0 0 1 3 3v1a3 3 0 0 1 2 5 3 3 0 0 1-2 5v1a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3z"/></svg> تحقق من فهمك</h4><ol><li>ما وظيفة Enter؟</li><li>ما وظيفة Backspace؟</li></ol></div>
+    <div class="page-num">9</div>
+  </section>
+
+  <section class="page workbook-page lesson-page">
+    <div class="page-header"><h2><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/></svg> سطح المكتب والنوافذ</h2><span class="unit-label">درس 6</span></div>
+    <div class="lesson-goal"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg> هدف الدرس: التنقل بين النوافذ</div>
+    <div class="term-row"><span class="term-icon"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10 12 2H4v8l8 8 8-8z"/><path d="M7.5 7.5h.01"/><path d="m14 18 6-6"/></svg></span><span class="key-term">سطح المكتب</span><span class="key-term">نافذة</span><span class="key-term">شريط المهام</span></div>
+    <div class="app-logo-strip"><span class="app-logo app-windows"><img src="../assets/logos/windows.svg" alt="Windows"><span>Windows</span></span></div>
+    
+    <p class="lesson-text">سطح المكتب هو مساحة العمل بعد تشغيل الجهاز. تظهر عليه أيقونات ونوافذ وشريط مهام يساعدك على العودة للبرامج المفتوحة.</p>
+    <div class="two-col tight-cols">
+      <div>
+        <h3 class="section-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></svg> خطوات التطبيق</h3>
+        <ol class="steps compact-steps"><li>افتح نافذة برنامج.</li><li>صغر النافذة ثم أعد فتحها.</li><li>كبر النافذة لتملأ الشاشة.</li><li>انتقل بين نافذتين من شريط المهام.</li></ol>
+      </div>
+      <div>
+        <div class="activity-box"><div class="activity-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg> تدريب سريع</div><p>اكتب أسماء ثلاثة عناصر تراها على سطح المكتب.</p></div>
+        <div class="note-box">لا تغلق عمل زميلك إذا وجدت نافذة مفتوحة على جهاز مشترك.</div>
+      </div>
+    </div>
+    <div class="write-label">مكان الإجابة أو الملاحظات</div>
+    <div class="answer-space"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div>
+    
+    <div class="question-box mini-question"><h4><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3a3 3 0 0 0-3 3v1a3 3 0 0 0-2 5 3 3 0 0 0 2 5v1a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M15 3a3 3 0 0 1 3 3v1a3 3 0 0 1 2 5 3 3 0 0 1-2 5v1a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3z"/></svg> تحقق من فهمك</h4><ol><li>كيف تعرف أن البرنامج ما زال مفتوحا؟</li><li>ما فائدة زر التصغير؟</li></ol></div>
+    <div class="page-num">10</div>
+  </section>
+
+  <section class="page workbook-page lesson-page">
+    <div class="page-header"><h2><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/></svg> الملفات والمجلدات</h2><span class="unit-label">درس 7</span></div>
+    <div class="lesson-goal"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg> هدف الدرس: فهم الفرق بين الملف والمجلد</div>
+    <div class="term-row"><span class="term-icon"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10 12 2H4v8l8 8 8-8z"/><path d="M7.5 7.5h.01"/><path d="m14 18 6-6"/></svg></span><span class="key-term">ملف</span><span class="key-term">مجلد</span><span class="key-term">تنظيم</span></div>
+    
+    <div class="lesson-visual visual-folder" aria-hidden="true"><div class="visual-icon"><span></span></div><div class="visual-labels"><b>مجلد</b><b>ملف</b><b>حفظ</b></div></div>
+    <p class="lesson-text">الملف يحتوي عملا واحدا مثل نص أو صورة. المجلد يجمع ملفات مرتبطة حتى نستطيع العثور عليها بسهولة.</p>
+    <div class="two-col tight-cols">
+      <div>
+        <h3 class="section-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></svg> خطوات التطبيق</h3>
+        <ol class="steps compact-steps"><li>أنشئ مجلدا باسم حاسوب.</li><li>أنشئ ملفا نصيا داخله.</li><li>أعد تسمية الملف باسم واضح.</li><li>افتح المجلد وتأكد من مكان الملف.</li></ol>
+      </div>
+      <div>
+        <div class="activity-box"><div class="activity-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg> تدريب سريع</div><p>صمم شجرة مجلدات للمواد الدراسية.</p></div>
+        <div class="note-box">الاسم الجيد يوفر وقتك عند البحث لاحقا.</div>
+      </div>
+    </div>
+    <div class="write-label">مكان الإجابة أو الملاحظات</div>
+    <div class="answer-table"><table><tr><th>العنصر</th><th>إجابتي</th><th>ملاحظة</th></tr><tr><td>ما تعلمته</td><td></td><td></td></tr><tr><td>خطوة طبقتها</td><td></td><td></td></tr><tr><td>خطأ صححته</td><td></td><td></td></tr></table></div>
+    
+    <div class="question-box mini-question"><h4><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3a3 3 0 0 0-3 3v1a3 3 0 0 0-2 5 3 3 0 0 0 2 5v1a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M15 3a3 3 0 0 1 3 3v1a3 3 0 0 1 2 5 3 3 0 0 1-2 5v1a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3z"/></svg> تحقق من فهمك</h4><ol><li>لماذا نستخدم المجلدات؟</li><li>أي اسم أفضل: ملف1 أم واجب-حاسوب؟</li></ol></div>
+    <div class="page-num">11</div>
+  </section>
+
+  <section class="page workbook-page lesson-page">
+    <div class="page-header"><h2><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/></svg> حفظ الملف وفتحه</h2><span class="unit-label">درس 8</span></div>
+    <div class="lesson-goal"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg> هدف الدرس: حفظ العمل في مكان معروف</div>
+    <div class="term-row"><span class="term-icon"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10 12 2H4v8l8 8 8-8z"/><path d="M7.5 7.5h.01"/><path d="m14 18 6-6"/></svg></span><span class="key-term">حفظ</span><span class="key-term">فتح</span><span class="key-term">اسم الملف</span></div>
+    
+    
+    <p class="lesson-text">الحفظ يعني تخزين العمل حتى نعود إليه لاحقا. يجب أن نعرف اسم الملف ومكانه حتى لا يضيع.</p>
+    <div class="two-col tight-cols">
+      <div>
+        <h3 class="section-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></svg> خطوات التطبيق</h3>
+        <ol class="steps compact-steps"><li>اكتب جملة في ملف.</li><li>اضغط حفظ باسم.</li><li>اختر المجلد الصحيح.</li><li>أغلق الملف ثم افتحه من جديد.</li></ol>
+      </div>
+      <div>
+        <div class="activity-box"><div class="activity-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg> تدريب سريع</div><p>احفظ ملفا باسم تدريب-الحفظ داخل مجلد الحاسوب.</p></div>
+        <div class="note-box">احفظ العمل كل عدة دقائق.</div>
+      </div>
+    </div>
+    <div class="write-label">مكان الإجابة أو الملاحظات</div>
+    <div class="check-answer"><div>□ نفذت الخطوات بالترتيب</div><div>□ حفظت عملي باسم واضح</div><div>□ راجعت النتيجة قبل التسليم</div><div>□ كتبت سؤالا للمعلم إن احتجت</div></div><div class="answer-space"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div>
+    <div class="creative-box"><div class="creative-title">مهمة للطلاب المبدعين</div><p>ضع خطة أسماء لملفات أسبوع كامل.</p><div class="answer-space"><div class="answer-line"></div><div class="answer-line"></div></div></div>
+    <div class="question-box mini-question"><h4><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3a3 3 0 0 0-3 3v1a3 3 0 0 0-2 5 3 3 0 0 0 2 5v1a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M15 3a3 3 0 0 1 3 3v1a3 3 0 0 1 2 5 3 3 0 0 1-2 5v1a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3z"/></svg> تحقق من فهمك</h4><ol><li>ماذا يحدث إذا لم نحفظ؟</li><li>لماذا نختار مكان الحفظ؟</li></ol></div>
+    <div class="page-num">12</div>
+  </section>
+
+  <section class="page workbook-page lesson-page">
+    <div class="page-header"><h2><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/></svg> الكتابة في Word</h2><span class="unit-label">درس 9</span></div>
+    <div class="lesson-goal"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg> هدف الدرس: إنشاء مستند نصي بسيط</div>
+    <div class="term-row"><span class="term-icon"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10 12 2H4v8l8 8 8-8z"/><path d="M7.5 7.5h.01"/><path d="m14 18 6-6"/></svg></span><span class="key-term">Word</span><span class="key-term">مستند</span><span class="key-term">فقرة</span></div>
+    <div class="app-logo-strip"><span class="app-logo app-word"><img src="../assets/logos/word.svg" alt="Word"><span>Word</span></span></div>
+    
+    <p class="lesson-text">Word برنامج لكتابة النصوص وتنسيقها. نستخدمه للرسائل والتقارير والواجبات المدرسية.</p>
+    <div class="two-col tight-cols">
+      <div>
+        <h3 class="section-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></svg> خطوات التطبيق</h3>
+        <ol class="steps compact-steps"><li>افتح Word.</li><li>اكتب عنوانا.</li><li>اكتب فقرة قصيرة.</li><li>احفظ الملف باسم واضح.</li></ol>
+      </div>
+      <div>
+        <div class="activity-box"><div class="activity-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg> تدريب سريع</div><p>اكتب فقرة بعنوان يومي المدرسي.</p></div>
+        <div class="note-box">ابدأ بالنص أولا ثم نسقه بعد أن تكتمل الفكرة.</div>
+      </div>
+    </div>
+    <div class="write-label">مكان الإجابة أو الملاحظات</div>
+    <div class="compare-answer"><div><strong>الخيار الأول</strong><div class="answer-space"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div></div><div><strong>الخيار الثاني</strong><div class="answer-space"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div></div></div>
+    
+    <div class="question-box mini-question"><h4><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3a3 3 0 0 0-3 3v1a3 3 0 0 0-2 5 3 3 0 0 0 2 5v1a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M15 3a3 3 0 0 1 3 3v1a3 3 0 0 1 2 5 3 3 0 0 1-2 5v1a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3z"/></svg> تحقق من فهمك</h4><ol><li>ما الفرق بين العنوان والفقرة؟</li><li>لماذا نراجع النص قبل الحفظ؟</li></ol></div>
+    <div class="page-num">13</div>
+  </section>
+
+  <section class="page workbook-page lesson-page">
+    <div class="page-header"><h2><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/></svg> تنسيق النص</h2><span class="unit-label">درس 10</span></div>
+    <div class="lesson-goal"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg> هدف الدرس: استخدام الخط والحجم والمحاذاة</div>
+    <div class="term-row"><span class="term-icon"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10 12 2H4v8l8 8 8-8z"/><path d="M7.5 7.5h.01"/><path d="m14 18 6-6"/></svg></span><span class="key-term">غامق</span><span class="key-term">حجم الخط</span><span class="key-term">محاذاة</span></div>
+    
+    <div class="lesson-visual visual-document" aria-hidden="true"><div class="visual-icon"><span></span></div><div class="visual-labels"><b>عنوان</b><b>فقرة</b><b>تنسيق</b></div></div>
+    <p class="lesson-text">التنسيق يجعل النص أسهل قراءة. نستخدم الخط الغامق للعناوين، والحجم المناسب، والمحاذاة بوعي.</p>
+    <div class="two-col tight-cols">
+      <div>
+        <h3 class="section-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></svg> خطوات التطبيق</h3>
+        <ol class="steps compact-steps"><li>حدد العنوان.</li><li>اجعله غامقا.</li><li>غير حجمه إلى حجم أكبر.</li><li>اجعل الفقرة بمحاذاة مناسبة.</li></ol>
+      </div>
+      <div>
+        <div class="activity-box"><div class="activity-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg> تدريب سريع</div><p>نسق فقرة يومي المدرسي لتصبح واضحة.</p></div>
+        <div class="note-box">التنسيق الجيد يخدم القارئ ولا يشتته.</div>
+      </div>
+    </div>
+    <div class="write-label">مكان الإجابة أو الملاحظات</div>
+    <div class="design-space"><div class="design-grid"></div><div class="design-note">ارسم أو خطط هنا: صمم صفحة بعنوان واضح ولونين فقط.</div></div>
+    
+    <div class="question-box mini-question"><h4><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3a3 3 0 0 0-3 3v1a3 3 0 0 0-2 5 3 3 0 0 0 2 5v1a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M15 3a3 3 0 0 1 3 3v1a3 3 0 0 1 2 5 3 3 0 0 1-2 5v1a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3z"/></svg> تحقق من فهمك</h4><ol><li>متى نستخدم الغامق؟</li><li>لماذا لا نكبر كل النص؟</li></ol></div>
+    <div class="page-num">14</div>
+  </section>
+
+  <section class="page workbook-page lesson-page">
+    <div class="page-header"><h2><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/></svg> القوائم والجداول البسيطة</h2><span class="unit-label">درس 11</span></div>
+    <div class="lesson-goal"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg> هدف الدرس: تنظيم المعلومات داخل مستند</div>
+    <div class="term-row"><span class="term-icon"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10 12 2H4v8l8 8 8-8z"/><path d="M7.5 7.5h.01"/><path d="m14 18 6-6"/></svg></span><span class="key-term">قائمة</span><span class="key-term">جدول</span><span class="key-term">صف وعمود</span></div>
+    <div class="app-logo-strip"><span class="app-logo app-word"><img src="../assets/logos/word.svg" alt="Word"><span>Word</span></span><span class="app-logo app-sheets"><img src="../assets/logos/sheets.svg" alt="Sheets"><span>Sheets</span></span></div>
+    
+    <p class="lesson-text">القائمة مناسبة للنقاط القصيرة، والجدول مناسب للمقارنة أو ترتيب المعلومات في صفوف وأعمدة.</p>
+    <div class="two-col tight-cols">
+      <div>
+        <h3 class="section-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></svg> خطوات التطبيق</h3>
+        <ol class="steps compact-steps"><li>اكتب ثلاث مواد في قائمة.</li><li>أدرج جدولا من 3 أعمدة.</li><li>اكتب اليوم والمادة والواجب.</li><li>نسق الصف الأول.</li></ol>
+      </div>
+      <div>
+        <div class="activity-box"><div class="activity-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg> تدريب سريع</div><p>أنشئ جدولا أسبوعيا صغيرا.</p></div>
+        <div class="note-box">لا تجعل الجدول ضيقا؛ وضوح القراءة مهم.</div>
+      </div>
+    </div>
+    <div class="write-label">مكان الإجابة أو الملاحظات</div>
+    <div class="answer-space"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div>
+    
+    <div class="question-box mini-question"><h4><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3a3 3 0 0 0-3 3v1a3 3 0 0 0-2 5 3 3 0 0 0 2 5v1a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M15 3a3 3 0 0 1 3 3v1a3 3 0 0 1 2 5 3 3 0 0 1-2 5v1a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3z"/></svg> تحقق من فهمك</h4><ol><li>متى أستخدم الجدول؟</li><li>ما وظيفة الصف الأول؟</li></ol></div>
+    <div class="page-num">15</div>
+  </section>
+
+  <section class="page workbook-page lesson-page">
+    <div class="page-header"><h2><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/></svg> Google Docs</h2><span class="unit-label">درس 12</span></div>
+    <div class="lesson-goal"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg> هدف الدرس: إنشاء مستند سحابي</div>
+    <div class="term-row"><span class="term-icon"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10 12 2H4v8l8 8 8-8z"/><path d="M7.5 7.5h.01"/><path d="m14 18 6-6"/></svg></span><span class="key-term">Docs</span><span class="key-term">حفظ تلقائي</span><span class="key-term">سحابة</span></div>
+    <div class="app-logo-strip"><span class="app-logo app-word"><img src="../assets/logos/word.svg" alt="Word"><span>Word</span></span><span class="app-logo app-docs"><img src="../assets/logos/docs.svg" alt="Docs"><span>Docs</span></span><span class="app-logo app-drive"><img src="../assets/logos/drive.svg" alt="Drive"><span>Drive</span></span></div>
+    
+    <p class="lesson-text">Docs يسمح بكتابة مستند يحفظ تلقائيا في الحساب المدرسي. يمكن فتحه من أكثر من جهاز عند الحاجة.</p>
+    <div class="two-col tight-cols">
+      <div>
+        <h3 class="section-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></svg> خطوات التطبيق</h3>
+        <ol class="steps compact-steps"><li>افتح Docs.</li><li>أنشئ مستندا جديدا.</li><li>اكتب عنوانا وفقرة.</li><li>تحقق من وجوده في Drive.</li></ol>
+      </div>
+      <div>
+        <div class="activity-box"><div class="activity-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg> تدريب سريع</div><p>اكتب ملخص درس من ثلاث جمل.</p></div>
+        <div class="note-box">لا تضع معلومات خاصة في مستندات مشتركة.</div>
+      </div>
+    </div>
+    <div class="write-label">مكان الإجابة أو الملاحظات</div>
+    <div class="answer-table"><table><tr><th>العنصر</th><th>إجابتي</th><th>ملاحظة</th></tr><tr><td>ما تعلمته</td><td></td><td></td></tr><tr><td>خطوة طبقتها</td><td></td><td></td></tr><tr><td>خطأ صححته</td><td></td><td></td></tr></table></div>
+    <div class="creative-box"><div class="creative-title">مهمة للطلاب المبدعين</div><p>أنشئ قالبا صغيرا لملخص الدروس.</p><div class="answer-space"><div class="answer-line"></div><div class="answer-line"></div></div></div>
+    <div class="question-box mini-question"><h4><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3a3 3 0 0 0-3 3v1a3 3 0 0 0-2 5 3 3 0 0 0 2 5v1a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M15 3a3 3 0 0 1 3 3v1a3 3 0 0 1 2 5 3 3 0 0 1-2 5v1a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3z"/></svg> تحقق من فهمك</h4><ol><li>ما فائدة الحفظ التلقائي؟</li><li>متى أستخدم Docs بدلا من Word؟</li></ol></div>
+    <div class="page-num">16</div>
+  </section>
+
+  <section class="page workbook-page lesson-page">
+    <div class="page-header"><h2><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/></svg> البريد الإلكتروني</h2><span class="unit-label">درس 13</span></div>
+    <div class="lesson-goal"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg> هدف الدرس: كتابة رسالة مدرسية مهذبة</div>
+    <div class="term-row"><span class="term-icon"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10 12 2H4v8l8 8 8-8z"/><path d="M7.5 7.5h.01"/><path d="m14 18 6-6"/></svg></span><span class="key-term">Gmail</span><span class="key-term">عنوان</span><span class="key-term">مستلم</span></div>
+    <div class="app-logo-strip"><span class="app-logo app-gmail"><img src="../assets/logos/gmail.svg" alt="Gmail"><span>Gmail</span></span></div>
+    <div class="lesson-visual visual-mail" aria-hidden="true"><div class="visual-icon"><span></span></div><div class="visual-labels"><b>إلى</b><b>عنوان</b><b>مرفق</b></div></div>
+    <p class="lesson-text">البريد الإلكتروني وسيلة تواصل رسمية. الرسالة الجيدة لها عنوان واضح وتحية ونص مختصر وخاتمة.</p>
+    <div class="two-col tight-cols">
+      <div>
+        <h3 class="section-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></svg> خطوات التطبيق</h3>
+        <ol class="steps compact-steps"><li>اكتب عنوان الرسالة.</li><li>ابدأ بتحية.</li><li>اكتب الطلب بوضوح.</li><li>راجع المستلم قبل الإرسال.</li></ol>
+      </div>
+      <div>
+        <div class="activity-box"><div class="activity-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg> تدريب سريع</div><p>اكتب مسودة رسالة تسأل المعلم عن الواجب.</p></div>
+        <div class="note-box">لا ترسل رسالة وأنت غاضب؛ انتظر وراجع كلامك.</div>
+      </div>
+    </div>
+    <div class="write-label">مكان الإجابة أو الملاحظات</div>
+    <div class="check-answer"><div>□ نفذت الخطوات بالترتيب</div><div>□ حفظت عملي باسم واضح</div><div>□ راجعت النتيجة قبل التسليم</div><div>□ كتبت سؤالا للمعلم إن احتجت</div></div><div class="answer-space"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div>
+    
+    <div class="question-box mini-question"><h4><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3a3 3 0 0 0-3 3v1a3 3 0 0 0-2 5 3 3 0 0 0 2 5v1a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M15 3a3 3 0 0 1 3 3v1a3 3 0 0 1 2 5 3 3 0 0 1-2 5v1a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3z"/></svg> تحقق من فهمك</h4><ol><li>لماذا نكتب عنوانا؟</li><li>ما العبارة المهذبة في النهاية؟</li></ol></div>
+    <div class="page-num">17</div>
+  </section>
+
+  <section class="page workbook-page lesson-page">
+    <div class="page-header"><h2><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/></svg> المرفقات في البريد</h2><span class="unit-label">درس 14</span></div>
+    <div class="lesson-goal"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg> هدف الدرس: إرفاق ملف صحيح</div>
+    <div class="term-row"><span class="term-icon"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10 12 2H4v8l8 8 8-8z"/><path d="M7.5 7.5h.01"/><path d="m14 18 6-6"/></svg></span><span class="key-term">مرفق</span><span class="key-term">إرسال</span><span class="key-term">مراجعة</span></div>
+    <div class="app-logo-strip"><span class="app-logo app-gmail"><img src="../assets/logos/gmail.svg" alt="Gmail"><span>Gmail</span></span></div>
+    
+    <p class="lesson-text">المرفق هو ملف نرسله مع الرسالة. يجب التأكد من أنه الملف المطلوب وباسمه الصحيح.</p>
+    <div class="two-col tight-cols">
+      <div>
+        <h3 class="section-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></svg> خطوات التطبيق</h3>
+        <ol class="steps compact-steps"><li>افتح رسالة جديدة.</li><li>اضغط رمز المرفق.</li><li>اختر الملف الصحيح.</li><li>راجع الاسم ثم أرسل.</li></ol>
+      </div>
+      <div>
+        <div class="activity-box"><div class="activity-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg> تدريب سريع</div><p>أرفق ملف تدريب-الحفظ في رسالة تدريبية.</p></div>
+        <div class="note-box">لا تفتح مرفقات مجهولة من أشخاص لا تعرفهم.</div>
+      </div>
+    </div>
+    <div class="write-label">مكان الإجابة أو الملاحظات</div>
+    <div class="compare-answer"><div><strong>الخيار الأول</strong><div class="answer-space"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div></div><div><strong>الخيار الثاني</strong><div class="answer-space"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div></div></div>
+    
+    <div class="question-box mini-question"><h4><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3a3 3 0 0 0-3 3v1a3 3 0 0 0-2 5 3 3 0 0 0 2 5v1a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M15 3a3 3 0 0 1 3 3v1a3 3 0 0 1 2 5 3 3 0 0 1-2 5v1a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3z"/></svg> تحقق من فهمك</h4><ol><li>لماذا نراجع المرفق؟</li><li>ما خطر إرسال ملف خاطئ؟</li></ol></div>
+    <div class="page-num">18</div>
+  </section>
+
+  <section class="page workbook-page lesson-page">
+    <div class="page-header"><h2><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/></svg> Google Drive</h2><span class="unit-label">درس 15</span></div>
+    <div class="lesson-goal"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg> هدف الدرس: رفع ملف وتنظيمه</div>
+    <div class="term-row"><span class="term-icon"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10 12 2H4v8l8 8 8-8z"/><path d="M7.5 7.5h.01"/><path d="m14 18 6-6"/></svg></span><span class="key-term">Drive</span><span class="key-term">رفع</span><span class="key-term">مجلد</span></div>
+    <div class="app-logo-strip"><span class="app-logo app-drive"><img src="../assets/logos/drive.svg" alt="Drive"><span>Drive</span></span></div>
+    
+    <p class="lesson-text">Drive مساحة لحفظ الملفات على الإنترنت داخل حسابك. التنظيم داخله مهم مثل تنظيم الجهاز.</p>
+    <div class="two-col tight-cols">
+      <div>
+        <h3 class="section-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></svg> خطوات التطبيق</h3>
+        <ol class="steps compact-steps"><li>افتح Drive.</li><li>أنشئ مجلدا باسم الحاسوب.</li><li>ارفع ملفا.</li><li>افتح الملف للتأكد.</li></ol>
+      </div>
+      <div>
+        <div class="activity-box"><div class="activity-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg> تدريب سريع</div><p>ارفع ملفك المنسق إلى مجلد الحاسوب.</p></div>
+        <div class="note-box">سجل خروجك من الحساب عند استخدام جهاز مشترك.</div>
+      </div>
+    </div>
+    <div class="write-label">مكان الإجابة أو الملاحظات</div>
+    <div class="design-space"><div class="design-grid"></div><div class="design-note">ارسم أو خطط هنا: صمم خريطة مجلدات Drive لسنة دراسية كاملة.</div></div>
+    
+    <div class="question-box mini-question"><h4><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3a3 3 0 0 0-3 3v1a3 3 0 0 0-2 5 3 3 0 0 0 2 5v1a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M15 3a3 3 0 0 1 3 3v1a3 3 0 0 1 2 5 3 3 0 0 1-2 5v1a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3z"/></svg> تحقق من فهمك</h4><ol><li>ما فائدة Drive؟</li><li>كيف أتأكد أن الرفع نجح؟</li></ol></div>
+    <div class="page-num">19</div>
+  </section>
+
+  <section class="page workbook-page lesson-page">
+    <div class="page-header"><h2><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/></svg> المشاركة الآمنة</h2><span class="unit-label">درس 16</span></div>
+    <div class="lesson-goal"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg> هدف الدرس: اختيار إذن المشاركة المناسب</div>
+    <div class="term-row"><span class="term-icon"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10 12 2H4v8l8 8 8-8z"/><path d="M7.5 7.5h.01"/><path d="m14 18 6-6"/></svg></span><span class="key-term">مشاهدة</span><span class="key-term">تعليق</span><span class="key-term">تعديل</span></div>
+    <div class="app-logo-strip"><span class="app-logo app-drive"><img src="../assets/logos/drive.svg" alt="Drive"><span>Drive</span></span></div>
+    <div class="lesson-visual visual-computer" aria-hidden="true"><div class="visual-icon"><span></span></div><div class="visual-labels"><b>شاشة</b><b>لوحة</b><b>فأرة</b></div></div>
+    <p class="lesson-text">المشاركة تسمح للآخرين برؤية الملف أو التعليق أو التعديل. اختيار الإذن الصحيح يحمي عملك.</p>
+    <div class="two-col tight-cols">
+      <div>
+        <h3 class="section-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></svg> خطوات التطبيق</h3>
+        <ol class="steps compact-steps"><li>حدد الملف.</li><li>افتح مشاركة.</li><li>اكتب بريد الشخص المطلوب.</li><li>اختر الإذن المناسب.</li></ol>
+      </div>
+      <div>
+        <div class="activity-box"><div class="activity-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg> تدريب سريع</div><p>شارك ملفا تدريبيا بصلاحية مشاهدة فقط.</p></div>
+        <div class="note-box">شارك مع من يحتاج الملف فقط.</div>
+      </div>
+    </div>
+    <div class="write-label">مكان الإجابة أو الملاحظات</div>
+    <div class="answer-space"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div>
+    <div class="creative-box"><div class="creative-title">مهمة للطلاب المبدعين</div><p>اكتب سياسة مشاركة قصيرة لفريق مدرسي.</p><div class="answer-space"><div class="answer-line"></div><div class="answer-line"></div></div></div>
+    <div class="question-box mini-question"><h4><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3a3 3 0 0 0-3 3v1a3 3 0 0 0-2 5 3 3 0 0 0 2 5v1a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M15 3a3 3 0 0 1 3 3v1a3 3 0 0 1 2 5 3 3 0 0 1-2 5v1a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3z"/></svg> تحقق من فهمك</h4><ol><li>متى نعطي تعديل؟</li><li>ما خطر الرابط العام؟</li></ol></div>
+    <div class="page-num">20</div>
+  </section>
+
+  <section class="page workbook-page lesson-page">
+    <div class="page-header"><h2><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/></svg> كلمات المرور</h2><span class="unit-label">درس 17</span></div>
+    <div class="lesson-goal"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg> هدف الدرس: تمييز كلمة مرور قوية</div>
+    <div class="term-row"><span class="term-icon"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10 12 2H4v8l8 8 8-8z"/><path d="M7.5 7.5h.01"/><path d="m14 18 6-6"/></svg></span><span class="key-term">كلمة مرور</span><span class="key-term">خصوصية</span><span class="key-term">حساب</span></div>
+    
+    
+    <p class="lesson-text">كلمة المرور تحمي حسابك. القوية طويلة، غير متوقعة، ولا تحتوي اسمك أو تاريخ ميلادك.</p>
+    <div class="two-col tight-cols">
+      <div>
+        <h3 class="section-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></svg> خطوات التطبيق</h3>
+        <ol class="steps compact-steps"><li>اكتب صفات كلمة قوية.</li><li>قارنها بكلمة ضعيفة.</li><li>كوّن عبارة مرور وهمية.</li><li>لا تكتب كلمتك الحقيقية في الدوسية.</li></ol>
+      </div>
+      <div>
+        <div class="activity-box"><div class="activity-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg> تدريب سريع</div><p>اكتب ثلاث قواعد لكلمة مرور آمنة.</p></div>
+        <div class="note-box">لا أحد يحتاج معرفة كلمة مرورك.</div>
+      </div>
+    </div>
+    <div class="write-label">مكان الإجابة أو الملاحظات</div>
+    <div class="answer-table"><table><tr><th>العنصر</th><th>إجابتي</th><th>ملاحظة</th></tr><tr><td>ما تعلمته</td><td></td><td></td></tr><tr><td>خطوة طبقتها</td><td></td><td></td></tr><tr><td>خطأ صححته</td><td></td><td></td></tr></table></div>
+    
+    <div class="question-box mini-question"><h4><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3a3 3 0 0 0-3 3v1a3 3 0 0 0-2 5 3 3 0 0 0 2 5v1a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M15 3a3 3 0 0 1 3 3v1a3 3 0 0 1 2 5 3 3 0 0 1-2 5v1a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3z"/></svg> تحقق من فهمك</h4><ol><li>لماذا لا أعطي كلمتي لصديق؟</li><li>ما مشكلة كلمة قصيرة جدا؟</li></ol></div>
+    <div class="page-num">21</div>
+  </section>
+
+  <section class="page workbook-page lesson-page">
+    <div class="page-header"><h2><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/></svg> البحث الآمن</h2><span class="unit-label">درس 18</span></div>
+    <div class="lesson-goal"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg> هدف الدرس: استخدام كلمات بحث مناسبة</div>
+    <div class="term-row"><span class="term-icon"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10 12 2H4v8l8 8 8-8z"/><path d="M7.5 7.5h.01"/><path d="m14 18 6-6"/></svg></span><span class="key-term">بحث</span><span class="key-term">مصدر</span><span class="key-term">تحقق</span></div>
+    
+    
+    <p class="lesson-text">البحث الجيد يبدأ بكلمات واضحة. نقرأ العنوان ونقارن أكثر من مصدر قبل اعتماد المعلومة.</p>
+    <div class="two-col tight-cols">
+      <div>
+        <h3 class="section-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></svg> خطوات التطبيق</h3>
+        <ol class="steps compact-steps"><li>حدد سؤالك.</li><li>اختر كلمات مفتاحية.</li><li>افتح نتيجة مناسبة.</li><li>اكتب اسم المصدر.</li></ol>
+      </div>
+      <div>
+        <div class="activity-box"><div class="activity-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg> تدريب سريع</div><p>ابحث عن فائدة القراءة وسجل معلومة واحدة.</p></div>
+        <div class="note-box">لا تكتب بياناتك الشخصية في مواقع غير معروفة.</div>
+      </div>
+    </div>
+    <div class="write-label">مكان الإجابة أو الملاحظات</div>
+    <div class="check-answer"><div>□ نفذت الخطوات بالترتيب</div><div>□ حفظت عملي باسم واضح</div><div>□ راجعت النتيجة قبل التسليم</div><div>□ كتبت سؤالا للمعلم إن احتجت</div></div><div class="answer-space"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div>
+    
+    <div class="question-box mini-question"><h4><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3a3 3 0 0 0-3 3v1a3 3 0 0 0-2 5 3 3 0 0 0 2 5v1a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M15 3a3 3 0 0 1 3 3v1a3 3 0 0 1 2 5 3 3 0 0 1-2 5v1a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3z"/></svg> تحقق من فهمك</h4><ol><li>لماذا لا نصدق أول نتيجة دائما؟</li><li>ما معنى مصدر موثوق؟</li></ol></div>
+    <div class="page-num">22</div>
+  </section>
+
+  <section class="page workbook-page lesson-page">
+    <div class="page-header"><h2><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/></svg> السلامة الرقمية</h2><span class="unit-label">درس 19</span></div>
+    <div class="lesson-goal"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg> هدف الدرس: اتباع سلوك آمن ومحترم</div>
+    <div class="term-row"><span class="term-icon"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10 12 2H4v8l8 8 8-8z"/><path d="M7.5 7.5h.01"/><path d="m14 18 6-6"/></svg></span><span class="key-term">أمان</span><span class="key-term">احترام</span><span class="key-term">خصوصية</span></div>
+    
+    <div class="lesson-visual visual-lock" aria-hidden="true"><div class="visual-icon"><span></span></div><div class="visual-labels"><b>خاص</b><b>قوي</b><b>آمن</b></div></div>
+    <p class="lesson-text">السلامة الرقمية تعني حماية النفس والآخرين عند استخدام الإنترنت والحسابات والأجهزة.</p>
+    <div class="two-col tight-cols">
+      <div>
+        <h3 class="section-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></svg> خطوات التطبيق</h3>
+        <ol class="steps compact-steps"><li>لا تشارك بياناتك.</li><li>استأذن قبل تصوير أحد.</li><li>أبلغ المعلم عن رسالة غريبة.</li><li>استخدم لغة محترمة.</li></ol>
+      </div>
+      <div>
+        <div class="activity-box"><div class="activity-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg> تدريب سريع</div><p>اكتب ثلاث قواعد أمان لمختبر الحاسوب.</p></div>
+        <div class="note-box">الشجاعة الرقمية تعني طلب المساعدة عند الخطر.</div>
+      </div>
+    </div>
+    <div class="write-label">مكان الإجابة أو الملاحظات</div>
+    <div class="compare-answer"><div><strong>الخيار الأول</strong><div class="answer-space"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div></div><div><strong>الخيار الثاني</strong><div class="answer-space"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div></div></div>
+    
+    <div class="question-box mini-question"><h4><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3a3 3 0 0 0-3 3v1a3 3 0 0 0-2 5 3 3 0 0 0 2 5v1a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M15 3a3 3 0 0 1 3 3v1a3 3 0 0 1 2 5 3 3 0 0 1-2 5v1a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3z"/></svg> تحقق من فهمك</h4><ol><li>ماذا تفعل عند رسالة مزعجة؟</li><li>لماذا نحترم خصوصية الآخرين؟</li></ol></div>
+    <div class="page-num">23</div>
+  </section>
+
+  <section class="page workbook-page lesson-page">
+    <div class="page-header"><h2><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/></svg> الذكاء الاصطناعي كمساعد</h2><span class="unit-label">درس 20</span></div>
+    <div class="lesson-goal"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg> هدف الدرس: استخدام AI للتعلم دون نسخ</div>
+    <div class="term-row"><span class="term-icon"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10 12 2H4v8l8 8 8-8z"/><path d="M7.5 7.5h.01"/><path d="m14 18 6-6"/></svg></span><span class="key-term">AI</span><span class="key-term">مساعدة</span><span class="key-term">تحقق</span></div>
+    <div class="app-logo-strip"><span class="app-logo app-openai"><img src="../assets/logos/openai.svg" alt="AI"><span>AI</span></span></div>
+    
+    <p class="lesson-text">يمكن للذكاء الاصطناعي أن يشرح أو يقترح أسئلة، لكنه قد يخطئ. استخدمه للفهم واكتب بأسلوبك.</p>
+    <div class="two-col tight-cols">
+      <div>
+        <h3 class="section-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></svg> خطوات التطبيق</h3>
+        <ol class="steps compact-steps"><li>اكتب سؤالا واضحا.</li><li>اطلب شرحا بسيطا.</li><li>قارن مع كتابك.</li><li>اكتب ملخصك الخاص.</li></ol>
+      </div>
+      <div>
+        <div class="activity-box"><div class="activity-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg> تدريب سريع</div><p>اكتب طلبا يساعدك على فهم الملفات والمجلدات.</p></div>
+        <div class="note-box">لا تضع بيانات شخصية في أدوات AI.</div>
+      </div>
+    </div>
+    <div class="write-label">مكان الإجابة أو الملاحظات</div>
+    <div class="design-space"><div class="design-grid"></div><div class="design-note">ارسم أو خطط هنا: اطلب من AI فكرة ثم طورها أنت في ثلاث خطوات.</div></div>
+    <div class="creative-box"><div class="creative-title">مهمة للطلاب المبدعين</div><p>اطلب من AI فكرة ثم طورها أنت في ثلاث خطوات.</p><div class="answer-space"><div class="answer-line"></div><div class="answer-line"></div></div></div>
+    <div class="question-box mini-question"><h4><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3a3 3 0 0 0-3 3v1a3 3 0 0 0-2 5 3 3 0 0 0 2 5v1a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M15 3a3 3 0 0 1 3 3v1a3 3 0 0 1 2 5 3 3 0 0 1-2 5v1a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3z"/></svg> تحقق من فهمك</h4><ol><li>متى يكون AI مفيدا؟</li><li>لماذا لا ننسخ جوابه مباشرة؟</li></ol></div>
+    <div class="page-num">24</div>
+  </section>
+
+  <section class="page workbook-page lesson-page">
+    <div class="page-header"><h2><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/></svg> نسخ ونقل وحذف ملف</h2><span class="unit-label">درس 21</span></div>
+    <div class="lesson-goal"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg> هدف الدرس: التعامل مع الملفات دون فقدانها</div>
+    <div class="term-row"><span class="term-icon"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10 12 2H4v8l8 8 8-8z"/><path d="M7.5 7.5h.01"/><path d="m14 18 6-6"/></svg></span><span class="key-term">نسخ</span><span class="key-term">نقل</span><span class="key-term">حذف</span></div>
+    
+    
+    <p class="lesson-text">نسخ الملف يعني إنشاء نسخة ثانية، ونقله يعني تغيير مكانه، أما الحذف فيزيله من مكانه وقد ينتقل إلى سلة المحذوفات.</p>
+    <div class="two-col tight-cols">
+      <div>
+        <h3 class="section-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></svg> خطوات التطبيق</h3>
+        <ol class="steps compact-steps"><li>اختر ملفا تدريبيا.</li><li>انسخه إلى مجلد آخر.</li><li>انقله إلى مجلد جديد.</li><li>احذف نسخة تدريبية فقط بعد إذن المعلم.</li></ol>
+      </div>
+      <div>
+        <div class="activity-box"><div class="activity-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg> تدريب سريع</div><p>طبّق النسخ والنقل على ملف غير مهم ثم اكتب الفرق بينهما.</p></div>
+        <div class="note-box">لا تجرب الحذف على ملفات مهمة أو ملفات زميلك.</div>
+      </div>
+    </div>
+    <div class="write-label">مكان الإجابة أو الملاحظات</div>
+    <div class="answer-space"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div>
+    
+    <div class="question-box mini-question"><h4><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3a3 3 0 0 0-3 3v1a3 3 0 0 0-2 5 3 3 0 0 0 2 5v1a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M15 3a3 3 0 0 1 3 3v1a3 3 0 0 1 2 5 3 3 0 0 1-2 5v1a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3z"/></svg> تحقق من فهمك</h4><ol><li>متى أستخدم النسخ؟</li><li>لماذا لا أحذف ملفات لا تخصني؟</li></ol></div>
+    <div class="page-num">25</div>
+  </section>
+
+  <section class="page workbook-page lesson-page">
+    <div class="page-header"><h2><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/></svg> مراجعة تأسيسية</h2><span class="unit-label">درس 22</span></div>
+    <div class="lesson-goal"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg> هدف الدرس: دمج مهارات الجزء الأول</div>
+    <div class="term-row"><span class="term-icon"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10 12 2H4v8l8 8 8-8z"/><path d="M7.5 7.5h.01"/><path d="m14 18 6-6"/></svg></span><span class="key-term">مراجعة</span><span class="key-term">إنجاز</span><span class="key-term">تسليم</span></div>
+    <div class="app-logo-strip"><span class="app-logo app-drive"><img src="../assets/logos/drive.svg" alt="Drive"><span>Drive</span></span></div>
+    <div class="lesson-visual visual-computer" aria-hidden="true"><div class="visual-icon"><span></span></div><div class="visual-labels"><b>شاشة</b><b>لوحة</b><b>فأرة</b></div></div>
+    <p class="lesson-text">بعد هذا الجزء تستطيع إنشاء ملف، تنسيقه، حفظه، رفعه، ومشاركته بأمان.</p>
+    <div class="two-col tight-cols">
+      <div>
+        <h3 class="section-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></svg> خطوات التطبيق</h3>
+        <ol class="steps compact-steps"><li>اختر موضوعا قصيرا.</li><li>اكتب مستندا منسقا.</li><li>احفظه باسم واضح.</li><li>ارفعه وشاركه مع المعلم.</li></ol>
+      </div>
+      <div>
+        <div class="activity-box"><div class="activity-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg> تدريب سريع</div><p>أنشئ ملفا بعنوان: مهاراتي الرقمية الأولى.</p></div>
+        <div class="note-box">راجع عملك قبل التسليم كما يراجع الكاتب نصه.</div>
+      </div>
+    </div>
+    <div class="write-label">مكان الإجابة أو الملاحظات</div>
+    <div class="answer-table"><table><tr><th>العنصر</th><th>إجابتي</th><th>ملاحظة</th></tr><tr><td>ما تعلمته</td><td></td><td></td></tr><tr><td>خطوة طبقتها</td><td></td><td></td></tr><tr><td>خطأ صححته</td><td></td><td></td></tr></table></div>
+    
+    <div class="question-box mini-question"><h4><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3a3 3 0 0 0-3 3v1a3 3 0 0 0-2 5 3 3 0 0 0 2 5v1a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M15 3a3 3 0 0 1 3 3v1a3 3 0 0 1 2 5 3 3 0 0 1-2 5v1a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3z"/></svg> تحقق من فهمك</h4><ol><li>ما المهارة التي أتقنتها؟</li><li>ما المهارة التي تحتاج تدريبا؟</li></ol></div>
+    <div class="page-num">26</div>
+  </section>
+
+  <section class="page workbook-page">
+    <div class="page-header"><h2><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M9 2h6"/><path d="M10 2v6l-5 9a3 3 0 0 0 3 5h8a3 3 0 0 0 3-5l-5-9V2"/><path d="M7 16h10"/></svg> مختبر تنظيم الملفات</h2><span class="unit-label">مختبر مهارات 1</span></div>
+    <p>ستنشئ نظاما منظما لملفاتك المدرسية من الصفر.</p>
+    <div class="cards-grid cards-grid-2">
+      <div class="card"><h5>المطلوب</h5><p>مجلد رئيسي وثلاثة مجلدات فرعية وملف داخل كل مجلد.</p></div>
+      <div class="card"><h5>الناتج النهائي</h5><p>هيكل ملفات واضح بأسماء مفهومة.</p></div>
+    </div>
+    <h3 class="section-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M9 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-3"/><path d="M8 12h8M8 16h5"/></svg> قائمة التنفيذ</h3>
+    <table class="assessment-table"><tr><th>البند</th><th>تم</th><th>ملاحظة</th></tr><tr><td>أنشأت المجلد الرئيسي.</td><td class="check-cell">□</td><td><div class="answer-space"><div class="answer-line"></div></div></td></tr><tr><td>استخدمت أسماء واضحة.</td><td class="check-cell">□</td><td><div class="answer-space"><div class="answer-line"></div></div></td></tr><tr><td>حفظت ملفا في المكان الصحيح.</td><td class="check-cell">□</td><td><div class="answer-space"><div class="answer-line"></div></div></td></tr><tr><td>استطعت فتح الملف مرة أخرى.</td><td class="check-cell">□</td><td><div class="answer-space"><div class="answer-line"></div></div></td></tr></table>
+    <div class="creative-box"><div class="creative-title">توسعة للمبدعين</div><p>اقترح طريقة لتسمية ملفات الشهر القادم بحيث لا تختلط عليك.</p><div class="answer-space"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div></div>
+    <div class="write-label">ماذا تعلمت من المختبر؟</div>
+    <div class="answer-space"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div>
+    <div class="page-num">27</div>
+  </section>
+
+  <section class="page workbook-page">
+    <div class="page-header"><h2><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M9 2h6"/><path d="M10 2v6l-5 9a3 3 0 0 0 3 5h8a3 3 0 0 0 3-5l-5-9V2"/><path d="M7 16h10"/></svg> مختبر الرسالة والملف</h2><span class="unit-label">مختبر مهارات 2</span></div>
+    <p>ستكتب ملفا قصيرا ثم ترفعه وترسله برسالة مهذبة.</p>
+    <div class="cards-grid cards-grid-2">
+      <div class="card"><h5>المطلوب</h5><p>مستند منسق، رفع إلى Drive، ومسودة بريد.</p></div>
+      <div class="card"><h5>الناتج النهائي</h5><p>ملف جاهز للتسليم ورسالة واضحة.</p></div>
+    </div>
+    <h3 class="section-title"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M9 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-3"/><path d="M8 12h8M8 16h5"/></svg> قائمة التنفيذ</h3>
+    <table class="assessment-table"><tr><th>البند</th><th>تم</th><th>ملاحظة</th></tr><tr><td>كتبت عنوانا وفقرة.</td><td class="check-cell">□</td><td><div class="answer-space"><div class="answer-line"></div></div></td></tr><tr><td>نسقت النص.</td><td class="check-cell">□</td><td><div class="answer-space"><div class="answer-line"></div></div></td></tr><tr><td>رفعت الملف.</td><td class="check-cell">□</td><td><div class="answer-space"><div class="answer-line"></div></div></td></tr><tr><td>راجعت المرفق قبل الإرسال.</td><td class="check-cell">□</td><td><div class="answer-space"><div class="answer-line"></div></div></td></tr></table>
+    <div class="creative-box"><div class="creative-title">توسعة للمبدعين</div><p>حوّل رسالتك إلى قالب يمكن استخدامه عند إرسال أي واجب.</p><div class="answer-space"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div></div>
+    <div class="write-label">ماذا تعلمت من المختبر؟</div>
+    <div class="answer-space"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div>
+    <div class="page-num">28</div>
+  </section>
+
+  <section class="page workbook-page">
+    <div class="page-header"><h2><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18v12H3z"/><path d="M12 16v5M8 21h8"/></svg> المشروع النهائي</h2><span class="unit-label">مبتدئ</span></div>
+    <div class="unit-big-header"><div class="unit-number">مشروع ختامي</div><div class="unit-title">ملفي الرقمي الأول</div><div class="unit-desc">إنشاء ملف شخصي مدرسي منظم يحتوي تعريفا وجدولا وقواعد أمان.</div></div>
+    <div class="timeline"><div class="timeline-item"><div class="tl-label">مرحلة 1</div><div class="tl-desc">اختيار عنوان وغلاف بسيط.</div></div><div class="timeline-item"><div class="tl-label">مرحلة 2</div><div class="tl-desc">كتابة فقرة تعريفية آمنة دون بيانات حساسة.</div></div><div class="timeline-item"><div class="tl-label">مرحلة 3</div><div class="tl-desc">إضافة جدول أسبوعي.</div></div><div class="timeline-item"><div class="tl-label">مرحلة 4</div><div class="tl-desc">حفظ الملف ورفعه.</div></div><div class="timeline-item"><div class="tl-label">مرحلة 5</div><div class="tl-desc">كتابة رسالة تسليم مهذبة.</div></div></div>
+    <table class="rubric-table"><tr><th>المعيار</th><th>ممتاز</th><th>جيد</th><th>يحتاج تحسين</th></tr><tr><td>وضوح المحتوى</td><td>دقيق ومنظم</td><td>مقبول مع نقص بسيط</td><td>يحتاج مراجعة</td></tr><tr><td>تنسيق المستند</td><td>دقيق ومنظم</td><td>مقبول مع نقص بسيط</td><td>يحتاج مراجعة</td></tr><tr><td>تنظيم الملفات</td><td>دقيق ومنظم</td><td>مقبول مع نقص بسيط</td><td>يحتاج مراجعة</td></tr><tr><td>الأمان الرقمي</td><td>دقيق ومنظم</td><td>مقبول مع نقص بسيط</td><td>يحتاج مراجعة</td></tr></table>
+    <div class="write-label">خطة تسليم المشروع</div><div class="answer-space"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div>
+    <div class="page-num">29</div>
+  </section>
+
+  <section class="page workbook-page">
+    <div class="page-header"><h2><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M9 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-3"/><path d="M8 12h8M8 16h5"/></svg> تقييم ذاتي وخاتمة</h2><span class="unit-label">صفحة 30</span></div>
+    <table class="assessment-table"><tr><th>المهارة</th><th>أتقنها</th><th>أحتاج تدريب</th><th>ملاحظتي</th></tr><tr><td>أعرف أجزاء الحاسوب.</td><td class="check-cell">□</td><td class="check-cell">□</td><td><div class="answer-space"><div class="answer-line"></div></div></td></tr><tr><td>أستخدم الفأرة ولوحة المفاتيح.</td><td class="check-cell">□</td><td class="check-cell">□</td><td><div class="answer-space"><div class="answer-line"></div></div></td></tr><tr><td>أنشئ ملفات ومجلدات.</td><td class="check-cell">□</td><td class="check-cell">□</td><td><div class="answer-space"><div class="answer-line"></div></div></td></tr><tr><td>أكتب مستندا وأنسقه.</td><td class="check-cell">□</td><td class="check-cell">□</td><td><div class="answer-space"><div class="answer-line"></div></div></td></tr><tr><td>أستخدم Gmail و Drive بأمان.</td><td class="check-cell">□</td><td class="check-cell">□</td><td><div class="answer-space"><div class="answer-line"></div></div></td></tr><tr><td>أفهم قواعد السلامة الرقمية.</td><td class="check-cell">□</td><td class="check-cell">□</td><td><div class="answer-space"><div class="answer-line"></div></div></td></tr></table>
+    <div class="teacher-notes">
+      <div><strong>ملاحظة الطالب</strong><div class="answer-space"><div class="answer-line"></div><div class="answer-line"></div></div></div>
+      <div><strong>ملاحظة المعلم</strong><div class="answer-space"><div class="answer-line"></div><div class="answer-line"></div></div></div>
+    </div>
+    <div class="certificate-section"><h3>شهادة إنجاز</h3><p>أتم الطالب/ة متطلبات الجزء الأول: مبتدئ في مهارات الحاسوب.</p><div class="cert-line"></div><div class="signature-row"><div class="sig-box"><div class="sig-line"></div>اسم الطالب</div><div class="sig-box"><div class="sig-line"></div>توقيع المعلم</div></div></div>
+    <div class="info-box"><h4>رسالة أخيرة</h4><p>أصبحت لديك قاعدة قوية. الخطوة القادمة هي بناء مستندات وعروض وجداول أكثر تنظيما.</p></div>
+    <div class="page-num">30</div>
+  </section></body></html>

@@ -31,12 +31,183 @@ html, body {
 
 body {
   font-family: "Noto Sans Arabic", "Segoe UI", "Tahoma", Arial, sans-serif;
-  font-size: 13px;
-  line-height: 1.65;
+  font-size: 14px;
+  line-height: 1.72;
   direction: rtl;
   text-align: right;
   color: #222;
 }
+
+.icon {
+  width: 1.05em;
+  height: 1.05em;
+  stroke: currentColor;
+  stroke-width: 2;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vertical-align: -0.16em;
+  margin-left: 5px;
+}
+
+.page-header h2 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.page-header .icon,
+.section-title .icon,
+.lesson-goal .icon,
+.activity-title .icon,
+.mini-question h4 .icon {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 auto;
+}
+
+.cover-icons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.cover-icons .icon {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border: 1.5px solid rgba(255,255,255,0.55);
+  border-radius: 50%;
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+}
+
+.cover-hero {
+  width: 138mm;
+  max-width: 78%;
+  height: auto;
+  margin: 14px auto 6px auto;
+  display: block;
+  color: #fff;
+}
+
+.cover-hero .ci-screen,
+.cover-hero .ci-keyboard,
+.cover-hero .ci-mouse,
+.cover-hero .ci-folder,
+.cover-hero .ci-cloud,
+.cover-hero .ci-light {
+  fill: rgba(255,255,255,0.18);
+  stroke: rgba(255,255,255,0.9);
+  stroke-width: 3;
+}
+
+.cover-hero .ci-window {
+  fill: rgba(255,255,255,0.82);
+  stroke: rgba(255,255,255,0.98);
+  stroke-width: 2;
+}
+
+.cover-hero .ci-line,
+.cover-hero .ci-keyline {
+  fill: none;
+  stroke: rgba(255,255,255,0.92);
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.cover-hero .ci-dark {
+  fill: rgba(255,255,255,0.8);
+}
+
+.cover-hero .ci-shadow {
+  fill: rgba(0,0,0,0.16);
+}
+
+.cover-logo-strip {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 6px auto 8px auto;
+  max-width: 145mm;
+}
+
+.cover-logo-strip span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 31mm;
+  justify-content: center;
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.92);
+  border: 1px solid rgba(255,255,255,0.55);
+  color: #222;
+  font-size: 11px;
+  line-height: 1;
+  direction: ltr;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.14);
+}
+
+.cover-logo-strip img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.app-logo-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 7px 0 9px 0;
+}
+
+.app-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-width: 0;
+  height: 31px;
+  padding: 3px 8px;
+  border-radius: 8px;
+  border: 1.4px solid rgba(0,0,0,0.22);
+  font-size: 11px;
+  font-weight: 800;
+  direction: ltr;
+  background: #fff;
+  color: #111;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.app-logo img {
+  width: 21px;
+  height: 21px;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+.app-logo span {
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.app-word { border-color: #185abd; color: #185abd; }
+.app-docs { border-color: #1a73e8; color: #1a73e8; }
+.app-gmail { border-color: #c5221f; color: #c5221f; }
+.app-drive { border-color: #188038; color: #188038; }
+.app-powerpoint { border-color: #c43e1c; color: #c43e1c; }
+.app-slides { border-color: #f9ab00; color: #8a5a00; }
+.app-excel { border-color: #107c41; color: #107c41; }
+.app-sheets { border-color: #188038; color: #188038; }
+.app-calendar { border-color: #1a73e8; color: #1a73e8; }
+.app-forms { border-color: #673ab7; color: #673ab7; }
+.app-ai { border-color: #4527a0; color: #4527a0; }
+.app-openai { border-color: #4527a0; color: #4527a0; }
+.app-windows { border-color: #0078d4; color: #0078d4; }
 
 /* ===== WORKBOOK WRITING AREAS ===== */
 .school-strip {
@@ -68,12 +239,21 @@ body {
 
 .term-row {
   margin: 6px 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.term-icon .icon {
+  width: 19px;
+  height: 19px;
 }
 
 .lesson-text {
   margin: 5px 0 7px 0;
-  font-size: 12.5px;
-  line-height: 1.58;
+  font-size: 14px;
+  line-height: 1.7;
 }
 
 .tight-cols {
@@ -82,10 +262,10 @@ body {
 }
 
 .compact-steps li {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-size: 12px;
-  line-height: 1.48;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: 13.2px;
+  line-height: 1.55;
 }
 
 .write-label {
@@ -93,7 +273,7 @@ body {
   border-bottom: 0;
   padding: 4px 8px;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 13px;
   margin-top: 5px;
   border-radius: 6px 6px 0 0;
   background: rgba(0,0,0,0.035);
@@ -101,20 +281,28 @@ body {
 
 .answer-space {
   border: 1px solid rgba(0,0,0,0.2);
-  padding: 6px 9px;
-  margin: 0 0 7px 0;
+  padding: 8px 10px;
+  margin: 0 0 9px 0;
   background: rgba(255,255,255,0.82);
   border-radius: 0 0 6px 6px;
 }
 
 .answer-line {
-  height: 16px;
+  height: 22px;
   border-bottom: 1px dotted #777;
 }
 
+.lesson-page > .answer-space {
+  min-height: 205px;
+}
+
+.workbook-page:not(.lesson-page) > .answer-space {
+  min-height: 95px;
+}
+
 .creative-box {
-  padding: 8px 11px;
-  margin: 7px 0;
+  padding: 10px 12px;
+  margin: 9px 0;
   background: #FFF3E0;
   border: 2px solid #FF8F00;
   border-radius: 8px;
@@ -123,17 +311,30 @@ body {
 .creative-title {
   color: #E65100;
   font-weight: 800;
-  font-size: 12.8px;
+  font-size: 14px;
   margin-bottom: 4px;
 }
 
 .creative-title::before {
-  content: "* ";
+  content: "";
+}
+
+.creative-title::after {
+  content: " ✦";
+}
+
+.activity-box .activity-title::before,
+.note-box::before,
+.challenge-box .challenge-title::before,
+.think-box::before,
+.ai-box .ai-title::before,
+.warning-box::before {
+  content: "" !important;
 }
 
 .mini-question {
-  margin-top: auto !important;
-  padding: 8px 10px !important;
+  margin-top: 10px !important;
+  padding: 9px 11px !important;
 }
 
 .mini-question h4 {
@@ -141,8 +342,8 @@ body {
 }
 
 .mini-question li {
-  font-size: 12px;
-  margin-bottom: 3px;
+  font-size: 13px;
+  margin-bottom: 4px;
 }
 
 .toc-compact .toc-item {
@@ -156,6 +357,173 @@ body {
 .toc-compact + .toc-item + .toc-item + .toc-item {
   padding: 4px 7px;
   font-size: 11px;
+}
+
+.toc-unit {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.toc-unit .icon {
+  width: 15px;
+  height: 15px;
+  margin-left: 2px;
+}
+
+/* ===== LIGHT EDUCATIONAL VISUALS ===== */
+.lesson-visual {
+  display: grid;
+  grid-template-columns: 82px 1fr;
+  align-items: center;
+  gap: 10px;
+  min-height: 70px;
+  padding: 8px 10px;
+  margin: 6px 0 8px 0;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.72);
+  border: 1px solid rgba(0,0,0,0.12);
+}
+
+.visual-icon {
+  width: 78px;
+  height: 54px;
+  position: relative;
+}
+
+.visual-icon::before,
+.visual-icon::after,
+.visual-icon span::before,
+.visual-icon span::after {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.visual-labels {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+
+.visual-labels b {
+  border: 1px solid rgba(0,0,0,0.2);
+  background: rgba(255,255,255,0.8);
+  border-radius: 12px;
+  padding: 3px 10px;
+  font-size: 12px;
+}
+
+.visual-computer .visual-icon::before {
+  width: 58px; height: 36px; right: 8px; top: 2px; border: 3px solid currentColor; border-radius: 4px;
+}
+.visual-computer .visual-icon::after {
+  width: 28px; height: 5px; right: 23px; top: 43px; background: currentColor; border-radius: 4px;
+}
+.visual-computer .visual-icon span::before {
+  width: 42px; height: 4px; right: 16px; top: 50px; background: currentColor; border-radius: 4px;
+}
+
+.visual-mouse .visual-icon::before {
+  width: 34px; height: 48px; right: 22px; top: 2px; border: 3px solid currentColor; border-radius: 22px;
+}
+.visual-mouse .visual-icon::after {
+  width: 3px; height: 16px; right: 38px; top: 7px; background: currentColor;
+}
+.visual-mouse .visual-icon span::before {
+  width: 18px; height: 3px; right: 54px; top: 10px; background: currentColor; transform: rotate(-25deg);
+}
+
+.visual-keyboard .visual-icon::before {
+  width: 70px; height: 42px; right: 4px; top: 7px; border: 3px solid currentColor; border-radius: 6px;
+}
+.visual-keyboard .visual-icon::after {
+  width: 8px; height: 6px; right: 14px; top: 17px; background: currentColor; box-shadow: 13px 0 currentColor, 26px 0 currentColor, 39px 0 currentColor, 0 12px currentColor, 13px 12px currentColor, 26px 12px currentColor, 39px 12px currentColor;
+}
+
+.visual-folder .visual-icon::before {
+  width: 62px; height: 38px; right: 8px; top: 14px; border: 3px solid currentColor; border-radius: 4px;
+}
+.visual-folder .visual-icon::after {
+  width: 28px; height: 12px; right: 12px; top: 7px; border: 3px solid currentColor; border-bottom: 0; border-radius: 4px 4px 0 0;
+}
+
+.visual-document .visual-icon::before {
+  width: 46px; height: 52px; right: 16px; top: 1px; border: 3px solid currentColor; border-radius: 4px;
+}
+.visual-document .visual-icon::after {
+  width: 28px; height: 3px; right: 25px; top: 16px; background: currentColor; box-shadow: 0 10px currentColor, 0 20px currentColor;
+}
+
+.visual-mail .visual-icon::before {
+  width: 64px; height: 40px; right: 7px; top: 8px; border: 3px solid currentColor; border-radius: 5px;
+}
+.visual-mail .visual-icon::after {
+  width: 44px; height: 44px; right: 17px; top: -8px; border-right: 3px solid currentColor; border-bottom: 3px solid currentColor; transform: rotate(45deg);
+}
+
+.visual-sheet .visual-icon::before {
+  width: 52px; height: 50px; right: 13px; top: 2px; border: 3px solid currentColor; border-radius: 4px;
+}
+.visual-sheet .visual-icon::after {
+  width: 42px; height: 2px; right: 18px; top: 18px; background: currentColor; box-shadow: 0 12px currentColor, 0 24px currentColor;
+}
+.visual-sheet .visual-icon span::before {
+  width: 2px; height: 42px; right: 33px; top: 7px; background: currentColor; box-shadow: 15px 0 currentColor;
+}
+
+.visual-slides .visual-icon::before {
+  width: 62px; height: 42px; right: 8px; top: 6px; border: 3px solid currentColor; border-radius: 5px;
+}
+.visual-slides .visual-icon::after {
+  width: 24px; height: 3px; right: 18px; top: 18px; background: currentColor; box-shadow: 0 10px currentColor;
+}
+.visual-slides .visual-icon span::before {
+  width: 14px; height: 14px; right: 49px; top: 18px; border: 3px solid currentColor; border-radius: 50%;
+}
+
+.visual-calendar .visual-icon::before {
+  width: 56px; height: 48px; right: 11px; top: 4px; border: 3px solid currentColor; border-radius: 5px;
+}
+.visual-calendar .visual-icon::after {
+  width: 56px; height: 10px; right: 11px; top: 13px; background: currentColor;
+}
+.visual-calendar .visual-icon span::before {
+  width: 7px; height: 7px; right: 24px; top: 31px; background: currentColor; box-shadow: 14px 0 currentColor, 28px 0 currentColor;
+}
+
+.visual-form .visual-icon::before {
+  width: 46px; height: 52px; right: 16px; top: 1px; border: 3px solid currentColor; border-radius: 5px;
+}
+.visual-form .visual-icon::after {
+  width: 8px; height: 8px; right: 25px; top: 14px; border: 2px solid currentColor; box-shadow: 0 13px 0 -1px white, 0 13px 0 1px currentColor, 0 26px 0 -1px white, 0 26px 0 1px currentColor;
+}
+.visual-form .visual-icon span::before {
+  width: 18px; height: 2px; right: 40px; top: 18px; background: currentColor; box-shadow: 0 13px currentColor, 0 26px currentColor;
+}
+
+.visual-ai .visual-icon::before {
+  width: 46px; height: 38px; right: 16px; top: 10px; border: 3px solid currentColor; border-radius: 10px;
+}
+.visual-ai .visual-icon::after {
+  width: 7px; height: 7px; right: 28px; top: 25px; background: currentColor; border-radius: 50%; box-shadow: 16px 0 currentColor;
+}
+.visual-ai .visual-icon span::before {
+  width: 28px; height: 3px; right: 25px; top: 38px; background: currentColor; border-radius: 4px;
+}
+
+.visual-lock .visual-icon::before {
+  width: 46px; height: 34px; right: 16px; top: 19px; border: 3px solid currentColor; border-radius: 5px;
+}
+.visual-lock .visual-icon::after {
+  width: 28px; height: 24px; right: 25px; top: 3px; border: 3px solid currentColor; border-bottom: 0; border-radius: 18px 18px 0 0;
+}
+
+.visual-search .visual-icon::before {
+  width: 34px; height: 34px; right: 18px; top: 6px; border: 4px solid currentColor; border-radius: 50%;
+}
+.visual-search .visual-icon::after {
+  width: 28px; height: 5px; right: 44px; top: 40px; background: currentColor; transform: rotate(45deg); border-radius: 4px;
 }
 
 /* ===== PAGE LAYOUT ===== */
@@ -262,7 +630,7 @@ body {
 /* ===== PAGE HEADER ===== */
 .page-header {
   color: white;
-  padding: 10px 18px;
+  padding: 11px 18px;
   border-radius: 8px;
   margin-bottom: 16px;
   display: flex;
@@ -271,13 +639,13 @@ body {
 }
 
 .page-header h2 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   margin: 0;
 }
 
 .page-header .unit-label {
-  font-size: 11.5px;
+  font-size: 12.5px;
   opacity: 0.88;
   background: rgba(255,255,255,0.18);
   padding: 3px 10px;
@@ -286,7 +654,7 @@ body {
 
 /* ===== SECTION TITLE ===== */
 .section-title {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 700;
   border-bottom: 2.5px solid;
   padding-bottom: 5px;
@@ -294,7 +662,7 @@ body {
 }
 
 .lesson-goal {
-  font-size: 12px;
+  font-size: 13.5px;
   font-style: italic;
   margin-bottom: 10px;
   padding: 5px 12px;
@@ -312,14 +680,14 @@ body {
 }
 
 .info-box h4 {
-  font-size: 13.5px;
+  font-size: 14.5px;
   font-weight: 700;
   margin-bottom: 6px;
 }
 
 .info-box p, .info-box li {
-  font-size: 12.5px;
-  line-height: 1.7;
+  font-size: 13.5px;
+  line-height: 1.72;
   margin: 3px 0;
 }
 
@@ -334,7 +702,7 @@ body {
 
 .activity-box .activity-title {
   color: #E65100;
-  font-size: 13.5px;
+  font-size: 14.5px;
   font-weight: 700;
   margin-bottom: 8px;
 }
@@ -344,8 +712,8 @@ body {
 }
 
 .activity-box p, .activity-box li {
-  font-size: 12.5px;
-  line-height: 1.7;
+  font-size: 13.5px;
+  line-height: 1.72;
   color: #4E342E;
 }
 
@@ -354,8 +722,8 @@ body {
   border-radius: 6px;
   padding: 9px 13px;
   margin: 8px 0;
-  font-size: 12.5px;
-  line-height: 1.65;
+  font-size: 13.2px;
+  line-height: 1.68;
 }
 
 .note-box::before {
@@ -415,7 +783,7 @@ body {
 }
 
 .question-box h4 {
-  font-size: 13.5px;
+  font-size: 14.5px;
   font-weight: 700;
   color: #6A1B9A;
   margin-bottom: 8px;
@@ -427,7 +795,7 @@ body {
 }
 
 .question-box li {
-  font-size: 12.5px;
+  font-size: 13.5px;
   color: #444;
   margin-bottom: 7px;
   line-height: 1.6;
@@ -452,13 +820,13 @@ body {
 }
 
 .card h5 {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
   margin-bottom: 5px;
 }
 
 .card p, .card li {
-  font-size: 12px;
+  font-size: 13px;
   color: #555;
   line-height: 1.65;
   margin: 2px 0;
@@ -469,7 +837,7 @@ body {
   width: 100%;
   border-collapse: collapse;
   margin: 10px 0;
-  font-size: 12.5px;
+  font-size: 13.4px;
 }
 
 .styled-table th {
@@ -496,7 +864,7 @@ body {
 .steps li {
   counter-increment: step-counter;
   padding: 7px 38px 7px 0;
-  font-size: 12.5px;
+  font-size: 13.4px;
   color: #333;
   line-height: 1.65;
   border-bottom: 1px solid #eee;
@@ -528,7 +896,7 @@ body {
 
 .objectives li {
   padding: 5px 28px 5px 0;
-  font-size: 12.5px;
+  font-size: 13.5px;
   color: #333;
   line-height: 1.65;
   position: relative;
@@ -549,7 +917,7 @@ body {
   align-items: center;
   padding: 7px 10px;
   border-bottom: 1px dotted;
-  font-size: 12.5px;
+  font-size: 13px;
   color: #333;
 }
 
@@ -587,7 +955,7 @@ body {
 .assessment-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 12px;
+  font-size: 13px;
   margin: 10px 0;
 }
 
@@ -613,7 +981,7 @@ body {
 .rubric-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 11.5px;
+  font-size: 12.5px;
   margin: 10px 0;
 }
 
@@ -664,4 +1032,499 @@ body {
     box-shadow: 0 2px 12px rgba(0,0,0,0.12);
     margin-bottom: 20px;
   }
+}
+
+/* ===== FINAL SCHOOL PRINT OVERRIDES =====
+   White internal pages, grayscale-friendly structure, real A4 blocks.
+*/
+@page {
+  size: A4 portrait;
+  margin: 0;
+}
+
+.page {
+  width: 210mm;
+  height: 297mm;
+  min-height: 297mm;
+  padding: 14mm 15mm 16mm 15mm;
+  margin: 0 auto 15px auto;
+  overflow: hidden;
+  page-break-after: always;
+  break-after: page;
+  background: #fff;
+}
+
+.cover {
+  width: 210mm;
+  height: 297mm;
+  min-height: 297mm;
+  padding: 0;
+}
+
+.workbook-page,
+.workbook-page * {
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+.workbook-page {
+  background: #fff !important;
+  color: #111;
+  display: flex;
+  flex-direction: column;
+}
+
+.workbook-page .page-header {
+  background: #fff !important;
+  color: #111 !important;
+  border: 2px solid #222;
+  border-right: 8px solid var(--primary, #333);
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+}
+
+.workbook-page .page-header h2 {
+  color: #111;
+  font-size: 18px;
+}
+
+.workbook-page .page-header .unit-label {
+  background: #fff !important;
+  color: #111;
+  border: 1px solid #777;
+  border-radius: 12px;
+}
+
+.school-strip,
+.workbook-page .highlight-item,
+.workbook-page .info-box,
+.workbook-page .activity-box,
+.workbook-page .question-box,
+.workbook-page .think-box,
+.workbook-page .note-box,
+.workbook-page .creative-box,
+.workbook-page .card,
+.workbook-page .ai-box,
+.workbook-page .certificate-section,
+.lesson-visual {
+  background: #fff !important;
+  color: #111 !important;
+  box-shadow: none !important;
+}
+
+.workbook-page .info-box,
+.workbook-page .activity-box,
+.workbook-page .question-box,
+.workbook-page .creative-box,
+.workbook-page .card,
+.lesson-visual {
+  border: 1.5px solid #333 !important;
+}
+
+.workbook-page .note-box {
+  border: 1px dashed #555;
+}
+
+.workbook-page .section-title {
+  color: #111 !important;
+  border-bottom: 2px solid #222 !important;
+  margin: 10px 0 7px 0;
+}
+
+.workbook-page .lesson-goal {
+  background: #fff !important;
+  color: #111 !important;
+  border: 1px solid #555;
+  border-right: 6px solid var(--primary, #333);
+}
+
+.workbook-page .key-term {
+  background: #fff !important;
+  color: #111 !important;
+  border: 1px solid #555;
+}
+
+.workbook-page .steps li::before,
+.workbook-page .toc-page,
+.workbook-page .styled-table th,
+.workbook-page .assessment-table th,
+.workbook-page .rubric-table th {
+  background: #222 !important;
+  color: #fff !important;
+}
+
+.workbook-page .styled-table tr:nth-child(even) td,
+.workbook-page .toc-item:nth-child(odd) {
+  background: #f7f7f7 !important;
+}
+
+.creative-title,
+.activity-box .activity-title,
+.question-box h4 {
+  color: #111 !important;
+}
+
+.answer-space {
+  background: #fff !important;
+  border: 1.5px solid #333;
+}
+
+.answer-line {
+  height: 23px;
+  border-bottom: 1px dotted #555;
+}
+
+.lesson-page > .answer-space {
+  min-height: 200px;
+}
+
+.lesson-page:has(.creative-box) > .answer-space {
+  min-height: 110px;
+}
+
+.lesson-page:has(.creative-box) .check-answer {
+  padding: 7px 10px;
+  gap: 5px 10px;
+}
+
+.lesson-page:has(.creative-box) .creative-box {
+  padding: 8px 10px;
+  margin: 7px 0;
+}
+
+.lesson-page:has(.creative-box) .creative-box .answer-line {
+  height: 16px;
+}
+
+.lesson-page:has(.creative-box) .compare-answer > div {
+  min-height: 82px;
+}
+
+.lesson-page:has(.creative-box) .compare-answer .answer-line {
+  height: 15px;
+}
+
+.lesson-page:has(.creative-box) .design-space {
+  min-height: 135px;
+}
+
+.lesson-page:has(.creative-box) .design-grid {
+  height: 82px;
+}
+
+.answer-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 8px;
+}
+
+.answer-table th,
+.answer-table td {
+  border: 1px solid #444;
+  padding: 8px;
+  height: 38px;
+}
+
+.answer-table th {
+  background: #f0f0f0 !important;
+  color: #111 !important;
+}
+
+.check-answer {
+  border: 1.5px solid #333;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 12px;
+  font-size: 13.5px;
+}
+
+.compare-answer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.compare-answer > div {
+  border: 1.5px solid #333;
+  padding: 8px;
+  min-height: 145px;
+}
+
+.design-space {
+  border: 1.5px solid #333;
+  padding: 8px;
+  min-height: 250px;
+  margin-bottom: 8px;
+}
+
+.design-grid {
+  height: 195px;
+  background-image: linear-gradient(#ddd 1px, transparent 1px), linear-gradient(90deg, #ddd 1px, transparent 1px);
+  background-size: 12px 12px;
+  margin-bottom: 8px;
+}
+
+.design-note {
+  font-size: 12.5px;
+  color: #333;
+}
+
+.teacher-notes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 8px 0;
+}
+
+.teacher-notes > div {
+  border: 1.5px solid #333;
+  padding: 8px;
+}
+
+.teacher-notes strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.teacher-notes .answer-space {
+  margin-bottom: 0;
+  padding: 4px 8px;
+}
+
+.teacher-notes .answer-line {
+  height: 16px;
+}
+
+.workbook-page .certificate-section {
+  padding: 12px 16px;
+  margin: 8px 0;
+}
+
+.workbook-page .certificate-section h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.workbook-page .certificate-section .cert-line {
+  height: 18px;
+  margin: 10px 18px;
+}
+
+.workbook-page .signature-row {
+  margin-top: 8px;
+}
+
+.workbook-page .sig-box .sig-line {
+  margin-top: 12px;
+}
+
+.lesson-visual {
+  min-height: 58px;
+  color: #222;
+}
+
+.visual-labels b {
+  background: #fff !important;
+  border-color: #555;
+}
+
+@media print {
+  html, body {
+    background: #fff;
+  }
+
+  .page {
+    width: 210mm;
+    height: 297mm;
+    min-height: 297mm;
+    padding: 14mm 15mm 16mm 15mm;
+    margin: 0;
+    page-break-after: always;
+    break-after: page;
+  }
+
+  .cover {
+    width: 210mm;
+    height: 297mm;
+    min-height: 297mm;
+    padding: 0;
+  }
+}
+
+/* ===== FINAL COLORFUL DUPLEX VERSION ===== */
+.workbook-page {
+  background: #fff !important;
+}
+
+.workbook-page .page-header {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light)) !important;
+  color: #fff !important;
+  border: 0;
+  border-radius: 8px;
+}
+
+.workbook-page .page-header h2,
+.workbook-page .page-header .icon {
+  color: #fff;
+}
+
+.workbook-page .page-header .unit-label {
+  color: #fff;
+  background: rgba(255,255,255,0.18) !important;
+  border: 1px solid rgba(255,255,255,0.35);
+}
+
+.workbook-page .info-box {
+  background: var(--primary-very-light) !important;
+  border-color: var(--primary) !important;
+}
+
+.workbook-page .activity-box {
+  background: #FFFDE7 !important;
+  border: 2px dashed #B98500 !important;
+}
+
+.workbook-page .question-box {
+  background: #F8EFF9 !important;
+  border-color: #9C7AB0 !important;
+}
+
+.workbook-page .note-box {
+  background: #F4F8F4 !important;
+  border: 1px dashed #777;
+}
+
+.workbook-page .creative-box {
+  background: #FFF3E0 !important;
+  border-color: #9A5B00 !important;
+}
+
+.workbook-page .card,
+.lesson-visual {
+  background: #fff !important;
+  border-color: rgba(0,0,0,0.22) !important;
+}
+
+.workbook-page .lesson-goal {
+  background: var(--primary-very-light) !important;
+  color: var(--primary-dark) !important;
+  border-right-color: var(--primary);
+}
+
+.workbook-page .section-title {
+  color: var(--primary-dark) !important;
+  border-bottom-color: var(--primary-light) !important;
+}
+
+.workbook-page .key-term {
+  background: var(--primary-very-light) !important;
+  color: var(--primary-dark) !important;
+  border-color: var(--primary-light);
+}
+
+.workbook-page .styled-table th,
+.workbook-page .assessment-table th,
+.workbook-page .rubric-table th,
+.workbook-page .steps li::before,
+.workbook-page .toc-page {
+  background: var(--primary) !important;
+  color: #fff !important;
+}
+
+.workbook-page .styled-table tr:nth-child(even) td,
+.workbook-page .toc-item:nth-child(odd) {
+  background: var(--primary-very-light) !important;
+}
+
+.workbook-page .page-num {
+  background: var(--primary-very-light);
+  color: var(--primary);
+  border-color: var(--primary-light);
+}
+
+.workbook-page .page-num {
+  font-size: 11px;
+}
+
+.cover .page-num {
+  display: none;
+}
+
+@media print {
+  .page:nth-child(odd):not(.cover) {
+    padding-right: 18mm;
+    padding-left: 12mm;
+  }
+
+  .page:nth-child(even):not(.cover) {
+    padding-right: 12mm;
+    padding-left: 18mm;
+  }
+}
+
+/* Final cover spacing after adding local colored program logos. */
+.cover {
+  justify-content: flex-start;
+  padding-top: 10mm;
+  overflow: hidden;
+}
+
+.cover-icons {
+  margin-bottom: 8px;
+}
+
+.cover .grade-badge {
+  width: 96px;
+  height: 96px;
+  font-size: 48px;
+  margin: 8px auto 10px auto;
+}
+
+.cover h1 {
+  margin: 8px 0;
+}
+
+.cover h2,
+.cover .cover-subtitle {
+  margin: 6px 0;
+}
+
+.cover-hero {
+  width: 130mm;
+  margin: 10px auto 4px auto;
+}
+
+.cover-logo-strip {
+  margin-top: 4px;
+  margin-bottom: 6px;
+}
+
+.cover .cover-school {
+  margin-top: 8px;
+}
+
+.cover .cover-author {
+  margin-top: 6px;
+  padding: 6px 20px;
+}
+
+.cover .cover-decoration {
+  margin: 12px 0 10px 0;
+  font-size: 25px;
+}
+
+.cover .cover-year {
+  margin-top: 8px;
+  padding: 8px 28px;
+}
+
+.cover .cover-footer {
+  position: static;
+  width: auto;
+  margin-top: 8px;
+  font-size: 13px;
 }

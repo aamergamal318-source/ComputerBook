@@ -1,0 +1,15 @@
+:root{--primary:#4527A0;--primary-light:#7C4DFF;--primary-very-light:#EDE7F6;--primary-dark:#311B92;}
+.cover{background:linear-gradient(160deg,#311B92 0%,#4527A0 52%,#7C4DFF 100%) !important;color:#fff;}
+.page-header{background:linear-gradient(135deg,#4527A0,#7C4DFF);}
+.page-num{background:#EDE7F6;color:#4527A0;border:1px solid #7C4DFF;}
+.info-box{background:#EDE7F6;border-right-color:#4527A0;}
+.info-box h4,.section-title,.card h5,.unit-big-header .unit-title{color:#311B92;}
+.section-title{border-bottom-color:#7C4DFF;}
+.lesson-goal{background:#EDE7F6;border-right-color:#4527A0;color:#311B92;}
+.card{border-top-color:#4527A0;}
+.styled-table th,.assessment-table th,.rubric-table th{background:#4527A0;}
+.steps li::before,.toc-page,.num-badge{background:#4527A0;}
+.key-term{background:#EDE7F6;color:#311B92;border:1px solid #7C4DFF;}
+.highlight-item,.mini-card{background:#EDE7F6;color:#311B92;}
+.certificate-section{border-color:#4527A0;}
+.certificate-section h3{color:#4527A0;}

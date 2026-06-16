@@ -1,37 +1,37 @@
 {
-  "generatedAt": "2026-06-16T20:06:21.547Z",
-  "elapsedSeconds": 13.4,
+  "generatedAt": "2026-06-16T21:09:35.030Z",
+  "elapsedSeconds": 11.9,
   "allMeetMinimum": true,
   "workbooks": [
     {
       "grade": "الجزء الأول: مبتدئ",
-      "id": "grade-7",
+      "id": "part-1-beginner",
       "status": "success",
       "htmlSections": 30,
       "pdfPages": 30,
-      "fileSizeKB": 1172,
+      "fileSizeKB": 1473,
       "meetsMinimum": true,
-      "pdfPath": "C:\\Users\\aamer\\OneDrive\\שולחן העבודה\\projects\\ComputerBook\\computer-workbooks-pro\\grade-7\\grade-7.pdf"
+      "pdfPath": "C:\\Users\\aamer\\OneDrive\\שולחן העבודה\\projects\\ComputerBook\\computer-workbooks-pro\\part-1-beginner.pdf"
     },
     {
       "grade": "الجزء الثاني: متوسط",
-      "id": "grade-8",
+      "id": "part-2-intermediate",
       "status": "success",
       "htmlSections": 30,
       "pdfPages": 30,
-      "fileSizeKB": 1147,
+      "fileSizeKB": 1497,
       "meetsMinimum": true,
-      "pdfPath": "C:\\Users\\aamer\\OneDrive\\שולחן העבודה\\projects\\ComputerBook\\computer-workbooks-pro\\grade-8\\grade-8.pdf"
+      "pdfPath": "C:\\Users\\aamer\\OneDrive\\שולחן העבודה\\projects\\ComputerBook\\computer-workbooks-pro\\part-2-intermediate.pdf"
     },
     {
       "grade": "الجزء الثالث: متقدم",
-      "id": "grade-9",
+      "id": "part-3-advanced",
       "status": "success",
       "htmlSections": 30,
       "pdfPages": 30,
-      "fileSizeKB": 1206,
+      "fileSizeKB": 1539,
       "meetsMinimum": true,
-      "pdfPath": "C:\\Users\\aamer\\OneDrive\\שולחן העבודה\\projects\\ComputerBook\\computer-workbooks-pro\\grade-9\\grade-9.pdf"
+      "pdfPath": "C:\\Users\\aamer\\OneDrive\\שולחן העבודה\\projects\\ComputerBook\\computer-workbooks-pro\\part-3-advanced.pdf"
     }
   ]
 }

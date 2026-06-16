@@ -11,9 +11,9 @@ const fs = require('fs');
 const BASE_DIR = path.resolve(__dirname);
 
 const grades = [
-  { id: 'grade-7', label: 'الجزء الأول: مبتدئ', color: '#1565C0', minPages: 30 },
-  { id: 'grade-8', label: 'الجزء الثاني: متوسط', color: '#2E7D32', minPages: 30 },
-  { id: 'grade-9', label: 'الجزء الثالث: متقدم', color: '#4527A0', minPages: 30 },
+  { id: 'part-1-beginner', output: 'part-1-beginner.pdf', label: 'الجزء الأول: مبتدئ', color: '#1565C0', minPages: 30 },
+  { id: 'part-2-intermediate', output: 'part-2-intermediate.pdf', label: 'الجزء الثاني: متوسط', color: '#2E7D32', minPages: 30 },
+  { id: 'part-3-advanced', output: 'part-3-advanced.pdf', label: 'الجزء الثالث: متقدم', color: '#4527A0', minPages: 30 },
 ];
 
 // Count PDF pages by scanning the raw binary for page markers
@@ -34,7 +34,7 @@ function countPDFPages(pdfPath) {
 
 async function convertGrade(grade, browser) {
   const htmlFile = path.join(BASE_DIR, grade.id, 'index.html');
-  const pdfFile = path.join(BASE_DIR, grade.id, `${grade.id}.pdf`);
+  const pdfFile = path.join(BASE_DIR, grade.output);
 
   if (!fs.existsSync(htmlFile)) {
     return { grade: grade.label, status: 'missing', pages: 0 };

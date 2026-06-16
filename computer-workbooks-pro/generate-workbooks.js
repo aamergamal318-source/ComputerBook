@@ -5,21 +5,181 @@ const root = __dirname;
 
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
+const icons = {
+  monitor: '<rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8"/><path d="M12 16v4"/>',
+  keyboard: '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 9h.01M11 9h.01M15 9h.01M19 9h.01M7 13h.01M11 13h.01M15 13h.01M19 13h.01M8 17h8"/>',
+  mouse: '<rect x="7" y="3" width="10" height="18" rx="5"/><path d="M12 7v4"/>',
+  folder: '<path d="M4 6h6l2 2h8v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/>',
+  cloud: '<path d="M17.5 19H8a6 6 0 1 1 1.1-11.9A7 7 0 0 1 22 11.5 4.5 4.5 0 0 1 17.5 19z"/>',
+  bot: '<path d="M12 8V4H8"/><rect x="5" y="8" width="14" height="11" rx="2"/><path d="M2 14h3M19 14h3M9 13h.01M15 13h.01M10 17h4"/>',
+  target: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/>',
+  tags: '<path d="M20 10 12 2H4v8l8 8 8-8z"/><path d="M7.5 7.5h.01"/><path d="m14 18 6-6"/>',
+  list: '<path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/>',
+  pen: '<path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/>',
+  brain: '<path d="M9 3a3 3 0 0 0-3 3v1a3 3 0 0 0-2 5 3 3 0 0 0 2 5v1a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M15 3a3 3 0 0 1 3 3v1a3 3 0 0 1 2 5 3 3 0 0 1-2 5v1a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3z"/>',
+  flask: '<path d="M9 2h6"/><path d="M10 2v6l-5 9a3 3 0 0 0 3 5h8a3 3 0 0 0 3-5l-5-9V2"/><path d="M7 16h10"/>',
+  clipboard: '<rect x="8" y="2" width="8" height="4" rx="1"/><path d="M9 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-3"/><path d="M8 12h8M8 16h5"/>',
+  users: '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>',
+  chart: '<path d="M3 3v18h18"/><rect x="7" y="12" width="3" height="5"/><rect x="12" y="8" width="3" height="9"/><rect x="17" y="5" width="3" height="12"/>',
+  presentation: '<path d="M3 4h18v12H3z"/><path d="M12 16v5M8 21h8"/>',
+  table: '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 4v16M15 4v16"/>',
+  search: '<circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>',
+  lock: '<rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>',
+  sparkles: '<path d="M12 3l1.7 4.3L18 9l-4.3 1.7L12 15l-1.7-4.3L6 9l4.3-1.7L12 3z"/><path d="M19 14l.8 2.2L22 17l-2.2.8L19 20l-.8-2.2L16 17l2.2-.8L19 14z"/>',
+  book: '<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/>'
+};
+
+function icon(name, cls = "") {
+  const body = icons[name] || icons.book;
+  return `<svg class="icon ${cls}" viewBox="0 0 24 24" aria-hidden="true">${body}</svg>`;
+}
+
 function terms(items) {
-  return `<div class="term-row">${items.map((x) => `<span class="key-term">${esc(x)}</span>`).join("")}</div>`;
+  return `<div class="term-row"><span class="term-icon">${icon("tags")}</span>${items.map((x) => `<span class="key-term">${esc(x)}</span>`).join("")}</div>`;
 }
 
 function answerLines(rows = 5) {
   return `<div class="answer-space">${Array.from({ length: rows }, () => `<div class="answer-line"></div>`).join("")}</div>`;
 }
 
+function practiceArea(l, i) {
+  const mode = i % 5;
+  if (mode === 1) {
+    return `<div class="answer-table"><table><tr><th>العنصر</th><th>إجابتي</th><th>ملاحظة</th></tr><tr><td>ما تعلمته</td><td></td><td></td></tr><tr><td>خطوة طبقتها</td><td></td><td></td></tr><tr><td>خطأ صححته</td><td></td><td></td></tr></table></div>`;
+  }
+  if (mode === 2) {
+    return `<div class="check-answer"><div>□ نفذت الخطوات بالترتيب</div><div>□ حفظت عملي باسم واضح</div><div>□ راجعت النتيجة قبل التسليم</div><div>□ كتبت سؤالا للمعلم إن احتجت</div></div>${answerLines(3)}`;
+  }
+  if (mode === 3) {
+    return `<div class="compare-answer"><div><strong>الخيار الأول</strong>${answerLines(3)}</div><div><strong>الخيار الثاني</strong>${answerLines(3)}</div></div>`;
+  }
+  if (mode === 4) {
+    return `<div class="design-space"><div class="design-grid"></div><div class="design-note">ارسم أو خطط هنا: ${esc(l.creative)}</div></div>`;
+  }
+  return answerLines(l.lines || 6);
+}
+
+function visualForLesson(l, i) {
+  if (i % 3 !== 0) return "";
+  const text = `${l.title} ${l.terms.join(" ")}`;
+  let kind = "computer";
+  if (/فأرة|مؤشر|نقر/.test(text)) kind = "mouse";
+  else if (/لوحة|كتابة|مفاتيح/.test(text)) kind = "keyboard";
+  else if (/ملف|مجلد|Drive|حفظ|نسخ|نقل|حذف/.test(text)) kind = "folder";
+  else if (/Word|Docs|مستند|تقرير|تنسيق/.test(text)) kind = "document";
+  else if (/Gmail|بريد|رسالة|مرفق/.test(text)) kind = "mail";
+  else if (/Excel|Sheets|SUM|AVERAGE|MIN|MAX|IF|COUNTIF|SUMIF|بيانات|جدول|دالة/.test(text)) kind = "sheet";
+  else if (/عرض|شريحة|PowerPoint|Slides/.test(text)) kind = "slides";
+  else if (/Calendar|موعد|تذكير/.test(text)) kind = "calendar";
+  else if (/Forms|نموذج|استبيان/.test(text)) kind = "form";
+  else if (/ذكاء|AI/.test(text)) kind = "ai";
+  else if (/أمان|خصوصية|كلمة مرور|السلامة/.test(text)) kind = "lock";
+  else if (/بحث|مصدر/.test(text)) kind = "search";
+  const labels = {
+    computer: ["شاشة", "لوحة", "فأرة"],
+    mouse: ["نقرة", "سحب", "تحديد"],
+    keyboard: ["Enter", "Shift", "Space"],
+    folder: ["مجلد", "ملف", "حفظ"],
+    document: ["عنوان", "فقرة", "تنسيق"],
+    mail: ["إلى", "عنوان", "مرفق"],
+    sheet: ["A1", "SUM", "رسم"],
+    slides: ["عنوان", "صورة", "نقاط"],
+    calendar: ["تاريخ", "وقت", "تذكير"],
+    form: ["سؤال", "اختيار", "ردود"],
+    ai: ["طلب", "تحقق", "أسلوبك"],
+    lock: ["خاص", "قوي", "آمن"],
+    search: ["كلمات", "مصدر", "تحقق"],
+  }[kind];
+  return `<div class="lesson-visual visual-${kind}" aria-hidden="true"><div class="visual-icon"><span></span></div><div class="visual-labels">${labels.map((x) => `<b>${esc(x)}</b>`).join("")}</div></div>`;
+}
+
+function appBadges(l) {
+  const text = `${l.title} ${l.goal} ${l.explain} ${l.terms.join(" ")}`;
+  const apps = [
+    ["Windows", "windows", /Windows|سطح المكتب|النوافذ/],
+    ["Word", "word", /Word|مستند/],
+    ["Docs", "docs", /Docs/],
+    ["Gmail", "gmail", /Gmail|البريد|رسالة|مرفق/],
+    ["Drive", "drive", /Drive|سحابة|رفع|مشاركة/],
+    ["PowerPoint", "powerpoint", /PowerPoint|عرض/],
+    ["Slides", "slides", /Slides|شريحة/],
+    ["Excel", "excel", /Excel/],
+    ["Sheets", "sheets", /Sheets|SUM|AVERAGE|MIN|MAX|IF|COUNTIF|SUMIF|بيانات|جدول/],
+    ["Calendar", "calendar", /Calendar|موعد|تذكير/],
+    ["Forms", "forms", /Forms|نموذج|استبيان/],
+    ["AI", "openai", /AI|ذكاء/],
+  ].filter(([, , re]) => re.test(text)).map(([name, cls]) =>
+    `<span class="app-logo app-${cls}"><img src="../assets/logos/${cls}.svg" alt="${esc(name)}"><span>${esc(name)}</span></span>`
+  );
+  return apps.length ? `<div class="app-logo-strip">${apps.join("")}</div>` : "";
+}
+
+function coverImage(w) {
+  const aiNode = w.partNo === "3" ? `<g transform="translate(330 105)"><rect width="58" height="42" rx="10" class="ci-light"/><circle cx="20" cy="21" r="3"/><circle cx="38" cy="21" r="3"/><path d="M22 32h14"/></g>` : "";
+  return `<svg class="cover-hero" viewBox="0 0 420 210" role="img" aria-label="صورة تعليمية عن الحاسوب">
+    <rect x="15" y="138" width="390" height="18" rx="9" class="ci-shadow"/>
+    <g transform="translate(92 28)">
+      <rect x="0" y="0" width="190" height="112" rx="10" class="ci-screen"/>
+      <rect x="16" y="16" width="158" height="72" rx="5" class="ci-window"/>
+      <path d="M39 41h96M39 58h120M39 75h72" class="ci-line"/>
+      <rect x="74" y="112" width="42" height="18" rx="4" class="ci-dark"/>
+      <rect x="48" y="130" width="94" height="8" rx="4" class="ci-dark"/>
+    </g>
+    <g transform="translate(68 164)">
+      <rect width="206" height="32" rx="8" class="ci-keyboard"/>
+      <path d="M18 11h10M40 11h10M62 11h10M84 11h10M106 11h10M128 11h10M150 11h10M172 11h10M30 22h116" class="ci-keyline"/>
+    </g>
+    <g transform="translate(300 154)">
+      <rect width="38" height="52" rx="19" class="ci-mouse"/>
+      <path d="M19 9v16" class="ci-keyline"/>
+    </g>
+    <g transform="translate(28 72)">
+      <path d="M0 16h38l10 12h54v55H0z" class="ci-folder"/>
+      <path d="M18 48h58M18 64h42" class="ci-keyline"/>
+    </g>
+    <g transform="translate(292 38)">
+      <path d="M64 76H22A22 22 0 1 1 30 34 30 30 0 0 1 86 46 18 18 0 0 1 64 76z" class="ci-cloud"/>
+      <path d="M42 55h28M56 41v28" class="ci-keyline"/>
+    </g>
+    ${aiNode}
+  </svg>`;
+}
+
+function coverLogoStrip(w) {
+  const base = [
+    ["windows", "Windows"],
+    ["word", "Word"],
+    ["gmail", "Gmail"],
+    ["drive", "Drive"],
+  ];
+  const middle = [
+    ["powerpoint", "PowerPoint"],
+    ["sheets", "Sheets"],
+    ["forms", "Forms"],
+    ["calendar", "Calendar"],
+  ];
+  const advanced = [
+    ["docs", "Docs"],
+    ["slides", "Slides"],
+    ["excel", "Excel"],
+    ["openai", "AI"],
+  ];
+  const logos = w.partNo === "1" ? base : w.partNo === "2" ? middle : advanced;
+  return `<div class="cover-logo-strip">${logos.map(([file, name]) =>
+    `<span><img src="../assets/logos/${file}.svg" alt="${esc(name)}"><b>${esc(name)}</b></span>`
+  ).join("")}</div>`;
+}
+
 function cover(w) {
   return `
   <section class="page cover">
+    <div class="cover-icons">${icon("monitor")}${icon("keyboard")}${icon("mouse")}${icon("folder")}${icon("cloud")}${w.partNo === "3" ? icon("bot") : ""}</div>
     <div class="grade-badge">${w.partNo}</div>
     <h1>دوسية الحاسوب</h1>
     <h2>${w.title}</h2>
     <div class="cover-subtitle">${w.subtitle}</div>
+    ${coverImage(w)}
+    ${coverLogoStrip(w)}
     <div class="cover-school">مدرسة حورة الشاملة</div>
     <div class="cover-author">تجميع وترتيب: عامر جمل</div>
     <div class="cover-decoration">افهم | جرّب | اكتب | أبدع</div>
@@ -31,7 +191,7 @@ function cover(w) {
 function intro(w) {
   return `
   <section class="page workbook-page">
-    <div class="page-header"><h2>كيف تعمل بهذه الدوسية؟</h2><span class="unit-label">${w.short}</span></div>
+    <div class="page-header"><h2>${icon("book")} كيف تعمل بهذه الدوسية؟</h2><span class="unit-label">${w.short}</span></div>
     <div class="school-strip"><strong>مدرسة حورة الشاملة</strong><span>تجميع وترتيب: عامر جمل</span></div>
     <div class="highlight-row">
       <div class="highlight-item"><span class="h-icon">01</span><div class="h-title">اقرأ</div><div class="h-desc">ابدأ بالهدف والمصطلحات.</div></div>
@@ -46,6 +206,8 @@ function intro(w) {
       <div class="note-box">كل صفحة مصممة لتُملأ من الطالب: لا تكتف بالقراءة، اكتب إجابتك ونفذ التدريب العملي.</div>
     </div>
     <table class="styled-table"><tr><th>رمز الصفحة</th><th>ماذا يعني؟</th></tr><tr><td>تدريب سريع</td><td>مهمة قصيرة للتأكد من فهم المهارة.</td></tr><tr><td>مكان الإجابة</td><td>مساحة يكتب فيها الطالب خطواته أو ملاحظاته.</td></tr><tr><td>مهمة للمبدعين</td><td>تحدّ إضافي لمن يريد إنتاج عمل أجمل أو أعمق.</td></tr></table>
+    <div class="write-label">ملاحظات الطالب قبل البدء</div>
+    ${answerLines(4)}
     <div class="page-num">2</div>
   </section>`;
 }
@@ -53,20 +215,23 @@ function intro(w) {
 function goals(w) {
   return `
   <section class="page workbook-page">
-    <div class="page-header"><h2>الأهداف وخريطة المهارات</h2><span class="unit-label">${w.level}</span></div>
+    <div class="page-header"><h2>${icon("target")} الأهداف وخريطة المهارات</h2><span class="unit-label">${w.level}</span></div>
     <ul class="objectives">${w.goals.map((g) => `<li>${esc(g)}</li>`).join("")}</ul>
     <h3 class="section-title">قبل أن تبدأ</h3>
     <div class="question-box"><h4>اختبار ذاتي قصير</h4><ol>${w.precheck.map((q) => `<li>${esc(q)} ${answerLines(1)}</li>`).join("")}</ol></div>
     <div class="creative-box"><div class="creative-title">دفتر المتعلم المبدع</div><p>خصص آخر سطر في كل صفحة لفكرة صغيرة: اختصار تعلمته، خطأ صححته، أو سؤال تريد أن تسأله في الحصة القادمة.</p></div>
+    <div class="write-label">هدفي الشخصي في هذا الجزء</div>
+    ${answerLines(4)}
     <div class="page-num">3</div>
   </section>`;
 }
 
 function toc(w) {
-  const lines = w.lessons.map((l, i) => `<div class="toc-item"><span class="toc-unit">${i + 1}. ${esc(l.title)}</span><span class="toc-page">${i + 5}</span></div>`).join("");
+  const tocIcons = ["monitor", "folder", "pen", "presentation", "table", "cloud", "lock", "bot"];
+  const lines = w.lessons.map((l, i) => `<div class="toc-item"><span class="toc-unit">${icon(tocIcons[i % tocIcons.length])}${i + 1}. ${esc(l.title)}</span><span class="toc-page">${i + 5}</span></div>`).join("");
   return `
   <section class="page workbook-page">
-    <div class="page-header"><h2>الفهرس</h2><span class="unit-label">30 صفحة</span></div>
+    <div class="page-header"><h2>${icon("list")} الفهرس</h2><span class="unit-label">30 صفحة</span></div>
     <div class="toc-compact">${lines}</div>
     <div class="toc-item"><span class="toc-unit">مختبر المهارات ومهام المبدعين</span><span class="toc-page">27-28</span></div>
     <div class="toc-item"><span class="toc-unit">المشروع النهائي</span><span class="toc-page">29</span></div>
@@ -82,24 +247,26 @@ function lessonPage(l, i) {
     : "";
   return `
   <section class="page workbook-page lesson-page">
-    <div class="page-header"><h2>${esc(l.title)}</h2><span class="unit-label">درس ${i + 1}</span></div>
-    <div class="lesson-goal">هدف الدرس: ${esc(l.goal)}</div>
+    <div class="page-header"><h2>${icon("book")} ${esc(l.title)}</h2><span class="unit-label">درس ${i + 1}</span></div>
+    <div class="lesson-goal">${icon("target")} هدف الدرس: ${esc(l.goal)}</div>
     ${terms(l.terms)}
+    ${appBadges(l)}
+    ${visualForLesson(l, i)}
     <p class="lesson-text">${esc(l.explain)}</p>
     <div class="two-col tight-cols">
       <div>
-        <h3 class="section-title">خطوات التطبيق</h3>
+        <h3 class="section-title">${icon("list")} خطوات التطبيق</h3>
         <ol class="steps compact-steps">${l.steps.map((s) => `<li>${esc(s)}</li>`).join("")}</ol>
       </div>
       <div>
-        <div class="activity-box"><div class="activity-title">تدريب سريع</div><p>${esc(l.task)}</p></div>
+        <div class="activity-box"><div class="activity-title">${icon("pen")} تدريب سريع</div><p>${esc(l.task)}</p></div>
         <div class="note-box">${esc(l.tip)}</div>
       </div>
     </div>
     <div class="write-label">مكان الإجابة أو الملاحظات</div>
-    ${answerLines(l.lines || 5)}
+    ${practiceArea(l, i)}
     ${creative}
-    <div class="question-box mini-question"><h4>تحقق من فهمك</h4><ol>${l.questions.map((q) => `<li>${esc(q)}</li>`).join("")}</ol></div>
+    <div class="question-box mini-question"><h4>${icon("brain")} تحقق من فهمك</h4><ol>${l.questions.map((q) => `<li>${esc(q)}</li>`).join("")}</ol></div>
     <div class="page-num">${i + 5}</div>
   </section>`;
 }
@@ -108,15 +275,17 @@ function labPage(w, n, pageNo) {
   const lab = w.labs[n - 1];
   return `
   <section class="page workbook-page">
-    <div class="page-header"><h2>${esc(lab.title)}</h2><span class="unit-label">مختبر مهارات ${n}</span></div>
+    <div class="page-header"><h2>${icon("flask")} ${esc(lab.title)}</h2><span class="unit-label">مختبر مهارات ${n}</span></div>
     <p>${esc(lab.brief)}</p>
     <div class="cards-grid cards-grid-2">
       <div class="card"><h5>المطلوب</h5><p>${esc(lab.required)}</p></div>
       <div class="card"><h5>الناتج النهائي</h5><p>${esc(lab.output)}</p></div>
     </div>
-    <h3 class="section-title">قائمة التنفيذ</h3>
+    <h3 class="section-title">${icon("clipboard")} قائمة التنفيذ</h3>
     <table class="assessment-table"><tr><th>البند</th><th>تم</th><th>ملاحظة</th></tr>${lab.checks.map((c) => `<tr><td>${esc(c)}</td><td class="check-cell">□</td><td>${answerLines(1)}</td></tr>`).join("")}</table>
     <div class="creative-box"><div class="creative-title">توسعة للمبدعين</div><p>${esc(lab.creative)}</p>${answerLines(3)}</div>
+    <div class="write-label">ماذا تعلمت من المختبر؟</div>
+    ${answerLines(3)}
     <div class="page-num">${pageNo}</div>
   </section>`;
 }
@@ -124,7 +293,7 @@ function labPage(w, n, pageNo) {
 function projectPage(w) {
   return `
   <section class="page workbook-page">
-    <div class="page-header"><h2>المشروع النهائي</h2><span class="unit-label">${w.short}</span></div>
+    <div class="page-header"><h2>${icon("presentation")} المشروع النهائي</h2><span class="unit-label">${w.short}</span></div>
     <div class="unit-big-header"><div class="unit-number">مشروع ختامي</div><div class="unit-title">${esc(w.project.title)}</div><div class="unit-desc">${esc(w.project.desc)}</div></div>
     <div class="timeline">${w.project.steps.map((s, i) => `<div class="timeline-item"><div class="tl-label">مرحلة ${i + 1}</div><div class="tl-desc">${esc(s)}</div></div>`).join("")}</div>
     <table class="rubric-table"><tr><th>المعيار</th><th>ممتاز</th><th>جيد</th><th>يحتاج تحسين</th></tr>${w.project.rubric.map((r) => `<tr><td>${esc(r)}</td><td>دقيق ومنظم</td><td>مقبول مع نقص بسيط</td><td>يحتاج مراجعة</td></tr>`).join("")}</table>
@@ -136,8 +305,12 @@ function projectPage(w) {
 function closing(w) {
   return `
   <section class="page workbook-page">
-    <div class="page-header"><h2>تقييم ذاتي وخاتمة</h2><span class="unit-label">صفحة 30</span></div>
+    <div class="page-header"><h2>${icon("clipboard")} تقييم ذاتي وخاتمة</h2><span class="unit-label">صفحة 30</span></div>
     <table class="assessment-table"><tr><th>المهارة</th><th>أتقنها</th><th>أحتاج تدريب</th><th>ملاحظتي</th></tr>${w.self.map((s) => `<tr><td>${esc(s)}</td><td class="check-cell">□</td><td class="check-cell">□</td><td>${answerLines(1)}</td></tr>`).join("")}</table>
+    <div class="teacher-notes">
+      <div><strong>ملاحظة الطالب</strong>${answerLines(2)}</div>
+      <div><strong>ملاحظة المعلم</strong>${answerLines(2)}</div>
+    </div>
     <div class="certificate-section"><h3>شهادة إنجاز</h3><p>أتم الطالب/ة متطلبات ${esc(w.title)} في مهارات الحاسوب.</p><div class="cert-line"></div><div class="signature-row"><div class="sig-box"><div class="sig-line"></div>اسم الطالب</div><div class="sig-box"><div class="sig-line"></div>توقيع المعلم</div></div></div>
     <div class="info-box"><h4>رسالة أخيرة</h4><p>${esc(w.close)}</p></div>
     <div class="page-num">30</div>
@@ -149,12 +322,34 @@ function workbook(w) {
   return `<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>${esc(w.title)} - دوسية الحاسوب</title><link rel="stylesheet" href="../shared/print.css"><link rel="stylesheet" href="../shared/components.css"><link rel="stylesheet" href="style.css"></head><body>${pages.join("\n")}</body></html>`;
 }
 
+function themeCss(w) {
+  return `:root{--primary:${w.primary};--primary-light:${w.light};--primary-very-light:${w.pale};--primary-dark:${w.dark};}
+.cover{background:linear-gradient(160deg,${w.dark} 0%,${w.primary} 52%,${w.light} 100%) !important;color:#fff;}
+.page-header{background:linear-gradient(135deg,${w.primary},${w.light});}
+.page-num{background:${w.pale};color:${w.primary};border:1px solid ${w.light};}
+.info-box{background:${w.pale};border-right-color:${w.primary};}
+.info-box h4,.section-title,.card h5,.unit-big-header .unit-title{color:${w.dark};}
+.section-title{border-bottom-color:${w.light};}
+.lesson-goal{background:${w.pale};border-right-color:${w.primary};color:${w.dark};}
+.card{border-top-color:${w.primary};}
+.styled-table th,.assessment-table th,.rubric-table th{background:${w.primary};}
+.steps li::before,.toc-page,.num-badge{background:${w.primary};}
+.key-term{background:${w.pale};color:${w.dark};border:1px solid ${w.light};}
+.highlight-item,.mini-card{background:${w.pale};color:${w.dark};}
+.certificate-section{border-color:${w.primary};}
+.certificate-section h3{color:${w.primary};}`;
+}
+
 function L(title, goal, explain, termsList, steps, task, questions, tip, creative, lines = 5) {
   return { title, goal, explain, terms: termsList, steps, task, questions, tip, creative, lines };
 }
 
 const beginner = {
-  folder: "grade-7",
+  folder: "part-1-beginner",
+  primary: "#1565C0",
+  light: "#42A5F5",
+  pale: "#E3F2FD",
+  dark: "#0D47A1",
   partNo: "1",
   title: "الجزء الأول: مبتدئ",
   short: "مبتدئ",
@@ -197,7 +392,11 @@ const beginner = {
 };
 
 const intermediate = {
-  folder: "grade-8",
+  folder: "part-2-intermediate",
+  primary: "#2E7D32",
+  light: "#66BB6A",
+  pale: "#E8F5E9",
+  dark: "#1B5E20",
   partNo: "2",
   title: "الجزء الثاني: متوسط",
   short: "متوسط",
@@ -240,7 +439,11 @@ const intermediate = {
 };
 
 const advanced = {
-  folder: "grade-9",
+  folder: "part-3-advanced",
+  primary: "#4527A0",
+  light: "#7C4DFF",
+  pale: "#EDE7F6",
+  dark: "#311B92",
   partNo: "3",
   title: "الجزء الثالث: متقدم",
   short: "متقدم",
@@ -283,7 +486,9 @@ const advanced = {
 };
 
 for (const w of [beginner, intermediate, advanced]) {
+  fs.mkdirSync(path.join(root, w.folder), { recursive: true });
   fs.writeFileSync(path.join(root, w.folder, "index.html"), workbook(w), "utf8");
+  fs.writeFileSync(path.join(root, w.folder, "style.css"), themeCss(w), "utf8");
 }
 
 fs.writeFileSync(path.join(root, "README.md"), `# computer-workbooks-pro
@@ -298,9 +503,9 @@ fs.writeFileSync(path.join(root, "README.md"), `# computer-workbooks-pro
 
 ## فتح ملفات HTML
 
-- grade-7/index.html: الجزء الأول - مبتدئ
-- grade-8/index.html: الجزء الثاني - متوسط
-- grade-9/index.html: الجزء الثالث - متقدم
+- part-1-beginner/index.html: الجزء الأول - مبتدئ
+- part-2-intermediate/index.html: الجزء الثاني - متوسط
+- part-3-advanced/index.html: الجزء الثالث - متقدم
 
 ## توليد PDF
 
@@ -311,9 +516,9 @@ node convert-to-pdf.js
 
 ## الملفات النهائية
 
-- grade-7/grade-7.pdf
-- grade-8/grade-8.pdf
-- grade-9/grade-9.pdf
+- part-1-beginner.pdf
+- part-2-intermediate.pdf
+- part-3-advanced.pdf
 
 ## ملاحظات للطباعة
 
