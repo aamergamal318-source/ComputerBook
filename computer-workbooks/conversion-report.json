@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-06-17T14:16:04.907Z",
+  "parts": [
+    {
+      "label": "الجزء الأول: مبتدئ",
+      "outputName": "part-1-beginner.pdf",
+      "htmlPages": 30,
+      "pdfPages": 30,
+      "sizeKB": 3235,
+      "path": "C:\\Users\\aamer\\OneDrive\\שולחן העבודה\\projects\\ComputerBook\\computer-workbooks\\part-1-beginner\\part-1-beginner.pdf",
+      "ok": true
+    },
+    {
+      "label": "الجزء الثاني: متوسط",
+      "outputName": "part-2-intermediate.pdf",
+      "htmlPages": 30,
+      "pdfPages": 30,
+      "sizeKB": 3465,
+      "path": "C:\\Users\\aamer\\OneDrive\\שולחן העבודה\\projects\\ComputerBook\\computer-workbooks\\part-2-intermediate\\part-2-intermediate.pdf",
+      "ok": true
+    },
+    {
+      "label": "الجزء الثالث: متقدم",
+      "outputName": "part-3-advanced.pdf",
+      "htmlPages": 30,
+      "pdfPages": 30,
+      "sizeKB": 3035,
+      "path": "C:\\Users\\aamer\\OneDrive\\שולחן העבודה\\projects\\ComputerBook\\computer-workbooks\\part-3-advanced\\part-3-advanced.pdf",
+      "ok": true
+    }
+  ],
+  "allOk": true
+}
