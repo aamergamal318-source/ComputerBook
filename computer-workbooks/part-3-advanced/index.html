@@ -11,13 +11,19 @@
 <!-- ==================== PAGE 1: COVER ==================== -->
 <section class="page cover-page">
 
+  <div class="cover-circle-1"></div>
+  <div class="cover-circle-2"></div>
+  <div class="cover-circle-3"></div>
+
   <div class="cover-top-band">
-    <div class="cover-icons-row">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2m18 0h-2"/></svg>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/><circle cx="12" cy="12" r="10"/></svg>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+    <div style="display:flex;align-items:center;gap:12px;">
+      <div style="width:42px;height:42px;background:rgba(255,255,255,0.15);border:2px solid rgba(255,255,255,0.35);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+      </div>
+      <div>
+        <div style="font-size:14px;font-weight:900;color:white;line-height:1.3;">مدرسة حورة الشاملة</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.75);margin-top:1px;">قسم تقنية المعلومات</div>
+      </div>
     </div>
     <div class="cover-top-band-motto">حلّل · ابتكر · قدّم · قُد</div>
   </div>
@@ -29,111 +35,157 @@
     <h2 class="cover-subtitle">الجزء الثالث: متقدم</h2>
     <div class="cover-scene">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 160" width="340" height="143">
-        <!-- AI/data brain graphic -->
-        <circle cx="190" cy="80" r="55" fill="none" stroke="var(--c1)" stroke-width="2.5"/>
-        <circle cx="190" cy="80" r="38" fill="none" stroke="var(--c-mid)" stroke-width="1.5"/>
-        <circle cx="190" cy="80" r="10" fill="var(--c1)" opacity="0.8"/>
+        <!-- AI brain / circuit rings -->
+        <circle cx="190" cy="80" r="55" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.7)" stroke-width="2"/>
+        <circle cx="190" cy="80" r="38" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-dasharray="5,3"/>
+        <circle cx="190" cy="80" r="10" fill="rgba(255,255,255,0.75)"/>
         <!-- Circuit lines -->
-        <line x1="135" y1="80" x2="180" y2="80" stroke="var(--c1)" stroke-width="1.5"/>
-        <line x1="200" y1="80" x2="245" y2="80" stroke="var(--c1)" stroke-width="1.5"/>
-        <line x1="190" y1="25" x2="190" y2="42" stroke="var(--c1)" stroke-width="1.5"/>
-        <line x1="190" y1="118" x2="190" y2="135" stroke="var(--c1)" stroke-width="1.5"/>
-        <line x1="151" y1="41" x2="162" y2="52" stroke="var(--c2)" stroke-width="1.5"/>
-        <line x1="218" y1="108" x2="229" y2="119" stroke="var(--c2)" stroke-width="1.5"/>
-        <line x1="229" y1="41" x2="218" y2="52" stroke="var(--c2)" stroke-width="1.5"/>
-        <line x1="162" y1="108" x2="151" y2="119" stroke="var(--c2)" stroke-width="1.5"/>
-        <!-- Nodes -->
-        <circle cx="135" cy="80" r="5" fill="var(--c1)" opacity="0.7"/>
-        <circle cx="245" cy="80" r="5" fill="var(--c1)" opacity="0.7"/>
-        <circle cx="190" cy="25" r="5" fill="var(--c2)" opacity="0.7"/>
-        <circle cx="190" cy="135" r="5" fill="var(--c2)" opacity="0.7"/>
-        <!-- Spreadsheet side -->
-        <rect x="20" y="50" width="85" height="70" rx="5" fill="none" stroke="var(--c1)" stroke-width="1.5"/>
-        <rect x="20" y="50" width="85" height="16" rx="5" fill="var(--c1)" opacity="0.7"/>
-        <line x1="20" y1="82" x2="105" y2="82" stroke="var(--c-mid)" stroke-width="1"/>
-        <line x1="20" y1="98" x2="105" y2="98" stroke="var(--c-mid)" stroke-width="1"/>
-        <line x1="62" y1="66" x2="62" y2="120" stroke="var(--c-mid)" stroke-width="1"/>
-        <!-- Chart side -->
-        <rect x="275" y="60" width="12" height="60" rx="2" fill="var(--c1)" opacity="0.8"/>
-        <rect x="294" y="40" width="12" height="80" rx="2" fill="var(--c2)" opacity="0.65"/>
-        <rect x="313" y="50" width="12" height="70" rx="2" fill="var(--c1)" opacity="0.5"/>
-        <line x1="268" y1="120" x2="335" y2="120" stroke="var(--c1)" stroke-width="1.5"/>
+        <line x1="135" y1="80" x2="180" y2="80" stroke="rgba(255,255,255,0.7)" stroke-width="1.5"/>
+        <line x1="200" y1="80" x2="245" y2="80" stroke="rgba(255,255,255,0.7)" stroke-width="1.5"/>
+        <line x1="190" y1="25" x2="190" y2="42" stroke="rgba(255,255,255,0.7)" stroke-width="1.5"/>
+        <line x1="190" y1="118" x2="190" y2="135" stroke="rgba(255,255,255,0.7)" stroke-width="1.5"/>
+        <line x1="151" y1="41" x2="162" y2="52" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+        <line x1="218" y1="108" x2="229" y2="119" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+        <line x1="229" y1="41" x2="218" y2="52" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+        <line x1="162" y1="108" x2="151" y2="119" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+        <!-- Outer nodes -->
+        <circle cx="135" cy="80" r="5" fill="rgba(255,255,255,0.7)"/>
+        <circle cx="245" cy="80" r="5" fill="rgba(255,255,255,0.7)"/>
+        <circle cx="190" cy="25" r="5" fill="rgba(255,255,255,0.55)"/>
+        <circle cx="190" cy="135" r="5" fill="rgba(255,255,255,0.55)"/>
+        <!-- Spreadsheet (left) -->
+        <rect x="20" y="50" width="85" height="70" rx="5" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.65)" stroke-width="1.5"/>
+        <rect x="20" y="50" width="85" height="16" rx="5" fill="rgba(255,255,255,0.35)"/>
+        <line x1="20" y1="82" x2="105" y2="82" stroke="rgba(255,255,255,0.35)" stroke-width="1"/>
+        <line x1="20" y1="98" x2="105" y2="98" stroke="rgba(255,255,255,0.35)" stroke-width="1"/>
+        <line x1="62" y1="66" x2="62" y2="120" stroke="rgba(255,255,255,0.35)" stroke-width="1"/>
+        <!-- Line chart (right) -->
+        <rect x="270" y="55" width="90" height="70" rx="4" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.5)" stroke-width="1"/>
+        <polyline points="278,110 295,85 312,95 329,65 346,75" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="278" cy="110" r="3" fill="rgba(255,255,255,0.8)"/>
+        <circle cx="295" cy="85" r="3" fill="rgba(255,255,255,0.8)"/>
+        <circle cx="312" cy="95" r="3" fill="rgba(255,255,255,0.8)"/>
+        <circle cx="329" cy="65" r="3" fill="rgba(255,255,255,0.8)"/>
+        <circle cx="346" cy="75" r="3" fill="rgba(255,255,255,0.8)"/>
       </svg>
     </div>
-    <p class="cover-tagline">30 صفحة تدريبية قابلة للطباعة</p>
+    <p class="cover-tagline">31 صفحة تدريبية قابلة للطباعة</p>
     <div class="cover-features">
       <span class="cover-feature-pill">ذكاء اصطناعي</span>
       <span class="cover-feature-pill">تحليل بيانات</span>
       <span class="cover-feature-pill">أمن رقمي</span>
       <span class="cover-feature-pill">مشاريع متقدمة</span>
     </div>
+
+    <!-- Student info fields -->
+    <div class="student-info-box">
+      <div class="student-info-title">بيانات الطالب / الطالبة</div>
+      <div class="student-info-grid">
+        <div class="student-info-field">
+          <span class="student-info-label">اسم الطالب/ة</span>
+          <div class="student-info-line"></div>
+        </div>
+        <div class="student-info-field">
+          <span class="student-info-label">الصف</span>
+          <div class="student-info-line"></div>
+        </div>
+        <div class="student-info-field">
+          <span class="student-info-label">معلم/ة الموضوع</span>
+          <div class="student-info-line"></div>
+        </div>
+        <div class="student-info-field">
+          <span class="student-info-label">السنة الدراسية</span>
+          <div class="student-info-line"></div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="cover-footer-band">
     <strong>مدرسة حورة الشاملة</strong>
-    <span>إعداد: عامر جمل</span>
+    <span>تجميع وإعداد: عامر جمال</span>
     <span>2025 – 2026</span>
   </div>
 
 </section>
 
-<!-- ==================== PAGE 2: HOW TO USE + TRADEMARK ==================== -->
+<!-- ==================== PAGE 2: LEGAL / TRADEMARK NOTICE ==================== -->
 <section class="page">
-  <div class="page-header">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-    <div>
-      <h1>كيف تستخدم هذه الدوسية؟</h1>
-      <div class="header-sub">دليل الاستخدام والتنبيهات القانونية</div>
+
+  <div style="text-align:center;padding:18px 0 14px;border-bottom:2px solid var(--c-mid);margin-bottom:18px;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--c1)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    <div style="font-size:20px;font-weight:900;color:var(--c1);margin-top:6px;">إشعار تعليمي وحقوق الملكية</div>
+    <div style="font-size:12px;color:#6B7280;margin-top:3px;">دوسية الحاسوب — الجزء الثالث: متقدم</div>
+  </div>
+
+  <div class="info-box" style="margin-bottom:14px;text-align:center;padding:13px 18px;">
+    <div style="font-size:13.5px;font-weight:700;color:var(--c1);margin-bottom:5px;">هذه الدوسية معدّة للأغراض التعليمية فقط</div>
+    <div style="font-size:12.5px;color:#374151;line-height:1.8;">المحتوى الوارد في هذه الدوسية مخصص للتعليم والتدريب داخل بيئة الفصل الدراسي فقط، ولا يجوز نسخه أو توزيعه لأغراض تجارية.</div>
+  </div>
+
+  <div class="legal-box" style="margin-bottom:14px;">
+    <div class="box-title" style="font-size:13px;color:#374151;text-align:center;justify-content:center;padding-bottom:8px;border-bottom:1px solid #E5E7EB;margin-bottom:10px;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+      العلامات التجارية المذكورة في هذه الدوسية
     </div>
-    <span class="header-badge">صفحة 2</span>
-  </div>
-
-  <div class="info-box">
-    <div class="box-title">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
-      هذه الدوسية مُصمَّمة للمستوى المتقدم
+    <p style="font-size:12px;color:#4B5563;line-height:1.8;margin-bottom:10px;">الأسماء أدناه مذكورة في هذه الدوسية للأغراض التعليمية فقط، وتعود ملكيتها لأصحابها. <strong>لا تستخدم هذه الدوسية شعارات بصرية لأي شركة</strong>، ولا يدل ذكر الأسماء على وجود رعاية أو اعتماد رسمي.</p>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:5px 6px;margin-bottom:10px;">
+      <span style="font-size:11px;color:#1E3A5F;background:#EFF6FF;border:1px solid #BFDBFE;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Google</span>
+      <span style="font-size:11px;color:#1E3A5F;background:#EFF6FF;border:1px solid #BFDBFE;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Google Drive</span>
+      <span style="font-size:11px;color:#1E3A5F;background:#EFF6FF;border:1px solid #BFDBFE;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Gmail</span>
+      <span style="font-size:11px;color:#1E3A5F;background:#EFF6FF;border:1px solid #BFDBFE;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Google Docs</span>
+      <span style="font-size:11px;color:#1E3A5F;background:#EFF6FF;border:1px solid #BFDBFE;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Google Sheets</span>
+      <span style="font-size:11px;color:#1E3A5F;background:#EFF6FF;border:1px solid #BFDBFE;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Google Slides</span>
+      <span style="font-size:11px;color:#1E3A5F;background:#EFF6FF;border:1px solid #BFDBFE;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Google Calendar</span>
+      <span style="font-size:11px;color:#1E3A5F;background:#EFF6FF;border:1px solid #BFDBFE;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Google Forms</span>
+      <span style="font-size:11px;color:#1E40AF;background:#EFF6FF;border:1px solid #93C5FD;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Microsoft Word</span>
+      <span style="font-size:11px;color:#1E40AF;background:#EFF6FF;border:1px solid #93C5FD;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Microsoft Excel</span>
+      <span style="font-size:11px;color:#1E40AF;background:#EFF6FF;border:1px solid #93C5FD;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Microsoft PowerPoint</span>
+      <span style="font-size:11px;color:#1E40AF;background:#EFF6FF;border:1px solid #93C5FD;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Windows</span>
     </div>
-    ستجد في هذه الدوسية تدريبات وأنشطة عملية متقدمة تغطي إدارة المشاريع الرقمية، ودوال البيانات، والذكاء الاصطناعي، وأخلاقيات التقنية. كل صفحة مبنية على ما سبقها.
+    <p style="font-size:11px;color:#6B7280;margin:0;line-height:1.7;text-align:center;border-top:1px solid #E5E7EB;padding-top:7px;">
+      جميع الأسماء المذكورة علامات تجارية مسجّلة لأصحابها · ™ All trademarks are property of their respective owners
+    </p>
   </div>
 
-  <div class="section-title">
-    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>
-    تعليمات الاستخدام
-  </div>
-
-  <div class="cards-grid">
+  <div class="section-title">دليل استخدام الدوسية</div>
+  <div class="cards-grid" style="margin-bottom:10px;">
     <div class="card">
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>
-      <h3>اكتب بوضوح</h3>
-      <p>استخدم قلماً أو قلم حبر في مربعات الإجابة. اكتب بخط مقروء ومنظّم.</p>
+      <div style="display:flex;align-items:center;gap:6px;font-weight:700;color:var(--c1);margin-bottom:4px;font-size:12.5px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>
+        اكتب بوضوح
+      </div>
+      <p style="font-size:11.5px;color:#374151;margin:0;">أجب في مساحات الإجابة بقلم واضح ومقروء.</p>
     </div>
-    <div class="card green">
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-      <h3>ضع إشارة ✓</h3>
-      <p>في قوائم التحقق، ضع علامة في المربع بعد إتمام كل مهمة.</p>
+    <div class="card">
+      <div style="display:flex;align-items:center;gap:6px;font-weight:700;color:var(--c1);margin-bottom:4px;font-size:12.5px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        ضع إشارة ✓
+      </div>
+      <p style="font-size:11.5px;color:#374151;margin:0;">في قوائم التحقق، ضع علامة بعد إتمام كل مهمة.</p>
     </div>
-    <div class="card accent">
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
-      <h3>مهمة للمبدعين</h3>
-      <p>الصناديق البنفسجية هي تحديات إضافية للطلاب المتميزين.</p>
+    <div class="card" style="border-color:#DDD6FE;background:#FAF5FF;">
+      <div style="display:flex;align-items:center;gap:6px;font-weight:700;color:#6D28D9;margin-bottom:4px;font-size:12.5px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+        المبدعون
+      </div>
+      <p style="font-size:11.5px;color:#374151;margin:0;">الصناديق البنفسجية: تحديات إبداعية للمتميزين.</p>
     </div>
-    <div class="card purple">
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-      <h3>احترم المصادر</h3>
-      <p>عند استخدام الذكاء الاصطناعي أو الإنترنت، اذكر مصادرك دائماً.</p>
+    <div class="card" style="border-color:#FED7AA;background:#FFF7ED;">
+      <div style="display:flex;align-items:center;gap:6px;font-weight:700;color:#C2410C;margin-bottom:4px;font-size:12.5px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        احترم المصادر
+      </div>
+      <p style="font-size:11.5px;color:#374151;margin:0;">اذكر مصادرك عند الاقتباس أو الاستعانة بـ AI.</p>
     </div>
-  </div>
-
-  <div class="legal-box" style="margin-top:14px;">
-    <div class="box-title">تنبيه تعليمي وحقوق العلامات التجارية</div>
-    <p>هذه الدوسية معدّة لأغراض التعليم والتدريب فقط.</p>
-    <p>جميع أسماء وشعارات Google وGoogle Drive وGmail وGoogle Docs وGoogle Sheets وGoogle Forms وGoogle Calendar وMicrosoft Word وMicrosoft Excel وMicrosoft PowerPoint وMicrosoft 365 وأي شعارات أو أسماء تجارية أخرى مذكورة أو مستخدمة في هذه الدوسية هي علامات تجارية مملوكة لأصحابها.</p>
-    <p>استخدام هذه الأسماء هنا هو لأغراض تعليمية فقط، ولا يدل على وجود رعاية أو اعتماد أو شراكة رسمية من الشركات المالكة لها.</p>
   </div>
 
   <div class="note-box">
-    <div class="box-title">ملاحظة للمعلم</div>
-    يمكن طباعة هذه الدوسية بالأبيض والأسود أو الألوان الكاملة. يُنصح بالألوان للحصول على أفضل تجربة بصرية.
+    <div class="box-title">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+      ملاحظة للمعلم
+    </div>
+    يمكن طباعة هذه الدوسية بالأبيض والأسود أو الألوان الكاملة. تصميم الصفحات الداخلية مُحسَّن للطباعة أحادية اللون.
   </div>
 
   <div class="page-num">2</div>
@@ -172,16 +224,17 @@
   <div class="toc-item sub"><span>إدارة فريق رقمي</span><span class="toc-dots"></span><span class="toc-page">16</span></div>
   <div class="toc-item sub"><span>Gmail في إدارة المشروع</span><span class="toc-dots"></span><span class="toc-page">17</span></div>
   <div class="toc-item sub"><span>Google Calendar للمواعيد والمشاريع</span><span class="toc-dots"></span><span class="toc-page">18</span></div>
+  <div class="toc-item sub" style="background:#FFFBEB;border-right:3px solid #F59E0B;padding-right:14px;"><span>⭐ مراجعة سريعة — الوحدات 1–4</span><span class="toc-dots"></span><span class="toc-page" style="background:#FEF3C7;color:#92400E;">19</span></div>
 
-  <div class="toc-item unit"><span>الوحدة الخامسة: الذكاء الاصطناعي وأخلاقياته</span><span class="toc-dots"></span><span class="toc-page">19</span></div>
-  <div class="toc-item sub"><span>الذكاء الاصطناعي للتلخيص والفهم</span><span class="toc-dots"></span><span class="toc-page">19</span></div>
-  <div class="toc-item sub"><span>الذكاء الاصطناعي لتوليد الأفكار</span><span class="toc-dots"></span><span class="toc-page">20</span></div>
-  <div class="toc-item sub"><span>أخلاقيات الذكاء الاصطناعي</span><span class="toc-dots"></span><span class="toc-page">21</span></div>
+  <div class="toc-item unit"><span>الوحدة الخامسة: الذكاء الاصطناعي وأخلاقياته</span><span class="toc-dots"></span><span class="toc-page">20</span></div>
+  <div class="toc-item sub"><span>الذكاء الاصطناعي للتلخيص والفهم</span><span class="toc-dots"></span><span class="toc-page">20</span></div>
+  <div class="toc-item sub"><span>الذكاء الاصطناعي لتوليد الأفكار</span><span class="toc-dots"></span><span class="toc-page">21</span></div>
+  <div class="toc-item sub"><span>أخلاقيات الذكاء الاصطناعي</span><span class="toc-dots"></span><span class="toc-page">22</span></div>
 
-  <div class="toc-item unit"><span>الوحدة السادسة: التقييم والمشروع النهائي</span><span class="toc-dots"></span><span class="toc-page">22</span></div>
-  <div class="toc-item sub"><span>مراجعة المشروع المتقدم</span><span class="toc-dots"></span><span class="toc-page">22</span></div>
-  <div class="toc-item sub"><span>عرض النتائج بثقة</span><span class="toc-dots"></span><span class="toc-page">23</span></div>
-  <div class="toc-item sub"><span>ملف التسليم النهائي — مختبرات — المشروع النهائي — تقييم ذاتي — شهادة — مسرد</span><span class="toc-dots"></span><span class="toc-page">24</span></div>
+  <div class="toc-item unit"><span>الوحدة السادسة: التقييم والمشروع النهائي</span><span class="toc-dots"></span><span class="toc-page">23</span></div>
+  <div class="toc-item sub"><span>مراجعة المشروع المتقدم</span><span class="toc-dots"></span><span class="toc-page">23</span></div>
+  <div class="toc-item sub"><span>عرض النتائج بثقة</span><span class="toc-dots"></span><span class="toc-page">24</span></div>
+  <div class="toc-item sub"><span>ملف التسليم النهائي — مختبرات — المشروع النهائي — تقييم ذاتي — شهادة — مسرد</span><span class="toc-dots"></span><span class="toc-page">25</span></div>
 
   <div class="page-num">3</div>
 </section>
@@ -699,6 +752,14 @@
       <div class="header-sub">قواعد بناء جداول بيانات احترافية</div>
     </div>
     <span class="header-badge">صفحة 10</span>
+  </div>
+
+  <div class="recall-box">
+    <div class="box-title">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+      تذكّر من الجزء الثاني؟
+    </div>
+    في الجزء الثاني تعلّمت دوال <strong>SUM وAVERAGE</strong> وكيفية تنظيم خلايا البيانات. هنا في الجزء الثالث ستتعلم دوال أقوى (<strong>IF، COUNTIF</strong>) وكيفية ربط Sheets بأدوات الذكاء الاصطناعي لتحليل أعمق.
   </div>
 
   <div class="section-title">
@@ -1375,7 +1436,108 @@
   <div class="page-num">18</div>
 </section>
 
-<!-- ==================== PAGE 19: الذكاء الاصطناعي للتلخيص والفهم ==================== -->
+<!-- ==================== PAGE 19: مراجعة سريعة + جسر البيانات والذكاء الاصطناعي ==================== -->
+<section class="page">
+  <div class="formative-header">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+    مراجعة سريعة — الوحدات 1 إلى 4
+    <span style="margin-right:auto;font-size:12px;font-weight:400;opacity:0.85;">البيانات · الدوال · التعاون الرقمي</span>
+  </div>
+  <div class="formative-body" style="margin-bottom:9px;">
+    <p style="font-size:12px;color:#6B7280;margin-bottom:7px;">اختر الإجابة الصحيحة.</p>
+
+    <div class="q-row">
+      <div class="q-num">1</div>
+      <div><div>ما نتيجة الصيغة <span dir="ltr">=IF(A1>10,"ناجح","راسب")</span> إذا كانت A1=8؟</div>
+        <div class="q-choices">
+          <span class="q-choice"><input type="radio" disabled> أ) ناجح</span>
+          <span class="q-choice"><input type="radio" disabled> ب) راسب</span>
+          <span class="q-choice"><input type="radio" disabled> ج) خطأ (Error)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="q-row">
+      <div class="q-num">2</div>
+      <div><div>ما الدالة التي تحسب عدد الخلايا التي تحقق شرطاً معيناً؟</div>
+        <div class="q-choices">
+          <span class="q-choice"><input type="radio" disabled> أ) <span dir="ltr">=COUNT()</span></span>
+          <span class="q-choice"><input type="radio" disabled> ب) <span dir="ltr">=COUNTIF()</span></span>
+          <span class="q-choice"><input type="radio" disabled> ج) <span dir="ltr">=SUM()</span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="q-row">
+      <div class="q-num">3</div>
+      <div><div>أيّ نوع من الرسوم البيانية يُلائم مقارنة الكميات بين فئات مختلفة؟</div>
+        <div class="q-choices">
+          <span class="q-choice"><input type="radio" disabled> أ) الرسم الخطي (Line Chart)</span>
+          <span class="q-choice"><input type="radio" disabled> ب) الرسم الدائري (Pie Chart)</span>
+          <span class="q-choice"><input type="radio" disabled> ج) الرسم العمودي (Bar Chart)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="q-row">
+      <div class="q-num">4</div>
+      <div><div>ما فائدة ربط Google Forms بـ Google Sheets؟</div>
+        <div class="q-choices">
+          <span class="q-choice"><input type="radio" disabled> أ) لتصميم أشكال جميلة</span>
+          <span class="q-choice"><input type="radio" disabled> ب) لتسجيل إجابات الاستبيان تلقائياً في جدول</span>
+          <span class="q-choice"><input type="radio" disabled> ج) لإرسال بريد إلكتروني</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="q-row">
+      <div class="q-num">5</div>
+      <div><div>أيّ مما يلي مثال على تعاون رقمي حقيقي؟</div>
+        <div class="q-choices">
+          <span class="q-choice"><input type="radio" disabled> أ) حفظ ملف على الحاسوب فقط</span>
+          <span class="q-choice"><input type="radio" disabled> ب) مشاركة مستند Drive وتعديله مع الفريق في وقت واحد</span>
+          <span class="q-choice"><input type="radio" disabled> ج) طباعة التقرير ومشاركته ورقياً</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="q-row" style="border-bottom:none;">
+      <div class="q-num">6</div>
+      <div><div>ما الفرق الأساسي بين الفرز والتصفية في Sheets؟</div>
+        <div class="q-choices">
+          <span class="q-choice"><input type="radio" disabled> أ) لا فرق بينهما</span>
+          <span class="q-choice"><input type="radio" disabled> ب) الفرز يرتّب البيانات، التصفية تُخفي غير المطلوب</span>
+          <span class="q-choice"><input type="radio" disabled> ج) التصفية تحذف البيانات</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="recall-box" style="margin-bottom:8px;">
+    <div class="box-title">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      الجسر نحو الذكاء الاصطناعي
+    </div>
+    <p style="font-size:12px;margin:0;">الآن بعد أن أتقنت تنظيم البيانات وتحليلها يدوياً، ستتعلم في الوحدة التالية كيف يمكن للذكاء الاصطناعي أن <strong>يُسرّع هذا التحليل</strong> ويُقدّم رؤى أعمق — تماماً مثل ما تعلّمته لكن بقوة آلة!</p>
+  </div>
+
+  <div style="display:flex;gap:10px;align-items:stretch;">
+    <div class="collab-box" style="flex:1;margin-bottom:0;">
+      <div class="box-title">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        نشاط جماعي سريع
+      </div>
+      <p style="font-size:12px;margin:0;">مع مجموعتك: صمِّما استبياناً بسيطاً (3 أسئلة) في Google Forms عن موضوع تهتمون به، ثم اجمعوا الإجابات وحلّلوها في Sheets.</p>
+    </div>
+    <div class="note-box" style="flex:1;margin-bottom:0;">
+      <div class="box-title">مفتاح الإجابات</div>
+      <p style="font-size:11px;color:#374151;direction:ltr;text-align:right;">1-ب  2-ب  3-ج  4-ب  5-ب  6-ب</p>
+    </div>
+  </div>
+  <div class="page-num">19</div>
+</section>
+
+<!-- ==================== PAGE 20: الذكاء الاصطناعي للتلخيص والفهم ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2m18 0h-2M9 12v2m6-2v2"/></svg>
@@ -1383,7 +1545,7 @@
       <h1>الذكاء الاصطناعي للتلخيص والفهم</h1>
       <div class="header-sub">استخدام الذكاء الاصطناعي كأداة تعلّم</div>
     </div>
-    <span class="header-badge">صفحة 19</span>
+    <span class="header-badge">صفحة 20</span>
   </div>
 
   <div class="section-title">
@@ -1434,10 +1596,10 @@
     اطلب من الذكاء الاصطناعي تلخيص فقرة من كتابك المدرسي. ثم لخّصها بنفسك. قارن النتيجتين: أيهما أدق؟ أيهما أبسط؟ اكتب رأيك في مربع الإجابة.
   </div>
 
-  <div class="page-num">19</div>
+  <div class="page-num">20</div>
 </section>
 
-<!-- ==================== PAGE 20: الذكاء الاصطناعي لتوليد الأفكار ==================== -->
+<!-- ==================== PAGE 21: الذكاء الاصطناعي لتوليد الأفكار ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2m18 0h-2M9 12v2m6-2v2"/></svg>
@@ -1445,7 +1607,7 @@
       <h1>الذكاء الاصطناعي لتوليد الأفكار</h1>
       <div class="header-sub">العصف الذهني الذكي — أفكار لا تنتهي</div>
     </div>
-    <span class="header-badge">صفحة 20</span>
+    <span class="header-badge">صفحة 21</span>
   </div>
 
   <div class="info-box">
@@ -1501,11 +1663,11 @@
     </div>
   </div>
 
-  <div class="page-num">20</div>
+  <div class="page-num">21</div>
 </section>
 
 
-<!-- ==================== PAGE 21: أخلاقيات الذكاء الاصطناعي ==================== -->
+<!-- ==================== PAGE 22: أخلاقيات الذكاء الاصطناعي ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
@@ -1513,7 +1675,7 @@
       <h1>أخلاقيات الذكاء الاصطناعي</h1>
       <div class="header-sub">استخدام التقنية بمسؤولية وضمير</div>
     </div>
-    <span class="header-badge">صفحة 21</span>
+    <span class="header-badge">صفحة 22</span>
   </div>
 
   <div class="section-title">
@@ -1596,10 +1758,10 @@
     </div>
   </div>
 
-  <div class="page-num">21</div>
+  <div class="page-num">22</div>
 </section>
 
-<!-- ==================== PAGE 22: مراجعة المشروع المتقدم ==================== -->
+<!-- ==================== PAGE 23: مراجعة المشروع المتقدم ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
@@ -1607,7 +1769,7 @@
       <h1>مراجعة المشروع المتقدم</h1>
       <div class="header-sub">اختبر فهمك لجميع الموضوعات المتقدمة</div>
     </div>
-    <span class="header-badge">صفحة 22</span>
+    <span class="header-badge">صفحة 23</span>
   </div>
 
   <div class="info-box">
@@ -1645,10 +1807,10 @@
   <p style="font-weight:700;font-size:13px;color:var(--c1);">السؤال 10: اذكر ثلاثة أدوار مختلفة في فريق عمل رقمي وما الأداة الأنسب لكل دور.</p>
   <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
 
-  <div class="page-num">22</div>
+  <div class="page-num">23</div>
 </section>
 
-<!-- ==================== PAGE 23: عرض النتائج بثقة ==================== -->
+<!-- ==================== PAGE 24: عرض النتائج بثقة ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
@@ -1656,7 +1818,7 @@
       <h1>عرض النتائج بثقة</h1>
       <div class="header-sub">مهارات التقديم والتواصل الاحترافي</div>
     </div>
-    <span class="header-badge">صفحة 23</span>
+    <span class="header-badge">صفحة 24</span>
   </div>
 
   <div class="section-title">
@@ -1714,10 +1876,10 @@
     </tbody>
   </table>
 
-  <div class="page-num">23</div>
+  <div class="page-num">24</div>
 </section>
 
-<!-- ==================== PAGE 24: ملف التسليم النهائي ==================== -->
+<!-- ==================== PAGE 25: ملف التسليم النهائي ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
@@ -1725,7 +1887,7 @@
       <h1>ملف التسليم النهائي</h1>
       <div class="header-sub">ماذا يجب أن يحتوي مجلد تسليمك؟</div>
     </div>
-    <span class="header-badge">صفحة 24</span>
+    <span class="header-badge">صفحة 25</span>
   </div>
 
   <div class="section-title">
@@ -1775,10 +1937,10 @@
     أنشئ مجلداً رئيسياً باسم المشروع، ثم مجلدات فرعية: (01_التقرير / 02_العرض / 03_البيانات / 04_الصور). النظام يوفر وقتك عند البحث.
   </div>
 
-  <div class="page-num">24</div>
+  <div class="page-num">25</div>
 </section>
 
-<!-- ==================== PAGE 25: مختبر الاستبيان والتحليل ==================== -->
+<!-- ==================== PAGE 26: مختبر الاستبيان والتحليل ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
@@ -1786,7 +1948,7 @@
       <h1>مختبر الاستبيان والتحليل</h1>
       <div class="header-sub">صمّم استبياناً واحترافياً وحلّل نتائجه</div>
     </div>
-    <span class="header-badge">صفحة 25</span>
+    <span class="header-badge">صفحة 26</span>
   </div>
 
   <div class="info-box">
@@ -1832,10 +1994,10 @@
     <div class="answer-line"></div>
   </div>
 
-  <div class="page-num">25</div>
+  <div class="page-num">26</div>
 </section>
 
-<!-- ==================== PAGE 26: مختبر الذكاء الاصطناعي المسؤول ==================== -->
+<!-- ==================== PAGE 27: مختبر الذكاء الاصطناعي المسؤول ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2m18 0h-2M9 12v2m6-2v2"/></svg>
@@ -1843,7 +2005,7 @@
       <h1>مختبر الذكاء الاصطناعي المسؤول</h1>
       <div class="header-sub">استخدم الذكاء الاصطناعي بوعي ومسؤولية</div>
     </div>
-    <span class="header-badge">صفحة 26</span>
+    <span class="header-badge">صفحة 27</span>
   </div>
 
   <div class="info-box">
@@ -1885,10 +2047,10 @@
   <p style="font-size:12.5px;color:#555;">طوّر المحتوى وأضف لمستك الشخصية وأشِر في النهاية أنك استعنت بالذكاء الاصطناعي:</p>
   <div class="answer-box-xl"></div>
 
-  <div class="page-num">26</div>
+  <div class="page-num">27</div>
 </section>
 
-<!-- ==================== PAGE 27: المشروع النهائي ==================== -->
+<!-- ==================== PAGE 28: المشروع النهائي ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
@@ -1896,12 +2058,30 @@
       <h1>المشروع النهائي الشامل</h1>
       <div class="header-sub">وثّق مشروعك من البداية إلى النهاية</div>
     </div>
-    <span class="header-badge">صفحة 27</span>
+    <span class="header-badge">صفحة 28</span>
   </div>
 
   <div class="info-box">
     <div class="box-title">وصف المشروع النهائي</div>
     المشروع النهائي هو تطبيق شامل لكل ما تعلّمته. ستعمل مع فريقك لإنتاج تقرير + عرض تقديمي + تحليل بيانات حول موضوع تختارونه، موثّقاً بالمصادر ومنظّماً بالأدوات الرقمية.
+  </div>
+
+  <div class="recall-box" style="margin-bottom:10px;">
+    <div class="box-title">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+      مشروع تكاملي — يجمع مهارات الأجزاء الثلاثة
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-top:5px;">
+      <div style="background:#EFF6FF;border:1px solid #BFDBFE;border-radius:6px;padding:6px 8px;font-size:11.5px;">
+        <strong style="color:#1D4ED8;">الجزء الأول</strong><br>إدارة الملفات · كتابة التقرير في Docs · البريد الإلكتروني
+      </div>
+      <div style="background:#F0FDF4;border:1px solid #86EFAC;border-radius:6px;padding:6px 8px;font-size:11.5px;">
+        <strong style="color:#15803D;">الجزء الثاني</strong><br>تصميم العرض في Slides · تنظيم البيانات · Google Forms
+      </div>
+      <div style="background:#FAF5FF;border:1px solid #DDD6FE;border-radius:6px;padding:6px 8px;font-size:11.5px;">
+        <strong style="color:#7C3AED;">الجزء الثالث</strong><br>دوال IF · رسوم بيانية · الذكاء الاصطناعي في التحليل
+      </div>
+    </div>
   </div>
 
   <div class="section-title">
@@ -1948,10 +2128,10 @@
     </tbody>
   </table>
 
-  <div class="page-num">27</div>
+  <div class="page-num">28</div>
 </section>
 
-<!-- ==================== PAGE 28: تقييم ذاتي شامل ==================== -->
+<!-- ==================== PAGE 29: تقييم ذاتي شامل ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
@@ -1959,7 +2139,7 @@
       <h1>التقييم الذاتي الشامل</h1>
       <div class="header-sub">قيّم نفسك بصدق في جميع مهارات المستوى المتقدم</div>
     </div>
-    <span class="header-badge">صفحة 28</span>
+    <span class="header-badge">صفحة 29</span>
   </div>
 
   <p style="font-size:12.5px;color:#555;margin-bottom:6px;">ضع علامة في الخانة المناسبة: <span class="badge badge-green">أتقنت</span> <span class="badge badge-blue">أستطيع</span> <span class="badge badge-orange">أحتاج تدريب</span></p>
@@ -2003,10 +2183,10 @@
     </div>
   </div>
 
-  <div class="page-num">28</div>
+  <div class="page-num">29</div>
 </section>
 
-<!-- ==================== PAGE 29: شهادة الإنجاز ==================== -->
+<!-- ==================== PAGE 30: شهادة الإنجاز ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
@@ -2014,7 +2194,7 @@
       <h1>شهادة الإنجاز</h1>
       <div class="header-sub">أثبتّ أنك من بين أصحاب المستوى المتقدم</div>
     </div>
-    <span class="header-badge">صفحة 29</span>
+    <span class="header-badge">صفحة 30</span>
   </div>
 
   <div class="certificate-box">
@@ -2068,10 +2248,10 @@
     </div>
   </div>
 
-  <div class="page-num">29</div>
+  <div class="page-num">30</div>
 </section>
 
-<!-- ==================== PAGE 30: مسرد المصطلحات + خاتمة ==================== -->
+<!-- ==================== PAGE 31: مسرد المصطلحات + خاتمة ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
@@ -2079,7 +2259,7 @@
       <h1>مسرد المصطلحات التقنية المتقدمة</h1>
       <div class="header-sub">المرجع السريع لأهم مصطلحات هذا المستوى</div>
     </div>
-    <span class="header-badge">صفحة 30</span>
+    <span class="header-badge">صفحة 31</span>
   </div>
 
   <div class="glossary-grid">
@@ -2165,7 +2345,7 @@
     <div style="margin-top:6px;font-size:11.5px;color:#888;">إعداد: عامر جمل — مدرسة حورة الشاملة</div>
   </div>
 
-  <div class="page-num">30</div>
+  <div class="page-num">31</div>
 </section>
 
 </body>

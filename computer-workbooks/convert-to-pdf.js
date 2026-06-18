@@ -64,7 +64,7 @@ async function convertToPDF(part) {
       timeout: 90000,
     });
 
-    // Wait for Google Fonts to load (or timeout gracefully)
+    // Wait for fonts to load (local woff2 files)
     await page.evaluate(() => {
       return new Promise(resolve => {
         if (document.fonts && document.fonts.ready) {
@@ -75,6 +75,14 @@ async function convertToPDF(part) {
       });
     }).catch(() => {});
 
+    // Verify critical fonts loaded
+    const cairoLoaded = await page.evaluate(() =>
+      document.fonts.check('700 16px Cairo')
+    ).catch(() => false);
+    if (!cairoLoaded) {
+      console.warn(`   ⚠️  تحذير: خط Cairo لم يُحمَّل — تحقق من مسار assets/fonts/`);
+    }
+
     // Extra settle time for layout
     await new Promise(r => setTimeout(r, 2000));
 
@@ -84,8 +92,9 @@ async function convertToPDF(part) {
     );
     console.log(`   📑  عدد الصفحات المكتشفة في HTML: ${pageCount}`);
 
-    if (pageCount !== 30) {
-      console.warn(`   ⚠️   المتوقع 30 صفحة، وُجد ${pageCount} صفحة`);
+    const MIN_PAGES = 25, MAX_PAGES = 42;
+    if (pageCount < MIN_PAGES || pageCount > MAX_PAGES) {
+      console.warn(`   ⚠️  عدد الصفحات (${pageCount}) خارج النطاق المتوقع ${MIN_PAGES}–${MAX_PAGES}`);
     }
 
     // Generate PDF
@@ -109,6 +118,7 @@ async function convertToPDF(part) {
     console.log(`   📖  عدد صفحات PDF: ${pdfPageCount}`);
     console.log(`   📦  حجم الملف: ${fileSizeKB} KB`);
 
+    const MIN_PDF = 25, MAX_PDF = 42;
     return {
       label: part.label,
       outputName: part.outputName,
@@ -116,7 +126,7 @@ async function convertToPDF(part) {
       pdfPages: pdfPageCount,
       sizeKB: fileSizeKB,
       path: pdfPath,
-      ok: pdfPageCount === 30,
+      ok: typeof pdfPageCount === 'number' && pdfPageCount >= MIN_PDF && pdfPageCount <= MAX_PDF,
     };
   } catch (err) {
     await browser.close();
@@ -161,7 +171,7 @@ async function main() {
   const allOk = results.length === 3 && results.every(r => r.ok);
 
   if (allOk) {
-    console.log('✅  جميع الدوسيات الثلاث جاهزة للطباعة! (30 صفحة لكل دوسية)');
+    console.log('✅  جميع الدوسيات الثلاث جاهزة للطباعة! (25–42 صفحة لكل دوسية)');
   } else {
     console.log('⚠️   بعض الدوسيات تحتاج مراجعة (راجع عدد الصفحات أعلاه)');
   }

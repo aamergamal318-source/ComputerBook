@@ -11,13 +11,19 @@
 <!-- ==================== PAGE 1: COVER ==================== -->
 <section class="page cover-page">
 
+  <div class="cover-circle-1"></div>
+  <div class="cover-circle-2"></div>
+  <div class="cover-circle-3"></div>
+
   <div class="cover-top-band">
-    <div class="cover-icons-row">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" x2="18" y1="20" y2="10"/><line x1="12" x2="12" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="14"/><line x1="2" x2="22" y1="20" y2="20"/></svg>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H8a6 6 0 1 1 1.1-11.9A7 7 0 0 1 22 11.5 4.5 4.5 0 0 1 17.5 19z"/></svg>
+    <div style="display:flex;align-items:center;gap:12px;">
+      <div style="width:42px;height:42px;background:rgba(255,255,255,0.15);border:2px solid rgba(255,255,255,0.35);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+      </div>
+      <div>
+        <div style="font-size:14px;font-weight:900;color:white;line-height:1.3;">مدرسة حورة الشاملة</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.75);margin-top:1px;">قسم تقنية المعلومات</div>
+      </div>
     </div>
     <div class="cover-top-band-motto">نظّم · صمّم · قدّم · أبدع</div>
   </div>
@@ -29,106 +35,138 @@
     <h2 class="cover-subtitle">الجزء الثاني: متوسط</h2>
     <div class="cover-scene">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 160" width="340" height="143">
-        <rect x="55" y="15" width="185" height="130" rx="6" fill="none" stroke="var(--c1)" stroke-width="2.5"/>
-        <rect x="55" y="15" width="185" height="24" rx="6" fill="var(--c1)" opacity="0.9"/>
-        <line x1="55" y1="57" x2="240" y2="57" stroke="var(--c-mid)" stroke-width="1"/>
-        <line x1="55" y1="78" x2="240" y2="78" stroke="var(--c-mid)" stroke-width="1"/>
-        <line x1="55" y1="99" x2="240" y2="99" stroke="var(--c-mid)" stroke-width="1"/>
-        <line x1="55" y1="120" x2="240" y2="120" stroke="var(--c-mid)" stroke-width="1"/>
-        <line x1="115" y1="39" x2="115" y2="145" stroke="var(--c-mid)" stroke-width="1"/>
-        <line x1="175" y1="39" x2="175" y2="145" stroke="var(--c-mid)" stroke-width="1"/>
-        <rect x="265" y="80" width="18" height="60" rx="3" fill="var(--c1)" opacity="0.85"/>
-        <rect x="290" y="50" width="18" height="90" rx="3" fill="var(--c2)" opacity="0.7"/>
-        <rect x="315" y="65" width="18" height="75" rx="3" fill="var(--c1)" opacity="0.5"/>
-        <line x1="255" y1="140" x2="345" y2="140" stroke="var(--c1)" stroke-width="2"/>
-        <rect x="15" y="45" width="52" height="70" rx="4" fill="none" stroke="var(--c1)" stroke-width="1.5"/>
-        <line x1="23" y1="60" x2="59" y2="60" stroke="var(--c-mid)" stroke-width="1.2"/>
-        <line x1="23" y1="74" x2="59" y2="74" stroke="var(--c-mid)" stroke-width="1.2"/>
-        <line x1="23" y1="88" x2="52" y2="88" stroke="var(--c-mid)" stroke-width="1.2"/>
+        <!-- Spreadsheet / document -->
+        <rect x="55" y="15" width="185" height="130" rx="6" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.7)" stroke-width="2"/>
+        <rect x="55" y="15" width="185" height="24" rx="6" fill="rgba(255,255,255,0.3)"/>
+        <!-- Grid lines horizontal -->
+        <line x1="55" y1="57" x2="240" y2="57" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+        <line x1="55" y1="78" x2="240" y2="78" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+        <line x1="55" y1="99" x2="240" y2="99" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+        <line x1="55" y1="120" x2="240" y2="120" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+        <!-- Grid lines vertical -->
+        <line x1="115" y1="39" x2="115" y2="145" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+        <line x1="175" y1="39" x2="175" y2="145" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+        <!-- Bar chart -->
+        <rect x="265" y="80" width="18" height="60" rx="3" fill="rgba(255,255,255,0.75)"/>
+        <rect x="290" y="50" width="18" height="90" rx="3" fill="rgba(255,255,255,0.55)"/>
+        <rect x="315" y="65" width="18" height="75" rx="3" fill="rgba(255,255,255,0.4)"/>
+        <line x1="255" y1="140" x2="345" y2="140" stroke="rgba(255,255,255,0.7)" stroke-width="1.5"/>
+        <!-- Slide/presentation -->
+        <rect x="15" y="45" width="52" height="70" rx="4" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.65)" stroke-width="1.5"/>
+        <line x1="23" y1="60" x2="59" y2="60" stroke="rgba(255,255,255,0.5)" stroke-width="1.2"/>
+        <line x1="23" y1="74" x2="59" y2="74" stroke="rgba(255,255,255,0.5)" stroke-width="1.2"/>
+        <line x1="23" y1="88" x2="52" y2="88" stroke="rgba(255,255,255,0.5)" stroke-width="1.2"/>
       </svg>
     </div>
-    <p class="cover-tagline">30 صفحة تدريبية قابلة للطباعة</p>
+    <p class="cover-tagline">31 صفحة تدريبية قابلة للطباعة</p>
     <div class="cover-features">
       <span class="cover-feature-pill">جداول بيانات</span>
       <span class="cover-feature-pill">عروض تقديمية</span>
       <span class="cover-feature-pill">تنظيم رقمي</span>
       <span class="cover-feature-pill">مشاريع تعاونية</span>
     </div>
+
+    <!-- Student info fields -->
+    <div class="student-info-box">
+      <div class="student-info-title">بيانات الطالب / الطالبة</div>
+      <div class="student-info-grid">
+        <div class="student-info-field">
+          <span class="student-info-label">اسم الطالب/ة</span>
+          <div class="student-info-line"></div>
+        </div>
+        <div class="student-info-field">
+          <span class="student-info-label">الصف</span>
+          <div class="student-info-line"></div>
+        </div>
+        <div class="student-info-field">
+          <span class="student-info-label">معلم/ة الموضوع</span>
+          <div class="student-info-line"></div>
+        </div>
+        <div class="student-info-field">
+          <span class="student-info-label">السنة الدراسية</span>
+          <div class="student-info-line"></div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="cover-footer-band">
     <strong>مدرسة حورة الشاملة</strong>
-    <span>إعداد: عامر جمل</span>
+    <span>تجميع وإعداد: عامر جمال</span>
     <span>2025 – 2026</span>
   </div>
 
 </section>
 
-<!-- ==================== PAGE 2: HOW TO USE + TRADEMARK ==================== -->
+<!-- ==================== PAGE 2: LEGAL / TRADEMARK NOTICE ==================== -->
 <section class="page">
-  <div class="page-header">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-    <div>
-      <h1>كيف تستخدم هذه الدوسية؟</h1>
-      <div class="header-sub">دليل الطالب والمعلم</div>
+
+  <div style="text-align:center;padding:18px 0 14px;border-bottom:2px solid var(--c-mid);margin-bottom:18px;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--c1)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    <div style="font-size:20px;font-weight:900;color:var(--c1);margin-top:6px;">إشعار تعليمي وحقوق الملكية</div>
+    <div style="font-size:12px;color:#6B7280;margin-top:3px;">دوسية الحاسوب — الجزء الثاني: متوسط</div>
+  </div>
+
+  <div class="info-box" style="margin-bottom:14px;text-align:center;padding:13px 18px;">
+    <div style="font-size:13.5px;font-weight:700;color:var(--c1);margin-bottom:5px;">هذه الدوسية معدّة للأغراض التعليمية فقط</div>
+    <div style="font-size:12.5px;color:#374151;line-height:1.8;">المحتوى الوارد في هذه الدوسية مخصص للتعليم والتدريب داخل بيئة الفصل الدراسي فقط، ولا يجوز نسخه أو توزيعه لأغراض تجارية.</div>
+  </div>
+
+  <div class="legal-box" style="margin-bottom:14px;">
+    <div class="box-title" style="font-size:13px;color:#374151;text-align:center;justify-content:center;padding-bottom:8px;border-bottom:1px solid #E5E7EB;margin-bottom:10px;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+      العلامات التجارية المذكورة في هذه الدوسية
     </div>
-    <div class="header-badge">صفحة 2</div>
-  </div>
-
-  <div class="info-box">
-    <div class="box-title">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
-      هدف الدوسية
+    <p style="font-size:12px;color:#4B5563;line-height:1.8;margin-bottom:10px;">الأسماء أدناه مذكورة في هذه الدوسية للأغراض التعليمية فقط، وتعود ملكيتها لأصحابها. <strong>لا تستخدم هذه الدوسية شعارات بصرية لأي شركة</strong>، ولا يدل ذكر الأسماء على وجود رعاية أو اعتماد رسمي.</p>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:5px 6px;margin-bottom:10px;">
+      <span style="font-size:11px;color:#1E3A5F;background:#EFF6FF;border:1px solid #BFDBFE;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Google</span>
+      <span style="font-size:11px;color:#1E3A5F;background:#EFF6FF;border:1px solid #BFDBFE;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Google Drive</span>
+      <span style="font-size:11px;color:#1E3A5F;background:#EFF6FF;border:1px solid #BFDBFE;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Gmail</span>
+      <span style="font-size:11px;color:#1E3A5F;background:#EFF6FF;border:1px solid #BFDBFE;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Google Docs</span>
+      <span style="font-size:11px;color:#1E3A5F;background:#EFF6FF;border:1px solid #BFDBFE;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Google Sheets</span>
+      <span style="font-size:11px;color:#1E3A5F;background:#EFF6FF;border:1px solid #BFDBFE;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Google Slides</span>
+      <span style="font-size:11px;color:#1E3A5F;background:#EFF6FF;border:1px solid #BFDBFE;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Google Calendar</span>
+      <span style="font-size:11px;color:#1E3A5F;background:#EFF6FF;border:1px solid #BFDBFE;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Google Forms</span>
+      <span style="font-size:11px;color:#1E40AF;background:#EFF6FF;border:1px solid #93C5FD;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Microsoft Word</span>
+      <span style="font-size:11px;color:#1E40AF;background:#EFF6FF;border:1px solid #93C5FD;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Microsoft Excel</span>
+      <span style="font-size:11px;color:#1E40AF;background:#EFF6FF;border:1px solid #93C5FD;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Microsoft PowerPoint</span>
+      <span style="font-size:11px;color:#1E40AF;background:#EFF6FF;border:1px solid #93C5FD;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Windows</span>
     </div>
-    هذه الدوسية مصممة للطلاب في المرحلة الإعدادية لتطوير مهاراتهم الرقمية من المستوى المبتدئ إلى المتوسط. تغطي الدوسية إدارة الملفات، معالجة النصوص، العروض التقديمية، جداول البيانات، وأدوات Google الرقمية.
+    <p style="font-size:11px;color:#6B7280;margin:0;line-height:1.7;text-align:center;border-top:1px solid #E5E7EB;padding-top:7px;">
+      جميع الأسماء المذكورة علامات تجارية مسجّلة لأصحابها · ™ All trademarks are property of their respective owners
+    </p>
   </div>
 
-  <div class="section-title">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-    رموز الدوسية
-  </div>
-
-  <div class="cards-grid">
+  <div class="section-title">دليل استخدام الدوسية</div>
+  <div class="cards-grid" style="margin-bottom:0;">
     <div class="card">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>
-      <h3>نشاط تطبيقي</h3>
-      <p>مهام يكتب فيها الطالب أو يرسم أو يملأ الجداول بنفسه</p>
+      <div style="display:flex;align-items:center;gap:6px;font-weight:700;color:var(--c1);margin-bottom:4px;font-size:12.5px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>
+        اكتب بنفسك
+      </div>
+      <p style="font-size:11.5px;color:#374151;margin:0;">أجب على الأسئلة وأكمل الجداول بيدك في المساحات المخصصة.</p>
     </div>
-    <div class="card accent">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
-      <h3>مهمة للمبدعين</h3>
-      <p>تحديات إضافية للطلاب المتميزين تتطلب تفكيراً إبداعياً</p>
+    <div class="card">
+      <div style="display:flex;align-items:center;gap:6px;font-weight:700;color:var(--c1);margin-bottom:4px;font-size:12.5px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        ضع إشارة ✓
+      </div>
+      <p style="font-size:11.5px;color:#374151;margin:0;">في قوائم التحقق، ضع علامة بعد إتمام كل مهمة.</p>
     </div>
-    <div class="card green">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-      <h3>تحقق من فهمك</h3>
-      <p>أسئلة مراجعة سريعة للتأكد من استيعاب المفاهيم</p>
+    <div class="card" style="border-color:#FCD34D;background:#FFFBEB;">
+      <div style="display:flex;align-items:center;gap:6px;font-weight:700;color:#92400E;margin-bottom:4px;font-size:12.5px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+        المبدعون
+      </div>
+      <p style="font-size:11.5px;color:#374151;margin:0;">الصناديق البنفسجية: تحديات إبداعية للمتميزين.</p>
     </div>
-    <div class="card purple">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-      <h3>معلومة مهمة</h3>
-      <p>نصائح وتنبيهات يجب أن يعرفها كل طالب</p>
+    <div class="card" style="border-color:#86EFAC;background:#F0FDF4;">
+      <div style="display:flex;align-items:center;gap:6px;font-weight:700;color:#166534;margin-bottom:4px;font-size:12.5px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        الأمان الرقمي
+      </div>
+      <p style="font-size:11.5px;color:#374151;margin:0;">الصناديق البرتقالية: قواعد أمان يجب اتباعها.</p>
     </div>
-  </div>
-
-  <div class="section-title">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-    تنبيه تعليمي وحقوق العلامات التجارية
-  </div>
-
-  <div class="legal-box">
-    <div class="box-title">تنبيه تعليمي وحقوق العلامات التجارية</div>
-    <p>هذه الدوسية معدّة لأغراض التعليم والتدريب فقط.</p>
-    <p>جميع أسماء وشعارات Google وGoogle Drive وGmail وGoogle Docs وGoogle Sheets وGoogle Forms وGoogle Calendar وMicrosoft Word وMicrosoft Excel وMicrosoft PowerPoint وMicrosoft 365 وأي شعارات أو أسماء تجارية أخرى مذكورة أو مستخدمة في هذه الدوسية هي علامات تجارية مملوكة لأصحابها.</p>
-    <p>استخدام هذه الأسماء هنا هو لأغراض تعليمية فقط، ولا يدل على وجود رعاية أو اعتماد أو شراكة رسمية من الشركات المالكة لها.</p>
-  </div>
-
-  <div class="note-box">
-    <div class="box-title">
-      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
-      نصيحة للطالب
-    </div>
-    احرص على ملء كل نشاط بنفسك، واستخدم قلماً ملوناً للتمييز بين إجاباتك ومحتوى الدوسية. كلما تدربت أكثر، كلما تحسنت مهاراتك الرقمية.
   </div>
 
   <div class="page-num">2</div>
@@ -175,38 +213,39 @@
   <div class="toc-item sub"><span>دالتا SUM وAVERAGE</span><span class="toc-dots"></span><span class="toc-page">14</span></div>
   <div class="toc-item sub"><span>دالتا MIN وMAX</span><span class="toc-dots"></span><span class="toc-page">15</span></div>
   <div class="toc-item sub"><span>فرز البيانات وتصفيتها</span><span class="toc-dots"></span><span class="toc-page">16</span></div>
+  <div class="toc-item sub" style="background:#FFFBEB;border-right:3px solid #F59E0B;padding-right:14px;"><span>⭐ مراجعة سريعة — الوحدات 1–3</span><span class="toc-dots"></span><span class="toc-page" style="background:#FEF3C7;color:#92400E;">17</span></div>
 
   <div class="toc-item unit">
     <span>الوحدة الرابعة: أدوات Google الرقمية</span>
     <span class="toc-dots"></span>
-    <span class="toc-page">17</span>
+    <span class="toc-page">18</span>
   </div>
-  <div class="toc-item sub"><span>Google Calendar — التقويم الرقمي</span><span class="toc-dots"></span><span class="toc-page">17</span></div>
-  <div class="toc-item sub"><span>Google Forms — النماذج الرقمية</span><span class="toc-dots"></span><span class="toc-page">18</span></div>
-  <div class="toc-item sub"><span>المشاركة والتعاون الرقمي</span><span class="toc-dots"></span><span class="toc-page">19</span></div>
+  <div class="toc-item sub"><span>Google Calendar — التقويم الرقمي</span><span class="toc-dots"></span><span class="toc-page">18</span></div>
+  <div class="toc-item sub"><span>Google Forms — النماذج الرقمية</span><span class="toc-dots"></span><span class="toc-page">19</span></div>
+  <div class="toc-item sub"><span>المشاركة والتعاون الرقمي</span><span class="toc-dots"></span><span class="toc-page">20</span></div>
 
   <div class="toc-item unit">
     <span>الوحدة الخامسة: المراجعة والتقييم</span>
     <span class="toc-dots"></span>
-    <span class="toc-page">20</span>
+    <span class="toc-page">21</span>
   </div>
-  <div class="toc-item sub"><span>مراجعة المستوى المتوسط</span><span class="toc-dots"></span><span class="toc-page">20</span></div>
-  <div class="toc-item sub"><span>أخطاء شائعة وحلولها</span><span class="toc-dots"></span><span class="toc-page">21</span></div>
-  <div class="toc-item sub"><span>مهارة العرض أمام الصف</span><span class="toc-dots"></span><span class="toc-page">22</span></div>
-  <div class="toc-item sub"><span>ملف الإنجاز الرقمي</span><span class="toc-dots"></span><span class="toc-page">23</span></div>
-  <div class="toc-item sub"><span>الخصوصية الرقمية</span><span class="toc-dots"></span><span class="toc-page">24</span></div>
+  <div class="toc-item sub"><span>مراجعة المستوى المتوسط</span><span class="toc-dots"></span><span class="toc-page">21</span></div>
+  <div class="toc-item sub"><span>أخطاء شائعة وحلولها</span><span class="toc-dots"></span><span class="toc-page">22</span></div>
+  <div class="toc-item sub"><span>مهارة العرض أمام الصف</span><span class="toc-dots"></span><span class="toc-page">23</span></div>
+  <div class="toc-item sub"><span>ملف الإنجاز الرقمي</span><span class="toc-dots"></span><span class="toc-page">24</span></div>
+  <div class="toc-item sub"><span>الخصوصية الرقمية</span><span class="toc-dots"></span><span class="toc-page">25</span></div>
 
   <div class="toc-item unit">
     <span>الوحدة السادسة: المختبر والمشروع</span>
     <span class="toc-dots"></span>
-    <span class="toc-page">25</span>
+    <span class="toc-page">26</span>
   </div>
-  <div class="toc-item sub"><span>مختبر مهارات (1)</span><span class="toc-dots"></span><span class="toc-page">25</span></div>
-  <div class="toc-item sub"><span>مختبر مهارات (2)</span><span class="toc-dots"></span><span class="toc-page">26</span></div>
-  <div class="toc-item sub"><span>المشروع النهائي</span><span class="toc-dots"></span><span class="toc-page">27</span></div>
-  <div class="toc-item sub"><span>التقييم الذاتي</span><span class="toc-dots"></span><span class="toc-page">28</span></div>
-  <div class="toc-item sub"><span>شهادة الإنجاز</span><span class="toc-dots"></span><span class="toc-page">29</span></div>
-  <div class="toc-item sub"><span>مسرد المصطلحات والخاتمة</span><span class="toc-dots"></span><span class="toc-page">30</span></div>
+  <div class="toc-item sub"><span>مختبر مهارات (1)</span><span class="toc-dots"></span><span class="toc-page">26</span></div>
+  <div class="toc-item sub"><span>مختبر مهارات (2)</span><span class="toc-dots"></span><span class="toc-page">27</span></div>
+  <div class="toc-item sub"><span>المشروع النهائي</span><span class="toc-dots"></span><span class="toc-page">28</span></div>
+  <div class="toc-item sub"><span>التقييم الذاتي</span><span class="toc-dots"></span><span class="toc-page">29</span></div>
+  <div class="toc-item sub"><span>شهادة الإنجاز</span><span class="toc-dots"></span><span class="toc-page">30</span></div>
+  <div class="toc-item sub"><span>مسرد المصطلحات والخاتمة</span><span class="toc-dots"></span><span class="toc-page">31</span></div>
 
   <div class="page-num">3</div>
 </section>
@@ -1172,7 +1211,123 @@
   <div class="page-num">16</div>
 </section>
 
-<!-- ==================== PAGE 17: Google Calendar ==================== -->
+<!-- ==================== PAGE 17: مراجعة سريعة — الوحدات 1–3 ==================== -->
+<section class="page">
+  <div class="formative-header">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+    مراجعة سريعة — الوحدات 1 إلى 3
+    <span style="margin-right:auto;font-size:12px;font-weight:400;opacity:0.85;">العروض التقديمية · جداول البيانات</span>
+  </div>
+  <div class="formative-body" style="margin-bottom:10px;">
+    <p style="font-size:12px;color:#6B7280;margin-bottom:8px;">اختر الإجابة الصحيحة لكل سؤال.</p>
+
+    <div class="q-row">
+      <div class="q-num">1</div>
+      <div><div>ما الوظيفة الأساسية للشريحة العنوانية (Title Slide) في العرض؟</div>
+        <div class="q-choices">
+          <span class="q-choice"><input type="radio" disabled> أ) تلخيص كل المحتوى</span>
+          <span class="q-choice"><input type="radio" disabled> ب) تقديم موضوع العرض والمعروض</span>
+          <span class="q-choice"><input type="radio" disabled> ج) عرض الصور فقط</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="q-row">
+      <div class="q-num">2</div>
+      <div><div>ماذا تعني قاعدة 6×6 في تصميم الشرائح؟</div>
+        <div class="q-choices">
+          <span class="q-choice"><input type="radio" disabled> أ) 6 شرائح و6 صور</span>
+          <span class="q-choice"><input type="radio" disabled> ب) 6 أسطر كحد أقصى و6 كلمات في كل سطر</span>
+          <span class="q-choice"><input type="radio" disabled> ج) 6 ألوان و6 خطوط</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="q-row">
+      <div class="q-num">3</div>
+      <div><div>أيّ دالة تحسب مجموع نطاق من الخلايا في Excel؟</div>
+        <div class="q-choices">
+          <span class="q-choice"><input type="radio" disabled> أ) <span dir="ltr">=COUNT()</span></span>
+          <span class="q-choice"><input type="radio" disabled> ب) <span dir="ltr">=SUM()</span></span>
+          <span class="q-choice"><input type="radio" disabled> ج) <span dir="ltr">=MAX()</span></span>
+          <span class="q-choice"><input type="radio" disabled> د) <span dir="ltr">=IF()</span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="q-row">
+      <div class="q-num">4</div>
+      <div><div>ما اسم الخانة التي تتقاطع فيها العمود C مع الصف 5 في Excel؟</div>
+        <div class="q-choices">
+          <span class="q-choice"><input type="radio" disabled> أ) <span dir="ltr">5C</span></span>
+          <span class="q-choice"><input type="radio" disabled> ب) <span dir="ltr">C5</span></span>
+          <span class="q-choice"><input type="radio" disabled> ج) <span dir="ltr">Row5Col3</span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="q-row">
+      <div class="q-num">5</div>
+      <div><div>ما الدالة التي تعطي أعلى قيمة في نطاق من الأرقام؟</div>
+        <div class="q-choices">
+          <span class="q-choice"><input type="radio" disabled> أ) <span dir="ltr">=AVERAGE()</span></span>
+          <span class="q-choice"><input type="radio" disabled> ب) <span dir="ltr">=MIN()</span></span>
+          <span class="q-choice"><input type="radio" disabled> ج) <span dir="ltr">=MAX()</span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="q-row">
+      <div class="q-num">6</div>
+      <div><div>ما الأداة في Excel لعرض البيانات بشكل مرئي (أعمدة، دوائر)؟</div>
+        <div class="q-choices">
+          <span class="q-choice"><input type="radio" disabled> أ) المرشّح (Filter)</span>
+          <span class="q-choice"><input type="radio" disabled> ب) الرسم البياني (Chart)</span>
+          <span class="q-choice"><input type="radio" disabled> ج) الصيغة (Formula)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="q-row">
+      <div class="q-num">7</div>
+      <div><div>لتطبيق نمط (Theme) على عرض تقديمي، تذهب إلى:</div>
+        <div class="q-choices">
+          <span class="q-choice"><input type="radio" disabled> أ) قائمة ملف (File)</span>
+          <span class="q-choice"><input type="radio" disabled> ب) قائمة تصميم (Design) أو سمات (Themes)</span>
+          <span class="q-choice"><input type="radio" disabled> ج) قائمة إدراج (Insert)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="q-row" style="border-bottom:none;">
+      <div class="q-num">8</div>
+      <div><div>ما معنى الفرز التصاعدي (Sort Ascending) في Excel؟</div>
+        <div class="q-choices">
+          <span class="q-choice"><input type="radio" disabled> أ) من الأكبر إلى الأصغر</span>
+          <span class="q-choice"><input type="radio" disabled> ب) من الأصغر إلى الأكبر</span>
+          <span class="q-choice"><input type="radio" disabled> ج) بشكل عشوائي</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:flex;gap:10px;align-items:stretch;">
+    <div class="collab-box" style="flex:1;margin-bottom:0;">
+      <div class="box-title">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        ناقش مع زميلك
+      </div>
+      <p style="font-size:12px;margin:0;">اشرح لزميلك الفرق بين دالة SUM ودالة AVERAGE بمثال من حياتك اليومية (مثل درجاتك في المواد).</p>
+    </div>
+    <div class="note-box" style="flex:1;margin-bottom:0;">
+      <div class="box-title">مفتاح الإجابات</div>
+      <p style="font-size:11px;color:#374151;direction:ltr;text-align:right;">1-ب  2-ب  3-ب  4-ب  5-ج  6-ب  7-ب  8-ب</p>
+    </div>
+  </div>
+  <div class="page-num">17</div>
+</section>
+
+<!-- ==================== PAGE 18: Google Calendar ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
@@ -1180,7 +1335,7 @@
       <h1>Google Calendar — التقويم الرقمي</h1>
       <div class="header-sub">إدارة المواعيد — التخطيط — التذكير التلقائي</div>
     </div>
-    <div class="header-badge">صفحة 17</div>
+    <div class="header-badge">صفحة 18</div>
   </div>
 
   <div class="info-box">
@@ -1233,10 +1388,10 @@
     </table>
   </div>
 
-  <div class="page-num">17</div>
+  <div class="page-num">18</div>
 </section>
 
-<!-- ==================== PAGE 18: Google Forms ==================== -->
+<!-- ==================== PAGE 19: Google Forms ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>
@@ -1244,7 +1399,7 @@
       <h1>Google Forms — النماذج الرقمية</h1>
       <div class="header-sub">إنشاء نماذج — أنواع الأسئلة — جمع البيانات</div>
     </div>
-    <div class="header-badge">صفحة 18</div>
+    <div class="header-badge">صفحة 19</div>
   </div>
 
   <div class="info-box">
@@ -1297,10 +1452,10 @@
     </table>
   </div>
 
-  <div class="page-num">18</div>
+  <div class="page-num">19</div>
 </section>
 
-<!-- ==================== PAGE 19: المشاركة والتعاون الرقمي ==================== -->
+<!-- ==================== PAGE 20: المشاركة والتعاون الرقمي ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
@@ -1308,7 +1463,7 @@
       <h1>المشاركة والتعاون الرقمي</h1>
       <div class="header-sub">صلاحيات المشاركة — التعديل المشترك — آداب التعاون</div>
     </div>
-    <div class="header-badge">صفحة 19</div>
+    <div class="header-badge">صفحة 20</div>
   </div>
 
   <div class="info-box">
@@ -1368,10 +1523,10 @@
     </table>
   </div>
 
-  <div class="page-num">19</div>
+  <div class="page-num">20</div>
 </section>
 
-<!-- ==================== PAGE 20: مراجعة المستوى المتوسط ==================== -->
+<!-- ==================== PAGE 21: مراجعة المستوى المتوسط ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
@@ -1379,7 +1534,7 @@
       <h1>مراجعة المستوى المتوسط</h1>
       <div class="header-sub">أسئلة شاملة لجميع المحاور</div>
     </div>
-    <div class="header-badge">صفحة 20</div>
+    <div class="header-badge">صفحة 21</div>
   </div>
 
   <div class="section-title">أولاً: أسئلة موضوعية (ضع دائرة حول الإجابة الصحيحة)</div>
@@ -1421,10 +1576,10 @@
   <p style="font-size:13px; margin-bottom:4px; margin-top:6px;"><strong>7.</strong> ما الذي يجعل العرض التقديمي ناجحاً؟ اذكر 3 عناصر:</p>
   <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div>
 
-  <div class="page-num">20</div>
+  <div class="page-num">21</div>
 </section>
 
-<!-- ==================== PAGE 21: أخطاء شائعة وحلولها ==================== -->
+<!-- ==================== PAGE 22: أخطاء شائعة وحلولها ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
@@ -1432,7 +1587,7 @@
       <h1>أخطاء شائعة وحلولها</h1>
       <div class="header-sub">تشخيص المشكلة — إيجاد الحل — التجنب المستقبلي</div>
     </div>
-    <div class="header-badge">صفحة 21</div>
+    <div class="header-badge">صفحة 22</div>
   </div>
 
   <div class="info-box">
@@ -1504,10 +1659,10 @@
     دائماً احفظ عملك كل 10 دقائق أو فعّل الحفظ التلقائي (AutoSave). هذا يحميك من فقدان ساعات من العمل بسبب انقطاع الكهرباء أو تعطل البرنامج.
   </div>
 
-  <div class="page-num">21</div>
+  <div class="page-num">22</div>
 </section>
 
-<!-- ==================== PAGE 22: مهارة العرض أمام الصف ==================== -->
+<!-- ==================== PAGE 23: مهارة العرض أمام الصف ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
@@ -1515,7 +1670,7 @@
       <h1>مهارة العرض أمام الصف</h1>
       <div class="header-sub">التحضير — الإلقاء — لغة الجسد — التفاعل</div>
     </div>
-    <div class="header-badge">صفحة 22</div>
+    <div class="header-badge">صفحة 23</div>
   </div>
 
   <div class="info-box">
@@ -1575,10 +1730,10 @@
     </div>
   </div>
 
-  <div class="page-num">22</div>
+  <div class="page-num">23</div>
 </section>
 
-<!-- ==================== PAGE 23: ملف الإنجاز الرقمي ==================== -->
+<!-- ==================== PAGE 24: ملف الإنجاز الرقمي ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
@@ -1586,7 +1741,7 @@
       <h1>ملف الإنجاز الرقمي (E-Portfolio)</h1>
       <div class="header-sub">ما تجمعه — كيف تنظّمه — لماذا هو مهم</div>
     </div>
-    <div class="header-badge">صفحة 23</div>
+    <div class="header-badge">صفحة 24</div>
   </div>
 
   <div class="info-box">
@@ -1655,10 +1810,10 @@
     </div>
   </div>
 
-  <div class="page-num">23</div>
+  <div class="page-num">24</div>
 </section>
 
-<!-- ==================== PAGE 24: الخصوصية الرقمية ==================== -->
+<!-- ==================== PAGE 25: الخصوصية الرقمية ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
@@ -1666,7 +1821,7 @@
       <h1>الخصوصية الرقمية</h1>
       <div class="header-sub">حماية البيانات — الأمان الإلكتروني — المواطنة الرقمية</div>
     </div>
-    <div class="header-badge">صفحة 24</div>
+    <div class="header-badge">صفحة 25</div>
   </div>
 
   <div class="warning-box">
@@ -1726,10 +1881,10 @@
     </div>
   </div>
 
-  <div class="page-num">24</div>
+  <div class="page-num">25</div>
 </section>
 
-<!-- ==================== PAGE 25: مختبر مهارات (1) ==================== -->
+<!-- ==================== PAGE 26: مختبر مهارات (1) ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
@@ -1737,7 +1892,7 @@
       <h1>مختبر مهارات (1)</h1>
       <div class="header-sub">تطبيق عملي على الحاسوب — Word / Docs + Excel / Sheets</div>
     </div>
-    <div class="header-badge">صفحة 25</div>
+    <div class="header-badge">صفحة 26</div>
   </div>
 
   <div class="info-box">
@@ -1787,10 +1942,10 @@
     <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
   </div>
 
-  <div class="page-num">25</div>
+  <div class="page-num">26</div>
 </section>
 
-<!-- ==================== PAGE 26: مختبر مهارات (2) ==================== -->
+<!-- ==================== PAGE 27: مختبر مهارات (2) ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
@@ -1798,7 +1953,7 @@
       <h1>مختبر مهارات (2)</h1>
       <div class="header-sub">تطبيق عملي — Google Forms + Google Calendar</div>
     </div>
-    <div class="header-badge">صفحة 26</div>
+    <div class="header-badge">صفحة 27</div>
   </div>
 
   <div class="info-box">
@@ -1848,10 +2003,10 @@
     </tbody>
   </table>
 
-  <div class="page-num">26</div>
+  <div class="page-num">27</div>
 </section>
 
-<!-- ==================== PAGE 27: المشروع النهائي ==================== -->
+<!-- ==================== PAGE 28: المشروع النهائي ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
@@ -1859,7 +2014,7 @@
       <h1>المشروع النهائي</h1>
       <div class="header-sub">تنظيم فعالية مدرسية رقمياً</div>
     </div>
-    <div class="header-badge">صفحة 27</div>
+    <div class="header-badge">صفحة 28</div>
   </div>
 
   <div class="creative-box" style="margin-bottom:10px;">
@@ -1907,10 +2062,10 @@
     </div>
   </div>
 
-  <div class="page-num">27</div>
+  <div class="page-num">28</div>
 </section>
 
-<!-- ==================== PAGE 28: التقييم الذاتي ==================== -->
+<!-- ==================== PAGE 29: التقييم الذاتي ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
@@ -1918,7 +2073,7 @@
       <h1>التقييم الذاتي للمستوى المتوسط</h1>
       <div class="header-sub">قيّم نفسك بصدق — حدد نقاط قوتك وما تحتاج لتطويره</div>
     </div>
-    <div class="header-badge">صفحة 28</div>
+    <div class="header-badge">صفحة 29</div>
   </div>
 
   <div class="note-box" style="margin-bottom:10px;">
@@ -1964,10 +2119,10 @@
     <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
   </div>
 
-  <div class="page-num">28</div>
+  <div class="page-num">29</div>
 </section>
 
-<!-- ==================== PAGE 29: شهادة الإنجاز ==================== -->
+<!-- ==================== PAGE 30: شهادة الإنجاز ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
@@ -1975,7 +2130,7 @@
       <h1>شهادة الإنجاز</h1>
       <div class="header-sub">إكمال الجزء الثاني — المستوى المتوسط</div>
     </div>
-    <div class="header-badge">صفحة 29</div>
+    <div class="header-badge">صفحة 30</div>
   </div>
 
   <div class="certificate-box">
@@ -2012,10 +2167,10 @@
     <div style="font-size:15px; font-weight:700; color:var(--c2); margin-top:8px; letter-spacing:2px;">نظّم | صمّم | قدّم | أبدع</div>
   </div>
 
-  <div class="page-num">29</div>
+  <div class="page-num">30</div>
 </section>
 
-<!-- ==================== PAGE 30: مسرد المصطلحات والخاتمة ==================== -->
+<!-- ==================== PAGE 31: مسرد المصطلحات والخاتمة ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
@@ -2023,7 +2178,7 @@
       <h1>مسرد المصطلحات</h1>
       <div class="header-sub">المصطلحات الرقمية الأساسية للمستوى المتوسط</div>
     </div>
-    <div class="header-badge">صفحة 30</div>
+    <div class="header-badge">صفحة 31</div>
   </div>
 
   <div class="glossary-grid">
@@ -2101,7 +2256,7 @@
     <div style="margin-top:6px;font-size:11.5px;color:#888;">إعداد: عامر جمل — مدرسة حورة الشاملة</div>
   </div>
 
-  <div class="page-num">30</div>
+  <div class="page-num">31</div>
 </section>
 
 </body>

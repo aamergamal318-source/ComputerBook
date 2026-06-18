@@ -1,0 +1,1365 @@
+/* =======================================================
+   SHARED COMPONENTS — دوسية الحاسوب
+   Arabic RTL — A4 Print Ready
+   Part-specific style.css defines only CSS variables.
+   ======================================================= */
+
+/* ── Local fonts (no internet required) ── */
+@font-face {
+  font-family: 'Cairo';
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url('../assets/fonts/Cairo-arabic.woff2') format('woff2');
+  unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC;
+}
+@font-face {
+  font-family: 'Cairo';
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url('../assets/fonts/Cairo-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Cairo';
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url('../assets/fonts/Cairo-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Tajawal';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('../assets/fonts/Tajawal-300-arabic.woff2') format('woff2');
+  unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC;
+}
+@font-face {
+  font-family: 'Tajawal';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('../assets/fonts/Tajawal-300-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Tajawal';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../assets/fonts/Tajawal-400-arabic.woff2') format('woff2');
+  unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC;
+}
+@font-face {
+  font-family: 'Tajawal';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../assets/fonts/Tajawal-400-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Tajawal';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../assets/fonts/Tajawal-500-arabic.woff2') format('woff2');
+  unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC;
+}
+@font-face {
+  font-family: 'Tajawal';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../assets/fonts/Tajawal-500-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Tajawal';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../assets/fonts/Tajawal-700-arabic.woff2') format('woff2');
+  unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC;
+}
+@font-face {
+  font-family: 'Tajawal';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../assets/fonts/Tajawal-700-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Tajawal';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('../assets/fonts/Tajawal-900-arabic.woff2') format('woff2');
+  unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC;
+}
+@font-face {
+  font-family: 'Tajawal';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('../assets/fonts/Tajawal-900-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* ===================== RESET & BASE ===================== */
+@page { size: A4 portrait; margin: 0; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 14px; }
+body {
+  font-family: 'Cairo', 'Tajawal', Arial, sans-serif;
+  direction: rtl;
+  font-feature-settings: "anum" 0, "locl" 0;
+  -webkit-font-feature-settings: "anum" 0, "locl" 0;
+  background: #dde1e7;
+  color: #1a1a1a;
+  line-height: 1.8;
+}
+
+/* ===================== PAGE STRUCTURE ===================== */
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  height: 297mm;
+  padding: 11mm 15mm 15mm 15mm;
+  margin: 0 auto 24px;
+  background: white;
+  page-break-after: always;
+  page-break-inside: avoid;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 28px rgba(0,0,0,0.18);
+}
+.page:last-child { page-break-after: avoid; }
+
+/* Footer meta strip on every inner page */
+.page::after {
+  content: 'دوسية الحاسوب  ·  مدرسة حورة الشاملة  ·  إعداد: عامر جمال  ·  2025 – 2026';
+  position: absolute;
+  bottom: 5mm;
+  left: 18mm;
+  right: 18mm;
+  font-size: 8.5px;
+  color: #C4CBD4;
+  text-align: center;
+  padding-top: 3px;
+  border-top: 1px solid #E9EDF2;
+  font-family: 'Cairo', sans-serif;
+}
+
+/* ===================== PAGE HEADER ===================== */
+.page-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 14px 7px 14px;
+  margin-bottom: 10px;
+  background: white;
+  border: 2px solid var(--c-mid);
+  border-right: 6px solid var(--c1);
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--c1);
+  flex-shrink: 0;
+}
+.page-header svg { stroke: var(--c1) !important; flex-shrink: 0; width: 20px; height: 20px; }
+.page-header h1 { font-size: 14px; font-weight: 700; color: var(--c1); margin: 0; line-height: 1.3; }
+.header-sub { font-size: 11px; font-weight: 400; color: #6B7280; margin-top: 1px; }
+.header-badge {
+  margin-right: auto;
+  background: var(--c1);
+  color: white;
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 12px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ===================== PAGE NUMBER ===================== */
+/* Placed at lower-right corner (outside footer text zone) to avoid overlap */
+.page-num {
+  position: absolute;
+  bottom: 7mm;
+  right: 8mm;
+  left: auto;
+  transform: none;
+  background: var(--c1);
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  z-index: 10;
+  font-family: 'Cairo', sans-serif;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25), 0 0 0 2px white;
+}
+
+/* ===================== SECTION TITLE ===================== */
+.section-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--c1);
+  margin: 8px 0 5px;
+  padding-right: 10px;
+  border-right: 4px solid var(--c3);
+  line-height: 1.4;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.section-title svg { stroke: var(--c1) !important; flex-shrink: 0; width: 18px; height: 18px; }
+
+/* ===================== BOX TITLE (shared by all boxes) ===================== */
+.box-title {
+  font-weight: 700;
+  font-size: 12.5px;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.box-title svg { flex-shrink: 0; width: 16px; height: 16px; }
+
+/* ===================== OBJECTIVE BOX ===================== */
+.objective-box {
+  background: var(--c-light);
+  border: 1.5px solid var(--c-mid);
+  border-radius: 8px;
+  padding: 9px 13px;
+  margin-bottom: 10px;
+  flex-shrink: 0;
+}
+.obj-header {
+  font-weight: 700;
+  color: var(--c1);
+  font-size: 13px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.obj-header svg { stroke: var(--c1) !important; flex-shrink: 0; width: 16px; height: 16px; }
+.obj-list {
+  margin: 0;
+  padding-right: 18px;
+  font-size: 12.5px;
+  color: #374151;
+}
+.obj-list li { margin-bottom: 2px; }
+
+/* ===================== INFO BOX ===================== */
+.info-box {
+  background: #F8FAFC;
+  border: 1.5px solid #CBD5E1;
+  border-right: 4px solid var(--c2);
+  border-radius: 6px;
+  padding: 9px 13px;
+  margin-bottom: 10px;
+  font-size: 12.5px;
+  color: #374151;
+  line-height: 1.75;
+  flex-shrink: 0;
+}
+.info-box strong, .info-box .box-title { color: var(--c1); }
+
+/* ===================== NOTE BOX ===================== */
+.note-box {
+  background: #EFF6FF;
+  border: 1.5px solid #BFDBFE;
+  border-right: 4px solid var(--c2);
+  border-radius: 6px;
+  padding: 9px 13px;
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: #1E3A5F;
+  flex-shrink: 0;
+}
+.note-box strong, .note-box .box-title { color: var(--c1); }
+
+/* ===================== WARNING BOX ===================== */
+.warning-box {
+  background: #FFFBEB;
+  border: 1.5px solid #FCD34D;
+  border-right: 4px solid #D97706;
+  border-radius: 6px;
+  padding: 9px 13px;
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: #78350F;
+  flex-shrink: 0;
+}
+.warning-box strong, .warning-box .box-title { color: #92400E; }
+
+/* ===================== ACTIVITY BOX ===================== */
+.activity-box {
+  background: #FFF7ED;
+  border: 1.5px solid #FED7AA;
+  border-right: 4px solid #EA580C;
+  border-radius: 8px;
+  padding: 9px 13px;
+  margin-bottom: 10px;
+  font-size: 12.5px;
+  color: #374151;
+  flex-shrink: 0;
+}
+.activity-box .box-title { color: #C2410C; }
+.activity-box strong { color: #C2410C; }
+
+/* ===================== STEPS BOX ===================== */
+.steps-box {
+  background: white;
+  border: 1.5px solid var(--c-mid);
+  border-radius: 8px;
+  padding: 10px 13px;
+  margin-bottom: 10px;
+  flex-shrink: 0;
+}
+.steps-title {
+  font-weight: 700;
+  color: var(--c1);
+  font-size: 13px;
+  margin-bottom: 7px;
+  padding-bottom: 6px;
+  border-bottom: 1.5px solid var(--c-mid);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.steps-title svg { stroke: var(--c1) !important; flex-shrink: 0; width: 18px; height: 18px; }
+.step-row {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin-bottom: 5px;
+  font-size: 12.5px;
+  color: #374151;
+}
+.step-num {
+  background: var(--c1);
+  color: white;
+  min-width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.step-content { flex: 1; }
+
+/* Numbered steps list (used with <ol>) */
+.steps-list {
+  margin: 0 0 8px 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: step-counter;
+  flex-shrink: 0;
+}
+.steps-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 4px 0;
+  font-size: 12.5px;
+  color: #374151;
+  counter-increment: step-counter;
+  border-bottom: 1px solid #F3F4F6;
+  line-height: 1.6;
+}
+.steps-list li::before {
+  content: counter(step-counter);
+  background: var(--c1);
+  color: white;
+  min-width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10.5px;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* ===================== PRACTICE BOX ===================== */
+.practice-box {
+  background: #FFFBEB;
+  border: 1.5px solid #FCD34D;
+  border-radius: 8px;
+  padding: 9px 13px;
+  margin-bottom: 10px;
+  flex-shrink: 0;
+}
+.practice-title {
+  font-weight: 700;
+  color: #92400E;
+  font-size: 13px;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.practice-title svg { stroke: #92400E !important; flex-shrink: 0; width: 18px; height: 18px; }
+
+/* ===================== CREATIVE BOX ===================== */
+.creative-box {
+  background: #FAF5FF;
+  border: 1.5px solid #DDD6FE;
+  border-right: 4px solid #7C3AED;
+  border-radius: 8px;
+  padding: 9px 13px;
+  margin-bottom: 10px;
+  flex-shrink: 0;
+}
+.creative-title, .creative-box .box-title {
+  font-weight: 700;
+  color: #6D28D9;
+  font-size: 13px;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.creative-title svg, .creative-box .box-title svg { flex-shrink: 0; width: 18px; height: 18px; }
+.creative-box strong { color: #6D28D9; }
+
+/* ===================== CHECK (GREEN) BOX ===================== */
+.check-box {
+  background: #F0FDF4;
+  border: 1.5px solid #86EFAC;
+  border-radius: 8px;
+  padding: 9px 13px;
+  margin-bottom: 10px;
+  flex-shrink: 0;
+}
+.check-title, .check-box .box-title {
+  font-weight: 700;
+  color: #166534;
+  font-size: 13px;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.check-title svg { stroke: #166534 !important; flex-shrink: 0; width: 18px; height: 18px; }
+
+/* ===================== TIP BOX ===================== */
+.tip-box {
+  background: #EFF6FF;
+  border: 1.5px solid #BFDBFE;
+  border-radius: 6px;
+  padding: 7px 13px;
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: #1E3A5F;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.tip-box svg { stroke: #1D4ED8 !important; flex-shrink: 0; margin-top: 1px; width: 16px; height: 16px; }
+
+/* ===================== SAFETY BOX ===================== */
+.safety-box {
+  background: #FFF7ED;
+  border: 1.5px solid #FED7AA;
+  border-right: 4px solid #EA580C;
+  border-radius: 6px;
+  padding: 7px 13px;
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: #7C2D12;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.safety-box svg { stroke: #EA580C !important; flex-shrink: 0; margin-top: 1px; width: 16px; height: 16px; }
+
+/* ===================== LEGAL BOX ===================== */
+.legal-box {
+  background: #F9FAFB;
+  border: 2px solid #E5E7EB;
+  border-radius: 10px;
+  padding: 14px 16px;
+  flex-shrink: 0;
+}
+.legal-header {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 9px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #E5E7EB;
+}
+.legal-header svg { stroke: #374151 !important; flex-shrink: 0; width: 16px; height: 16px; }
+.legal-title { font-weight: 700; font-size: 13.5px; color: #374151; }
+.legal-text { font-size: 11.5px; color: #4B5563; line-height: 1.8; margin-bottom: 6px; }
+.legal-text:last-child { margin-bottom: 0; }
+.legal-box p { font-size: 11.5px; color: #4B5563; line-height: 1.75; margin-bottom: 6px; }
+.legal-box p:last-child { margin-bottom: 0; }
+.legal-box .box-title { color: #374151; font-size: 13px; border-bottom: 1px solid #E5E7EB; padding-bottom: 7px; margin-bottom: 9px; }
+
+/* ===================== CODE INLINE ===================== */
+.code-inline {
+  font-family: 'Courier New', Courier, monospace;
+  background: #F3F4F6;
+  border: 1px solid #D1D5DB;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 11.5px;
+  color: #374151;
+  direction: ltr;
+  display: inline-block;
+}
+
+/* ===================== ANSWER AREAS ===================== */
+.answer-lines { margin-bottom: 8px; flex-shrink: 0; }
+.answer-line {
+  border-bottom: 1.5px dashed #9CA3AF;
+  height: 26px;
+  margin-bottom: 4px;
+}
+
+.answer-box {
+  border: 1.5px dashed #9CA3AF;
+  border-radius: 6px;
+  padding: 6px 10px;
+  margin-bottom: 8px;
+  background: #FAFAFA;
+  min-height: 34px;
+  flex-shrink: 0;
+}
+.answer-box p { font-size: 12px; color: #9CA3AF; margin: 0; }
+
+.answer-box-lg {
+  border: 1.5px dashed #9CA3AF;
+  border-radius: 6px;
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  background: #FAFAFA;
+  min-height: 64px;
+  flex-shrink: 0;
+}
+
+.answer-box-xl {
+  border: 1.5px dashed #9CA3AF;
+  border-radius: 6px;
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  background: #FAFAFA;
+  min-height: 80px;
+  flex-shrink: 0;
+}
+
+/* ===================== LAYOUT ===================== */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-shrink: 0;
+}
+.three-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 10px;
+  flex-shrink: 0;
+}
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 10px;
+  flex-shrink: 0;
+}
+.cards-grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 10px;
+  flex-shrink: 0;
+}
+.card {
+  background: white;
+  border: 1.5px solid var(--c-mid);
+  border-radius: 8px;
+  padding: 9px 11px;
+  font-size: 12px;
+  color: #374151;
+}
+.card h3 { font-size: 12.5px; font-weight: 700; color: var(--c1); margin: 4px 0 3px; }
+.card p { font-size: 11.5px; color: #6B7280; margin: 0; }
+.card svg { stroke: var(--c1) !important; }
+.card.accent { border-color: #FCD34D; background: #FFFBEB; }
+.card.accent h3 { color: #92400E; }
+.card.accent svg { stroke: #D97706 !important; }
+.card.green { border-color: #86EFAC; background: #F0FDF4; }
+.card.green h3 { color: #166534; }
+.card.green svg { stroke: #16A34A !important; }
+.card.purple { border-color: #DDD6FE; background: #FAF5FF; }
+.card.purple h3 { color: #6D28D9; }
+.card.purple svg { stroke: #7C3AED !important; }
+.card-header {
+  font-weight: 700;
+  color: var(--c1);
+  font-size: 12.5px;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.card-header svg { stroke: var(--c1) !important; flex-shrink: 0; width: 16px; height: 16px; }
+
+/* ===================== TABLES ===================== */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  margin-bottom: 10px;
+  flex-shrink: 0;
+}
+.styled-table th {
+  background: linear-gradient(135deg, var(--c1) 0%, var(--c2) 100%);
+  color: white;
+  padding: 7px 10px;
+  text-align: right;
+  font-weight: 600;
+  font-family: 'Cairo', sans-serif;
+  font-size: 12px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+.styled-table td {
+  padding: 6px 10px;
+  border-bottom: 1px solid #E5E7EB;
+  color: #374151;
+  vertical-align: top;
+  font-size: 12px;
+}
+.styled-table tr:nth-child(even) td { background: var(--c-light); }
+
+/* Write table (with empty cells for answers) */
+.write-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  margin-bottom: 10px;
+  flex-shrink: 0;
+}
+.write-table th {
+  background: linear-gradient(135deg, var(--c1) 0%, var(--c2) 100%);
+  color: white;
+  padding: 7px 10px;
+  text-align: right;
+  font-weight: 600;
+  font-size: 12px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+.write-table td {
+  padding: 4px 8px;
+  border: 1.5px solid #D1D5DB;
+  color: #374151;
+  vertical-align: middle;
+  font-size: 12px;
+}
+.write-table tr:nth-child(even) td:first-child { background: #F9FAFB; }
+.write-cell {
+  min-height: 24px;
+  border-bottom: 1.5px dashed #9CA3AF;
+  display: block;
+  margin: 2px 0;
+}
+
+/* Rubric */
+.rubric-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11.5px;
+  margin-bottom: 10px;
+  flex-shrink: 0;
+}
+.rubric-table th {
+  background: linear-gradient(135deg, var(--c1) 0%, var(--c2) 100%);
+  color: white;
+  padding: 6px 8px;
+  text-align: center;
+  font-weight: 600;
+  border: 1px solid var(--c2);
+  font-size: 12px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+.rubric-table td {
+  padding: 5px 7px;
+  border: 1px solid #D1D5DB;
+  color: #374151;
+  text-align: center;
+  vertical-align: top;
+  font-size: 11px;
+  line-height: 1.5;
+}
+.rubric-table tr:nth-child(even) td { background: #F9FAFB; }
+.rubric-table td:first-child {
+  text-align: right;
+  font-weight: 600;
+  background: var(--c-light);
+  color: var(--c1);
+  font-size: 12px;
+}
+
+/* Assessment table */
+.assessment-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  margin-bottom: 10px;
+  flex-shrink: 0;
+}
+.assessment-table th {
+  background: linear-gradient(135deg, var(--c1) 0%, var(--c2) 100%);
+  color: white;
+  padding: 7px 10px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 12px;
+  border: 1px solid var(--c2);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+.assessment-table th:first-child { text-align: right; }
+.assessment-table td {
+  padding: 5px 8px;
+  border: 1px solid #E5E7EB;
+  color: #374151;
+  text-align: center;
+  font-size: 12px;
+}
+.assessment-table td:first-child { text-align: right; background: #F9FAFB; }
+.assessment-table tr:nth-child(even) td { background: #F3F4F6; }
+.assessment-table tr:nth-child(even) td:first-child { background: #EEF2FF; }
+.check-oval {
+  display: inline-block;
+  width: 22px;
+  height: 16px;
+  border: 2px solid var(--c1);
+  border-radius: 9px;
+  background: white;
+}
+
+/* ===================== TABLE OF CONTENTS ===================== */
+.toc-item {
+  display: flex;
+  align-items: baseline;
+  padding: 3px 0;
+  font-size: 12.5px;
+  border-bottom: 1px dotted #D1D5DB;
+}
+.toc-item.unit {
+  font-weight: 700;
+  color: white;
+  background: var(--c1);
+  padding: 5px 11px;
+  border-radius: 5px;
+  margin: 7px 0 2px;
+  border-bottom: none;
+  font-size: 13px;
+}
+.toc-item.sub {
+  padding-right: 14px;
+  color: #374151;
+  gap: 4px;
+}
+.toc-dots {
+  flex: 1;
+  border-bottom: 2px dotted #D1D5DB;
+  margin: 0 8px 3px;
+  min-width: 10px;
+}
+.toc-page {
+  font-weight: 700;
+  color: var(--c1);
+  min-width: 26px;
+  text-align: center;
+  background: var(--c-light);
+  border-radius: 4px;
+  padding: 0 4px;
+  font-size: 12px;
+}
+
+/* ===================== CHECKLIST ===================== */
+.checklist { list-style: none; margin: 0; padding: 0; flex-shrink: 0; }
+.checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 4px 0;
+  font-size: 12.5px;
+  color: #374151;
+  border-bottom: 1px solid #F3F4F6;
+  line-height: 1.6;
+}
+.check-sq {
+  width: 17px;
+  height: 17px;
+  border: 2px solid var(--c1);
+  border-radius: 3px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  display: inline-block;
+}
+.check-circle {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--c1);
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 2px;
+  display: inline-block;
+  background: white;
+}
+
+/* ===================== BADGES ===================== */
+.badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+}
+.badge-green { background: #DCFCE7; color: #166534; border: 1px solid #86EFAC; }
+.badge-blue  { background: #DBEAFE; color: #1E40AF; border: 1px solid #93C5FD; }
+.badge-orange{ background: #FEF3C7; color: #92400E; border: 1px solid #FCD34D; }
+
+/* ===================== VOCAB GRID ===================== */
+.vocab-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  margin-bottom: 10px;
+  flex-shrink: 0;
+}
+.vocab-item {
+  padding: 7px 9px;
+  border: 1px solid var(--c-mid);
+  border-radius: 6px;
+  background: linear-gradient(135deg, white, var(--c-light));
+}
+.vocab-term { font-weight: 700; color: var(--c1); font-size: 13px; line-height: 1.3; }
+.vocab-en { font-size: 10.5px; color: #6B7280; font-style: italic; margin-bottom: 2px; }
+.vocab-def { font-size: 11.5px; color: #374151; margin-top: 2px; line-height: 1.5; }
+
+/* ===================== SKILLS LAB TASK ===================== */
+.lab-task {
+  background: white;
+  border: 1.5px solid var(--c-mid);
+  border-radius: 8px;
+  padding: 9px 13px;
+  margin-bottom: 8px;
+  flex-shrink: 0;
+}
+.lab-task-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.lab-task-title { font-weight: 700; color: var(--c1); font-size: 13px; }
+.lab-score {
+  background: var(--c-light);
+  color: var(--c1);
+  border: 1px solid var(--c-mid);
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* ===================== GLOSSARY ===================== */
+.glossary-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  margin-bottom: 10px;
+  flex-shrink: 0;
+}
+.glossary-item {
+  padding: 7px 10px;
+  border: 1px solid var(--c-mid);
+  border-radius: 6px;
+  background: linear-gradient(135deg, white, var(--c-light));
+}
+.term-ar { font-weight: 700; color: var(--c1); font-size: 13px; line-height: 1.3; margin-bottom: 1px; }
+.term-en { font-size: 10px; color: #6B7280; font-style: italic; direction: ltr; display: block; margin-bottom: 3px; }
+.term-def { font-size: 11.5px; color: #374151; line-height: 1.5; }
+
+/* ===================== CERTIFICATE ===================== */
+.certificate {
+  border: 3px solid var(--c1);
+  border-radius: 12px;
+  padding: 22px 26px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  flex-shrink: 0;
+}
+.certificate-box {
+  border: 3px solid var(--c1);
+  border-radius: 14px;
+  padding: 18px 24px;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(135deg, white 0%, var(--c-light) 100%);
+  margin-bottom: 12px;
+  flex-shrink: 0;
+}
+.certificate-title {
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--c1);
+  margin-bottom: 4px;
+}
+.certificate-subtitle {
+  font-size: 13px;
+  color: var(--c2);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.cert-corner {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border: 3px solid var(--c3);
+}
+.cert-corner.tr { top: -3px; left: -3px; border-bottom: none; border-right: none; }
+.cert-corner.bl { bottom: -3px; right: -3px; border-top: none; border-left: none; }
+.cert-title { font-size: 20px; font-weight: 900; color: var(--c1); margin-bottom: 6px; }
+.cert-text { font-size: 13px; color: #374151; margin-bottom: 14px; }
+.cert-name-line {
+  border-bottom: 2px solid var(--c1);
+  width: 200px;
+  margin: 0 auto 4px;
+}
+.cert-name-label { font-size: 11px; color: #6B7280; margin-bottom: 16px; }
+.cert-sigs {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 12px;
+}
+.cert-sig { text-align: center; }
+.cert-sig-line {
+  border-bottom: 1.5px solid #374151;
+  width: 100px;
+  margin: 0 auto 3px;
+}
+.cert-sig-label { font-size: 11px; color: #6B7280; }
+.cert-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 14px;
+}
+.cert-field {
+  border-top: 1.5px solid var(--c-mid);
+  padding-top: 6px;
+  text-align: center;
+}
+.cert-field label { font-size: 11px; color: #6B7280; }
+
+/* ===================== BREAK-INSIDE AVOID ===================== */
+/* Prevent tables and activity boxes from splitting across print pages */
+.styled-table, .write-table, .rubric-table, .assessment-table,
+.activity-box, .steps-box, .practice-box, .creative-box,
+.certificate, .certificate-box, .lab-task {
+  break-inside: avoid;
+}
+
+/* ===================== COLLABORATIVE ACTIVITY BOX ===================== */
+.collab-box {
+  background: linear-gradient(135deg, #EFF6FF 0%, #F0FDF4 100%);
+  border: 1.5px solid #93C5FD;
+  border-right: 4px solid #2563EB;
+  border-radius: 8px;
+  padding: 9px 13px;
+  margin-bottom: 10px;
+  font-size: 12.5px;
+  color: #1E3A5F;
+  flex-shrink: 0;
+  break-inside: avoid;
+}
+.collab-box .box-title { color: #1D4ED8; }
+.collab-box strong { color: #1D4ED8; }
+
+/* ===================== CROSS-PART REMINDER BOX ===================== */
+.recall-box {
+  background: #FFFBEB;
+  border: 1.5px solid #FDE68A;
+  border-right: 4px solid #F59E0B;
+  border-radius: 8px;
+  padding: 8px 13px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #78350F;
+  flex-shrink: 0;
+  break-inside: avoid;
+}
+.recall-box .box-title { color: #92400E; }
+
+/* ===================== FORMATIVE ASSESSMENT ===================== */
+.formative-header {
+  background: linear-gradient(135deg, var(--c1) 0%, var(--c2) 100%);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 10px 10px 0 0;
+  font-size: 15px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex-shrink: 0;
+}
+.formative-body {
+  border: 2px solid var(--c-mid);
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  padding: 12px 14px;
+  background: white;
+  flex-shrink: 0;
+}
+.q-row {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  padding: 5px 0;
+  border-bottom: 1px dashed #E5E7EB;
+  font-size: 12.5px;
+  color: #374151;
+}
+.q-num {
+  background: var(--c1);
+  color: white;
+  min-width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10.5px;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.q-choices {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 3px;
+}
+.q-choice {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: #374151;
+}
+.q-choice input[type="radio"] { pointer-events: none; }
+
+/* ===================== CLOSING PAGE ===================== */
+.closing-star {
+  width: 60px;
+  height: 60px;
+  background: var(--c-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+  border: 3px solid var(--c-mid);
+}
+
+/* ======================================================
+   COVER PAGE STYLES
+   ====================================================== */
+
+.cover-page {
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  background: var(--c1) !important;
+}
+.cover-page::after { display: none !important; }
+
+/* Large decorative circles */
+.cover-circle-1 {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  border: 60px solid rgba(255,255,255,0.06);
+  top: -100px;
+  left: -90px;
+  pointer-events: none;
+}
+.cover-circle-2 {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 40px solid rgba(255,255,255,0.05);
+  bottom: 30px;
+  right: -60px;
+  pointer-events: none;
+}
+.cover-circle-3 {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.04);
+  top: 40px;
+  right: 30px;
+  pointer-events: none;
+}
+
+/* ── Top band ── */
+.cover-top-band {
+  background: rgba(0,0,0,0.18);
+  padding: 10px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+}
+.cover-icons-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.cover-icons-row svg {
+  width: 22px;
+  height: 22px;
+  opacity: 0.85;
+}
+.cover-top-band-motto {
+  color: rgba(255,255,255,0.88);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+/* ── Main white panel ── */
+.cover-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 22px 14px;
+  position: relative;
+  z-index: 2;
+}
+.cover-part-badge {
+  width: 56px;
+  height: 56px;
+  background: white;
+  color: var(--c1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 900;
+  font-family: 'Cairo', sans-serif;
+  margin-bottom: 8px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.25);
+}
+
+.cover-badge {
+  display: inline-block;
+  background: var(--c1);
+  color: white;
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.cover-title {
+  font-size: 34px;
+  font-weight: 900;
+  color: white;
+  line-height: 1.1;
+  margin-bottom: 4px;
+  font-family: 'Cairo', sans-serif;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.3);
+}
+.cover-subtitle {
+  font-size: 17px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+.cover-divider {
+  height: 2px;
+  background: rgba(255,255,255,0.35);
+  margin: 8px auto;
+  width: 60%;
+  border-radius: 2px;
+}
+.cover-scene { margin: 8px auto 8px; }
+.cover-tagline { font-size: 12px; color: rgba(255,255,255,0.8); margin-bottom: 8px; }
+.cover-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  margin-top: 4px;
+}
+.cover-feature-pill {
+  background: rgba(255,255,255,0.18);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.35);
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-size: 11.5px;
+  font-weight: 600;
+}
+/* ── Header (school name area inside cover) ── */
+.cover-header {
+  padding: 14px 22px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+}
+.cover-emblem {
+  width: 50px;
+  height: 50px;
+  background: rgba(255,255,255,0.15);
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.cover-school-name { font-size: 14px; font-weight: 900; color: white; line-height: 1.3; }
+.cover-school-dept { font-size: 11.5px; color: rgba(255,255,255,0.72); margin-top: 1px; }
+.cover-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 22px 12px;
+  position: relative;
+  z-index: 2;
+}
+.cover-illus { margin: 8px auto 10px; }
+
+/* ── Footer band ── */
+.cover-footer-band {
+  background: rgba(0,0,0,0.22);
+  padding: 11px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+  color: rgba(255,255,255,0.9);
+  font-size: 12px;
+}
+.cover-footer-band strong { color: white; font-size: 13px; }
+.cover-footer {
+  background: rgba(0,0,0,0.22);
+  padding: 12px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+}
+.cover-footer-item {
+  color: rgba(255,255,255,0.9);
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.cover-footer-item svg { stroke: rgba(255,255,255,0.8) !important; flex-shrink: 0; width: 14px; height: 14px; }
+
+/* ===================== STUDENT INFO BOX (Cover Page) ===================== */
+.student-info-box {
+  background: rgba(255,255,255,0.15);
+  border: 1.5px solid rgba(255,255,255,0.4);
+  border-radius: 10px;
+  padding: 11px 18px 13px;
+  margin: 8px 0 4px;
+  width: 100%;
+  max-width: 390px;
+}
+.student-info-title {
+  font-size: 10px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.7);
+  text-align: center;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.student-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 20px;
+}
+.student-info-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.student-info-label {
+  font-size: 10.5px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.9);
+}
+.student-info-line {
+  border-bottom: 1.5px dotted rgba(255,255,255,0.55);
+  height: 20px;
+}
+
+/* ===================== PRINT MEDIA ===================== */
+@media print {
+  body { background: white; }
+  .page { box-shadow: none; margin: 0; }
+}

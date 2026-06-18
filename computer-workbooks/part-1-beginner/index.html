@@ -11,125 +11,178 @@
 <!-- ==================== PAGE 1: COVER ==================== -->
 <section class="page cover-page">
 
-  <!-- Top colored band -->
+  <!-- Decorative circles -->
+  <div class="cover-circle-1"></div>
+  <div class="cover-circle-2"></div>
+  <div class="cover-circle-3"></div>
+
+  <!-- Top band: school branding -->
   <div class="cover-top-band">
-    <div class="cover-icons-row">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H8a6 6 0 1 1 1.1-11.9A7 7 0 0 1 22 11.5 4.5 4.5 0 0 1 17.5 19z"/></svg>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+    <div style="display:flex;align-items:center;gap:12px;">
+      <div style="width:42px;height:42px;background:rgba(255,255,255,0.15);border:2px solid rgba(255,255,255,0.35);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+      </div>
+      <div>
+        <div style="font-size:14px;font-weight:900;color:white;line-height:1.3;">مدرسة حورة الشاملة</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.75);margin-top:1px;">قسم تقنية المعلومات</div>
+      </div>
     </div>
     <div class="cover-top-band-motto">افهم · جرّب · اكتب · أبدع</div>
   </div>
 
-  <!-- White center area -->
+  <!-- Main center content -->
   <div class="cover-main">
     <div class="cover-part-badge">1</div>
     <h1 class="cover-title">دوسية الحاسوب</h1>
     <div class="cover-divider"></div>
     <h2 class="cover-subtitle">الجزء الأول: مبتدئ</h2>
 
-    <!-- SVG computer scene -->
+    <!-- SVG computer scene (white tones for colored background) -->
     <div class="cover-scene">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 160" width="340" height="143">
-        <!-- Monitor -->
-        <rect x="80" y="10" width="200" height="125" rx="8" fill="none" stroke="var(--c1)" stroke-width="3"/>
-        <rect x="92" y="22" width="176" height="95" rx="4" fill="var(--c-light)" stroke="var(--c-mid)" stroke-width="1.5"/>
-        <!-- Screen content lines -->
-        <line x1="110" y1="45" x2="230" y2="45" stroke="var(--c2)" stroke-width="2" stroke-linecap="round"/>
-        <line x1="110" y1="62" x2="200" y2="62" stroke="var(--c-mid)" stroke-width="1.5" stroke-linecap="round"/>
-        <line x1="110" y1="78" x2="215" y2="78" stroke="var(--c-mid)" stroke-width="1.5" stroke-linecap="round"/>
-        <rect x="110" y="90" width="50" height="18" rx="4" fill="var(--c1)" opacity="0.8"/>
-        <rect x="170" y="90" width="50" height="18" rx="4" fill="none" stroke="var(--c1)" stroke-width="1.5"/>
+        <!-- Monitor body -->
+        <rect x="80" y="10" width="200" height="125" rx="8" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.75)" stroke-width="2.5"/>
+        <!-- Screen -->
+        <rect x="92" y="22" width="176" height="95" rx="4" fill="rgba(255,255,255,0.18)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+        <!-- Screen content: title line -->
+        <line x1="110" y1="45" x2="230" y2="45" stroke="rgba(255,255,255,0.8)" stroke-width="2.5" stroke-linecap="round"/>
+        <!-- Text lines -->
+        <line x1="110" y1="62" x2="200" y2="62" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="110" y1="75" x2="215" y2="75" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" stroke-linecap="round"/>
+        <!-- Buttons -->
+        <rect x="110" y="87" width="50" height="16" rx="4" fill="rgba(255,255,255,0.6)"/>
+        <rect x="170" y="87" width="50" height="16" rx="4" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="1.5"/>
         <!-- Stand -->
-        <rect x="158" y="135" width="44" height="8" rx="4" fill="var(--c1)" opacity="0.6"/>
-        <rect x="138" y="143" width="84" height="6" rx="3" fill="var(--c-mid)"/>
+        <rect x="158" y="135" width="44" height="8" rx="4" fill="rgba(255,255,255,0.5)"/>
+        <rect x="138" y="143" width="84" height="5" rx="2.5" fill="rgba(255,255,255,0.35)"/>
         <!-- Keyboard -->
-        <rect x="90" y="152" width="180" height="5" rx="2.5" fill="var(--c-mid)"/>
+        <rect x="95" y="152" width="170" height="4" rx="2" fill="rgba(255,255,255,0.4)"/>
         <!-- Mouse -->
-        <rect x="295" y="120" width="30" height="42" rx="15" fill="none" stroke="var(--c1)" stroke-width="2"/>
-        <line x1="310" y1="120" x2="310" y2="140" stroke="var(--c1)" stroke-width="1.5"/>
+        <rect x="295" y="118" width="28" height="40" rx="14" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.65)" stroke-width="2"/>
+        <line x1="309" y1="118" x2="309" y2="138" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
         <!-- Folder -->
-        <path d="M20 80 L20 130 L70 130 L70 90 L50 90 L44 80 Z" fill="none" stroke="var(--c1)" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M22 82 L22 128 L68 128 L68 92 L49 92 L43 82 Z" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.65)" stroke-width="2" stroke-linejoin="round"/>
         <!-- Cloud -->
-        <path d="M315 60 Q315 42 330 42 Q335 30 350 34 Q365 28 368 42 Q378 44 376 56 Q376 66 365 66 L325 66 Q315 66 315 60Z" fill="none" stroke="var(--c1)" stroke-width="2"/>
+        <path d="M313 62 Q313 44 328 44 Q333 32 348 36 Q363 30 366 44 Q376 46 374 58 Q374 68 363 68 L323 68 Q313 68 313 62Z" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.65)" stroke-width="2"/>
+        <!-- Small connection line -->
+        <line x1="338" y1="68" x2="280" y2="100" stroke="rgba(255,255,255,0.3)" stroke-width="1" stroke-dasharray="3,3"/>
       </svg>
     </div>
 
-    <p class="cover-tagline">30 صفحة تدريبية قابلة للطباعة</p>
+    <p class="cover-tagline">31 صفحة تدريبية قابلة للطباعة</p>
     <div class="cover-features">
       <span class="cover-feature-pill">مساحات إجابة</span>
       <span class="cover-feature-pill">مختبرات عملية</span>
       <span class="cover-feature-pill">مهام للمبدعين</span>
       <span class="cover-feature-pill">تقييم ذاتي</span>
     </div>
+
+    <!-- Student info fields -->
+    <div class="student-info-box">
+      <div class="student-info-title">بيانات الطالب / الطالبة</div>
+      <div class="student-info-grid">
+        <div class="student-info-field">
+          <span class="student-info-label">اسم الطالب/ة</span>
+          <div class="student-info-line"></div>
+        </div>
+        <div class="student-info-field">
+          <span class="student-info-label">الصف</span>
+          <div class="student-info-line"></div>
+        </div>
+        <div class="student-info-field">
+          <span class="student-info-label">معلم/ة الموضوع</span>
+          <div class="student-info-line"></div>
+        </div>
+        <div class="student-info-field">
+          <span class="student-info-label">السنة الدراسية</span>
+          <div class="student-info-line"></div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <!-- Bottom colored band -->
+  <!-- Bottom footer band -->
   <div class="cover-footer-band">
     <strong>مدرسة حورة الشاملة</strong>
-    <span>إعداد: عامر جمال</span>
+    <span>تجميع وإعداد: عامر جمال</span>
     <span>2025 – 2026</span>
   </div>
 
 </section>
 
-<!-- ==================== PAGE 2: HOW TO USE + TRADEMARK ==================== -->
+<!-- ==================== PAGE 2: LEGAL / TRADEMARK NOTICE ==================== -->
 <section class="page">
-  <div class="page-header">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-    <span>كيف تستخدم هذه الدوسية؟</span>
+
+  <!-- Formal header -->
+  <div style="text-align:center;padding:18px 0 14px;border-bottom:2px solid var(--c-mid);margin-bottom:18px;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--c1)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    <div style="font-size:20px;font-weight:900;color:var(--c1);margin-top:6px;">إشعار تعليمي وحقوق الملكية</div>
+    <div style="font-size:12px;color:#6B7280;margin-top:3px;">دوسية الحاسوب — الجزء الأول: مبتدئ</div>
   </div>
 
-  <p style="font-size:13px;color:#374151;margin-bottom:10px;">هذه الدوسية مصمَّمة لتكون رفيقك داخل الفصل وخارجه. اقرأ كل صفحة بعناية، ثم أجب على الأنشطة مباشرةً في الفراغات المخصصة.</p>
+  <!-- Educational notice -->
+  <div class="info-box" style="margin-bottom:14px;text-align:center;padding:13px 18px;">
+    <div style="font-size:13.5px;font-weight:700;color:var(--c1);margin-bottom:5px;">هذه الدوسية معدّة للأغراض التعليمية فقط</div>
+    <div style="font-size:12.5px;color:#374151;line-height:1.8;">المحتوى الوارد في هذه الدوسية مخصص للتعليم والتدريب داخل بيئة الفصل الدراسي فقط، ولا يجوز نسخه أو توزيعه لأغراض تجارية.</div>
+  </div>
 
-  <div class="cards-grid" style="margin-bottom:10px;">
+  <!-- Trademark notice -->
+  <div class="legal-box" style="margin-bottom:14px;">
+    <div class="box-title" style="font-size:13px;color:#374151;text-align:center;justify-content:center;padding-bottom:8px;border-bottom:1px solid #E5E7EB;margin-bottom:10px;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+      العلامات التجارية المذكورة في هذه الدوسية
+    </div>
+    <p style="font-size:12px;color:#4B5563;line-height:1.8;margin-bottom:10px;">الأسماء أدناه مذكورة في هذه الدوسية للأغراض التعليمية فقط، وتعود ملكيتها لأصحابها. <strong>لا تستخدم هذه الدوسية شعارات بصرية لأي شركة</strong>، ولا يدل ذكر الأسماء على وجود رعاية أو اعتماد رسمي.</p>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:5px 6px;margin-bottom:10px;">
+      <span style="font-size:11px;color:#1E3A5F;background:#EFF6FF;border:1px solid #BFDBFE;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Google</span>
+      <span style="font-size:11px;color:#1E3A5F;background:#EFF6FF;border:1px solid #BFDBFE;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Google Drive</span>
+      <span style="font-size:11px;color:#1E3A5F;background:#EFF6FF;border:1px solid #BFDBFE;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Gmail</span>
+      <span style="font-size:11px;color:#1E3A5F;background:#EFF6FF;border:1px solid #BFDBFE;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Google Docs</span>
+      <span style="font-size:11px;color:#1E3A5F;background:#EFF6FF;border:1px solid #BFDBFE;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Google Sheets</span>
+      <span style="font-size:11px;color:#1E3A5F;background:#EFF6FF;border:1px solid #BFDBFE;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Google Slides</span>
+      <span style="font-size:11px;color:#1E3A5F;background:#EFF6FF;border:1px solid #BFDBFE;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Google Calendar</span>
+      <span style="font-size:11px;color:#1E3A5F;background:#EFF6FF;border:1px solid #BFDBFE;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Google Forms</span>
+      <span style="font-size:11px;color:#1E40AF;background:#EFF6FF;border:1px solid #93C5FD;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Microsoft Word</span>
+      <span style="font-size:11px;color:#1E40AF;background:#EFF6FF;border:1px solid #93C5FD;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Microsoft Excel</span>
+      <span style="font-size:11px;color:#1E40AF;background:#EFF6FF;border:1px solid #93C5FD;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Microsoft PowerPoint</span>
+      <span style="font-size:11px;color:#1E40AF;background:#EFF6FF;border:1px solid #93C5FD;padding:3px 7px;border-radius:5px;direction:ltr;text-align:center;display:block;">Windows</span>
+    </div>
+    <p style="font-size:11px;color:#6B7280;margin:0;line-height:1.7;text-align:center;border-top:1px solid #E5E7EB;padding-top:7px;">
+      جميع الأسماء المذكورة علامات تجارية مسجّلة لأصحابها · ™ All trademarks are property of their respective owners
+    </p>
+  </div>
+
+  <!-- How to use guide -->
+  <div class="section-title">دليل استخدام الدوسية</div>
+  <div class="cards-grid" style="margin-bottom:0;">
     <div class="card">
-      <div style="font-weight:700;color:#1565C0;margin-bottom:4px;display:flex;align-items:center;gap:6px;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+      <div style="display:flex;align-items:center;gap:6px;font-weight:700;color:var(--c1);margin-bottom:4px;font-size:12.5px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
         الهدف
       </div>
-      <p style="font-size:12px;color:#374151;margin:0;">اكتساب المهارات الأساسية في استخدام الحاسوب بطريقة عملية وممتعة.</p>
+      <p style="font-size:11.5px;color:#374151;margin:0;">اكتساب مهارات الحاسوب الأساسية عملياً.</p>
     </div>
     <div class="card">
-      <div style="font-weight:700;color:#1565C0;margin-bottom:4px;display:flex;align-items:center;gap:6px;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>
+      <div style="display:flex;align-items:center;gap:6px;font-weight:700;color:var(--c1);margin-bottom:4px;font-size:12.5px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>
         الكتابة
       </div>
-      <p style="font-size:12px;color:#374151;margin:0;">اكتب إجاباتك بقلم حبر أو رصاص في الأسطر والمربعات المخصصة.</p>
+      <p style="font-size:11.5px;color:#374151;margin:0;">اكتب إجاباتك في الأسطر والمربعات المخصصة.</p>
     </div>
     <div class="card">
-      <div style="font-weight:700;color:#1565C0;margin-bottom:4px;display:flex;align-items:center;gap:6px;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-        قوائم التحقق
+      <div style="display:flex;align-items:center;gap:6px;font-weight:700;color:var(--c1);margin-bottom:4px;font-size:12.5px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        التحقق
       </div>
-      <p style="font-size:12px;color:#374151;margin:0;">ضع علامة (✓) بجانب كل مهمة تنجزها لتتابع تقدمك.</p>
+      <p style="font-size:11.5px;color:#374151;margin:0;">ضع ✓ بجانب كل مهمة تُنجزها لتتابع تقدمك.</p>
     </div>
-    <div class="card">
-      <div style="font-weight:700;color:#9333EA;margin-bottom:4px;display:flex;align-items:center;gap:6px;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
-        مهمة المبدعين
+    <div class="card" style="border-color:#DDD6FE;background:#FAF5FF;">
+      <div style="display:flex;align-items:center;gap:6px;font-weight:700;color:#6D28D9;margin-bottom:4px;font-size:12.5px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+        المبدعون
       </div>
-      <p style="font-size:12px;color:#374151;margin:0;">المربعات البنفسجية تحتوي تحديات إبداعية إضافية للطلاب المتميزين.</p>
+      <p style="font-size:11.5px;color:#374151;margin:0;">المربعات البنفسجية: تحديات إبداعية للمتميزين.</p>
     </div>
-  </div>
-
-  <div class="info-box" style="margin-bottom:10px;">
-    <strong>رموز الدوسية:</strong>
-    <ul style="margin:6px 0 0 0;padding:0;list-style:none;font-size:12px;display:grid;grid-template-columns:1fr 1fr;gap:4px;">
-      <li>📌 معلومة مهمة</li>
-      <li>✏️ نشاط كتابي</li>
-      <li>🔒 قاعدة أمان</li>
-      <li>⭐ تحدٍّ إضافي</li>
-    </ul>
-  </div>
-
-  <div class="legal-box">
-    <div style="font-weight:700;font-size:13px;color:#374151;margin-bottom:8px;text-align:center;">تنبيه تعليمي وحقوق العلامات التجارية</div>
-    <p style="font-size:11.5px;color:#4B5563;margin-bottom:6px;">هذه الدوسية معدّة لأغراض التعليم والتدريب فقط.</p>
-    <p style="font-size:11.5px;color:#4B5563;margin-bottom:6px;">جميع أسماء وشعارات Google وGoogle Drive وGmail وGoogle Docs وGoogle Sheets وGoogle Forms وGoogle Calendar وMicrosoft Word وMicrosoft Excel وMicrosoft PowerPoint وMicrosoft 365 وأي شعارات أو أسماء تجارية أخرى مذكورة أو مستخدمة في هذه الدوسية هي علامات تجارية مملوكة لأصحابها.</p>
-    <p style="font-size:11.5px;color:#4B5563;margin:0;">استخدام هذه الأسماء هنا هو لأغراض تعليمية فقط، ولا يدل على وجود رعاية أو اعتماد أو شراكة رسمية من الشركات المالكة لها.</p>
   </div>
 
   <div class="page-num">2</div>
@@ -152,32 +205,33 @@
   <div class="toc-item unit">الوحدة الثانية: إدارة الملفات</div>
   <div class="toc-item sub"><span>الملفات والمجلدات</span><span class="toc-dots"></span><span class="toc-page">9</span></div>
   <div class="toc-item sub"><span>حفظ الملف وفتحه</span><span class="toc-dots"></span><span class="toc-page">10</span></div>
-  <div class="toc-item sub"><span>نسخ ونقل وحذف الملفات</span><span class="toc-dots"></span><span class="toc-page">21</span></div>
+  <div class="toc-item sub"><span>نسخ ونقل وحذف الملفات</span><span class="toc-dots"></span><span class="toc-page">11</span></div>
 
   <div class="toc-item unit">الوحدة الثالثة: معالجة النصوص</div>
-  <div class="toc-item sub"><span>الكتابة في Google Docs أو Word</span><span class="toc-dots"></span><span class="toc-page">11</span></div>
-  <div class="toc-item sub"><span>تنسيق النص</span><span class="toc-dots"></span><span class="toc-page">12</span></div>
-  <div class="toc-item sub"><span>القوائم والجداول البسيطة</span><span class="toc-dots"></span><span class="toc-page">13</span></div>
+  <div class="toc-item sub"><span>الكتابة في Google Docs أو Word</span><span class="toc-dots"></span><span class="toc-page">12</span></div>
+  <div class="toc-item sub"><span>تنسيق النص</span><span class="toc-dots"></span><span class="toc-page">13</span></div>
+  <div class="toc-item sub"><span>القوائم والجداول البسيطة</span><span class="toc-dots"></span><span class="toc-page">14</span></div>
+  <div class="toc-item sub" style="background:#FFFBEB;border-right:3px solid #F59E0B;padding-right:14px;"><span>⭐ مراجعة سريعة — الوحدات 1–3</span><span class="toc-dots"></span><span class="toc-page" style="background:#FEF3C7;color:#92400E;">15</span></div>
 
   <div class="toc-item unit">الوحدة الرابعة: الإنترنت والبريد الإلكتروني</div>
-  <div class="toc-item sub"><span>البريد الإلكتروني</span><span class="toc-dots"></span><span class="toc-page">14</span></div>
-  <div class="toc-item sub"><span>المرفقات</span><span class="toc-dots"></span><span class="toc-page">15</span></div>
-  <div class="toc-item sub"><span>Google Drive</span><span class="toc-dots"></span><span class="toc-page">16</span></div>
+  <div class="toc-item sub"><span>البريد الإلكتروني</span><span class="toc-dots"></span><span class="toc-page">16</span></div>
+  <div class="toc-item sub"><span>المرفقات</span><span class="toc-dots"></span><span class="toc-page">17</span></div>
+  <div class="toc-item sub"><span>Google Drive</span><span class="toc-dots"></span><span class="toc-page">18</span></div>
 
   <div class="toc-item unit">الوحدة الخامسة: الأمان الرقمي</div>
-  <div class="toc-item sub"><span>المشاركة الآمنة وكلمات المرور</span><span class="toc-dots"></span><span class="toc-page">17</span></div>
-  <div class="toc-item sub"><span>البحث الآمن على الإنترنت</span><span class="toc-dots"></span><span class="toc-page">18</span></div>
-  <div class="toc-item sub"><span>السلامة الرقمية</span><span class="toc-dots"></span><span class="toc-page">19</span></div>
-  <div class="toc-item sub"><span>الذكاء الاصطناعي كمساعد</span><span class="toc-dots"></span><span class="toc-page">20</span></div>
+  <div class="toc-item sub"><span>المشاركة الآمنة وكلمات المرور</span><span class="toc-dots"></span><span class="toc-page">19</span></div>
+  <div class="toc-item sub"><span>البحث الآمن على الإنترنت</span><span class="toc-dots"></span><span class="toc-page">20</span></div>
+  <div class="toc-item sub"><span>السلامة الرقمية</span><span class="toc-dots"></span><span class="toc-page">21</span></div>
+  <div class="toc-item sub"><span>الذكاء الاصطناعي كمساعد</span><span class="toc-dots"></span><span class="toc-page">22</span></div>
 
   <div class="toc-item unit">الوحدة السادسة: التقييم والمشاريع</div>
-  <div class="toc-item sub"><span>مراجعة تأسيسية</span><span class="toc-dots"></span><span class="toc-page">22</span></div>
-  <div class="toc-item sub"><span>مختبر مهارات (1) و(2)</span><span class="toc-dots"></span><span class="toc-page">23</span></div>
-  <div class="toc-item sub"><span>المشروع النهائي</span><span class="toc-dots"></span><span class="toc-page">25</span></div>
-  <div class="toc-item sub"><span>التقييم الذاتي</span><span class="toc-dots"></span><span class="toc-page">27</span></div>
-  <div class="toc-item sub"><span>شهادة الإنجاز</span><span class="toc-dots"></span><span class="toc-page">28</span></div>
-  <div class="toc-item sub"><span>مسرد المصطلحات</span><span class="toc-dots"></span><span class="toc-page">29</span></div>
-  <div class="toc-item sub"><span>خاتمة وكلمة أخيرة</span><span class="toc-dots"></span><span class="toc-page">30</span></div>
+  <div class="toc-item sub"><span>مراجعة تأسيسية</span><span class="toc-dots"></span><span class="toc-page">23</span></div>
+  <div class="toc-item sub"><span>مختبر مهارات (1) و(2)</span><span class="toc-dots"></span><span class="toc-page">24</span></div>
+  <div class="toc-item sub"><span>المشروع النهائي</span><span class="toc-dots"></span><span class="toc-page">26</span></div>
+  <div class="toc-item sub"><span>التقييم الذاتي</span><span class="toc-dots"></span><span class="toc-page">28</span></div>
+  <div class="toc-item sub"><span>شهادة الإنجاز</span><span class="toc-dots"></span><span class="toc-page">29</span></div>
+  <div class="toc-item sub"><span>مسرد المصطلحات</span><span class="toc-dots"></span><span class="toc-page">30</span></div>
+  <div class="toc-item sub"><span>خاتمة وكلمة أخيرة</span><span class="toc-dots"></span><span class="toc-page">31</span></div>
 
   <div class="page-num">3</div>
 </section>
@@ -500,6 +554,13 @@
   <p style="font-size:12px;color:#374151;margin:8px 0 4px;"><strong>لماذا من المهم تنظيم ملفاتك في مجلدات؟ اكتب سببين:</strong></p>
   <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
 
+  <div class="collab-box">
+    <div class="box-title">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      نشاط ثنائي — صمِّما هيكل مجلدات معاً
+    </div>
+    <p style="font-size:12px;margin:0;">مع زميلك: تخيّلا أن لديكما حاسوباً مشتركاً للمدرسة. ارسما هيكل مجلدات مناسباً يحتوي على مجلدات لكل مادة دراسية وداخلها مجلدات فرعية (واجبات، اختبارات، مشاريع).</p>
+  </div>
   <div class="page-num">9</div>
 </section>
 
@@ -563,7 +624,44 @@
 </section>
 
 
-<!-- ==================== PAGE 11: الكتابة في Google Docs أو Word ==================== -->
+<!-- ==================== PAGE 11: نسخ الملفات ونقلها وحذفها ==================== -->
+<section class="page">
+  <div class="page-header">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+    <div><h1>نسخ الملفات ونقلها وحذفها</h1><div class="header-sub">مهارات أساسية لإدارة ملفاتك</div></div>
+    <span class="header-badge">صفحة 11</span>
+  </div>
+  <div class="section-title"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>مقارنة العمليات الأساسية</div>
+  <table class="styled-table">
+    <thead><tr><th>العملية</th><th>ماذا تفعل؟</th><th>الاختصار</th><th>ملاحظة</th></tr></thead>
+    <tbody>
+      <tr><td><strong>نسخ (Copy)</strong></td><td>تُبقي الأصل وتُنشئ نسخة</td><td>Ctrl+C ثم Ctrl+V</td><td>الملف الأصلي يبقى</td></tr>
+      <tr><td><strong>نقل (Cut)</strong></td><td>تُزيل الأصل وتضعه في مكان آخر</td><td>Ctrl+X ثم Ctrl+V</td><td>يختفي من مكانه الأول</td></tr>
+      <tr><td><strong>حذف (Delete)</strong></td><td>تُزيل الملف إلى سلة المحذوفات</td><td>مفتاح Delete</td><td>يمكن الاسترجاع</td></tr>
+      <tr><td><strong>حذف نهائي</strong></td><td>تُزيل الملف تماماً</td><td>Shift + Delete</td><td>لا يذهب للسلة</td></tr>
+    </tbody>
+  </table>
+  <div class="section-title"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>خطوات نسخ ملف من مجلد إلى آخر</div>
+  <ul class="steps-list">
+    <li><span class="step-num">1</span><div class="step-content">افتح مستكشف الملفات وانتقل إلى الملف.</div></li>
+    <li><span class="step-num">2</span><div class="step-content">انقر بزر الفأرة الأيمن على الملف &larr; اختر <span class="code-inline">Copy</span> أو اضغط <span class="code-inline">Ctrl+C</span>.</div></li>
+    <li><span class="step-num">3</span><div class="step-content">انتقل إلى المجلد الهدف.</div></li>
+    <li><span class="step-num">4</span><div class="step-content">انقر بزر الفأرة الأيمن &larr; اختر <span class="code-inline">Paste</span> أو اضغط <span class="code-inline">Ctrl+V</span>.</div></li>
+  </ul>
+  <div class="note-box"><div class="box-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>سلة المحذوفات</div>عند الحذف العادي يذهب الملف إلى سلة المحذوفات. يمكن استرجاعه بالنقر المزدوج عليها ثم Restore. احرص على تفريغ السلة بانتظام لتوفير مساحة.</div>
+  <div class="activity-box"><div class="box-title"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>تدريب: أكمل الجدول</div>
+    <table class="write-table"><thead><tr><th>الموقف</th><th>العملية المناسبة</th><th>الاختصار</th></tr></thead>
+    <tbody>
+      <tr><td>تريد نسخة احتياطية من ملف مهم</td><td><div class="write-cell">&nbsp;</div></td><td><div class="write-cell">&nbsp;</div></td></tr>
+      <tr><td>تريد نقل صور من مجلد التنزيلات إلى مجلد الصور</td><td><div class="write-cell">&nbsp;</div></td><td><div class="write-cell">&nbsp;</div></td></tr>
+      <tr><td>تريد إزالة ملف قديم لا تحتاجه</td><td><div class="write-cell">&nbsp;</div></td><td><div class="write-cell">&nbsp;</div></td></tr>
+    </tbody></table>
+  </div>
+  <div class="creative-box"><div class="box-title"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>مهمة للمبدعين</div>صمّم هيكل مجلدات لتنظيم ملفاتك الدراسية. اكتبه هنا:<div class="answer-box-lg"></div></div>
+  <div class="page-num">11</div>
+</section>
+
+<!-- ==================== PAGE 12: الكتابة في Google Docs أو Word ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
@@ -608,10 +706,10 @@
   <p style="font-size:12px;color:#374151;margin-bottom:4px;">أي البرنامجين تفضل استخدامه؟ ولماذا؟</p>
   <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
 
-  <div class="page-num">11</div>
+  <div class="page-num">12</div>
 </section>
 
-<!-- ==================== PAGE 12: تنسيق النص ==================== -->
+<!-- ==================== PAGE 13: تنسيق النص ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7V4h16v3"/><path d="M9 20h6"/><path d="M12 4v16"/></svg>
@@ -662,10 +760,10 @@
     <div class="answer-line"></div>
   </div>
 
-  <div class="page-num">12</div>
+  <div class="page-num">13</div>
 </section>
 
-<!-- ==================== PAGE 13: القوائم والجداول البسيطة ==================== -->
+<!-- ==================== PAGE 14: القوائم والجداول البسيطة ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
@@ -728,10 +826,127 @@
     </tbody>
   </table>
 
-  <div class="page-num">13</div>
+  <div class="page-num">14</div>
 </section>
 
-<!-- ==================== PAGE 14: البريد الإلكتروني ==================== -->
+<!-- ==================== PAGE 15: مراجعة سريعة — الوحدات 1–3 ==================== -->
+<section class="page">
+  <div class="formative-header">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+    مراجعة سريعة — الوحدات 1 إلى 3
+    <span style="margin-right:auto;font-size:12px;font-weight:400;opacity:0.85;">الحاسوب · الملفات · معالجة النصوص</span>
+  </div>
+  <div class="formative-body" style="margin-bottom:10px;">
+    <p style="font-size:12px;color:#6B7280;margin-bottom:8px;">اختر الإجابة الصحيحة لكل سؤال بوضع دائرة حول الحرف المناسب.</p>
+
+    <div class="q-row">
+      <div class="q-num">1</div>
+      <div><div>أيّ من التالي يُخزّن البيانات بشكل دائم؟</div>
+        <div class="q-choices">
+          <span class="q-choice"><input type="radio" disabled> أ) RAM</span>
+          <span class="q-choice"><input type="radio" disabled> ب) المعالج CPU</span>
+          <span class="q-choice"><input type="radio" disabled> ج) القرص الصلب HDD</span>
+          <span class="q-choice"><input type="radio" disabled> د) الشاشة</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="q-row">
+      <div class="q-num">2</div>
+      <div><div>ما الاختصار الصحيح لنسخ نص محدد؟</div>
+        <div class="q-choices">
+          <span class="q-choice"><input type="radio" disabled> أ) <span dir="ltr">Ctrl+V</span></span>
+          <span class="q-choice"><input type="radio" disabled> ب) <span dir="ltr">Ctrl+C</span></span>
+          <span class="q-choice"><input type="radio" disabled> ج) <span dir="ltr">Ctrl+X</span></span>
+          <span class="q-choice"><input type="radio" disabled> د) <span dir="ltr">Ctrl+Z</span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="q-row">
+      <div class="q-num">3</div>
+      <div><div>ما الفرق بين "نسخ" و"قص" الملف؟</div>
+        <div class="q-choices">
+          <span class="q-choice"><input type="radio" disabled> أ) لا فرق بينهما</span>
+          <span class="q-choice"><input type="radio" disabled> ب) النسخ يُبقي النسخة الأصلية، القص يحذفها</span>
+          <span class="q-choice"><input type="radio" disabled> ج) القص أسرع من النسخ</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="q-row">
+      <div class="q-num">4</div>
+      <div><div>أيّ الخيارات يُعدّ مثالاً على مجلد (Folder)؟</div>
+        <div class="q-choices">
+          <span class="q-choice"><input type="radio" disabled> أ) ملف Word باسم "تقرير.docx"</span>
+          <span class="q-choice"><input type="radio" disabled> ب) مجلد "الصور" على سطح المكتب</span>
+          <span class="q-choice"><input type="radio" disabled> ج) برنامج المتصفح</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="q-row">
+      <div class="q-num">5</div>
+      <div><div>ما وظيفة زر <span dir="ltr">Backspace</span> في معالج النصوص؟</div>
+        <div class="q-choices">
+          <span class="q-choice"><input type="radio" disabled> أ) حذف الحرف الذي بعد المؤشر</span>
+          <span class="q-choice"><input type="radio" disabled> ب) حذف الحرف الذي قبل المؤشر</span>
+          <span class="q-choice"><input type="radio" disabled> ج) تحريك المؤشر للأمام</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="q-row">
+      <div class="q-num">6</div>
+      <div><div>كيف تعيد تسمية ملف في مستكشف الملفات؟</div>
+        <div class="q-choices">
+          <span class="q-choice"><input type="radio" disabled> أ) نقرة مزدوجة سريعة ثم اكتب الاسم الجديد</span>
+          <span class="q-choice"><input type="radio" disabled> ب) نقرة يمنى ← إعادة تسمية</span>
+          <span class="q-choice"><input type="radio" disabled> ج) كلا الطريقتين صحيح</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="q-row">
+      <div class="q-num">7</div>
+      <div><div>أيّ الخصائص يُجعل الخط أكثر ثقلاً وبروزاً؟</div>
+        <div class="q-choices">
+          <span class="q-choice"><input type="radio" disabled> أ) مائل (Italic)</span>
+          <span class="q-choice"><input type="radio" disabled> ب) غامق (Bold)</span>
+          <span class="q-choice"><input type="radio" disabled> ج) مسطّر (Underline)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="q-row" style="border-bottom:none;">
+      <div class="q-num">8</div>
+      <div><div>ما الاختصار لحفظ ملف؟</div>
+        <div class="q-choices">
+          <span class="q-choice"><input type="radio" disabled> أ) <span dir="ltr">Ctrl+P</span></span>
+          <span class="q-choice"><input type="radio" disabled> ب) <span dir="ltr">Ctrl+S</span></span>
+          <span class="q-choice"><input type="radio" disabled> ج) <span dir="ltr">Ctrl+N</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:flex;gap:10px;align-items:stretch;margin-bottom:0;">
+    <div class="collab-box" style="flex:1;margin-bottom:0;">
+      <div class="box-title">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        نشاط ثنائي
+      </div>
+      <p style="font-size:12px;margin:0;">تبادل الإجابات مع زميلك. لكلٍّ منكما أن يشرح للآخر إجاباته. اتفقا على الإجابة الصحيحة.</p>
+    </div>
+    <div class="note-box" style="flex:1;margin-bottom:0;">
+      <div class="box-title">مفتاح الإجابات</div>
+      <p style="font-size:11px;color:#374151;direction:ltr;text-align:right;">1-ج  2-ب  3-ب  4-ب  5-ب  6-ج  7-ب  8-ب</p>
+    </div>
+  </div>
+  <div class="page-num">15</div>
+</section>
+
+<!-- ==================== PAGE 16: البريد الإلكتروني ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
@@ -771,10 +986,10 @@
     <li><span class="check-circle"></span> تحقق من عنوان المُرسِل قبل الرد</li>
   </ul>
 
-  <div class="page-num">14</div>
+  <div class="page-num">16</div>
 </section>
 
-<!-- ==================== PAGE 15: المرفقات ==================== -->
+<!-- ==================== PAGE 17: المرفقات ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>
@@ -825,10 +1040,10 @@
     <div class="answer-box-xl" style="margin-top:5px;"></div>
   </div>
 
-  <div class="page-num">15</div>
+  <div class="page-num">17</div>
 </section>
 
-<!-- ==================== PAGE 16: Google Drive ==================== -->
+<!-- ==================== PAGE 18: Google Drive ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
@@ -880,10 +1095,10 @@
   <p style="font-size:12px;color:#374151;margin-bottom:4px;"><strong>نشاط:</strong> ما نوع الوصول المناسب إذا أردت أن يشارك صديقك في تعديل مشروعك؟ ولماذا؟</p>
   <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
 
-  <div class="page-num">16</div>
+  <div class="page-num">18</div>
 </section>
 
-<!-- ==================== PAGE 17: المشاركة الآمنة وكلمات المرور ==================== -->
+<!-- ==================== PAGE 19: المشاركة الآمنة وكلمات المرور ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
@@ -936,10 +1151,10 @@
   <p style="font-size:12px;color:#374151;margin-bottom:4px;"><strong>اكتب كلمة مرور قوية من اختراعك (لا تستخدمها فعليًا!):</strong></p>
   <div class="answer-box" style="direction:ltr;font-family:monospace;"></div>
 
-  <div class="page-num">17</div>
+  <div class="page-num">19</div>
 </section>
 
-<!-- ==================== PAGE 18: البحث الآمن على الإنترنت ==================== -->
+<!-- ==================== PAGE 20: البحث الآمن على الإنترنت ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
@@ -987,10 +1202,10 @@
     <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div>
   </div>
 
-  <div class="page-num">18</div>
+  <div class="page-num">20</div>
 </section>
 
-<!-- ==================== PAGE 19: السلامة الرقمية ==================== -->
+<!-- ==================== PAGE 21: السلامة الرقمية ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
@@ -1030,10 +1245,10 @@
     </div>
   </div>
 
-  <div class="page-num">19</div>
+  <div class="page-num">21</div>
 </section>
 
-<!-- ==================== PAGE 20: الذكاء الاصطناعي كمساعد ==================== -->
+<!-- ==================== PAGE 22: الذكاء الاصطناعي كمساعد ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2m18 0h-2M9 12v2m6-2v2"/></svg>
@@ -1099,51 +1314,14 @@
     <div class="answer-lines" style="margin-top:5px;"><div class="answer-line"></div><div class="answer-line"></div></div>
   </div>
 
-  <div class="page-num">20</div>
+  <div class="page-num">22</div>
 </section>
-<!-- ==================== PAGE 21 ==================== -->
-<section class="page">
-  <div class="page-header">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
-    <div><h1>نسخ الملفات ونقلها وحذفها</h1><div class="header-sub">مهارات أساسية لإدارة ملفاتك</div></div>
-    <span class="header-badge">صفحة 21</span>
-  </div>
-  <div class="section-title"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>مقارنة العمليات الأساسية</div>
-  <table class="styled-table">
-    <thead><tr><th>العملية</th><th>ماذا تفعل؟</th><th>الاختصار</th><th>ملاحظة</th></tr></thead>
-    <tbody>
-      <tr><td><strong>نسخ (Copy)</strong></td><td>تُبقي الأصل وتُنشئ نسخة</td><td>Ctrl+C ثم Ctrl+V</td><td>الملف الأصلي يبقى</td></tr>
-      <tr><td><strong>نقل (Cut)</strong></td><td>تُزيل الأصل وتضعه في مكان آخر</td><td>Ctrl+X ثم Ctrl+V</td><td>يختفي من مكانه الأول</td></tr>
-      <tr><td><strong>حذف (Delete)</strong></td><td>تُزيل الملف إلى سلة المحذوفات</td><td>مفتاح Delete</td><td>يمكن الاسترجاع</td></tr>
-      <tr><td><strong>حذف نهائي</strong></td><td>تُزيل الملف تماماً</td><td>Shift + Delete</td><td>لا يذهب للسلة</td></tr>
-    </tbody>
-  </table>
-  <div class="section-title"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>خطوات نسخ ملف من مجلد إلى آخر</div>
-  <ul class="steps-list">
-    <li><span class="step-num">1</span><div class="step-content">افتح مستكشف الملفات وانتقل إلى الملف.</div></li>
-    <li><span class="step-num">2</span><div class="step-content">انقر بزر الفأرة الأيمن على الملف &larr; اختر <span class="code-inline">Copy</span> أو اضغط <span class="code-inline">Ctrl+C</span>.</div></li>
-    <li><span class="step-num">3</span><div class="step-content">انتقل إلى المجلد الهدف.</div></li>
-    <li><span class="step-num">4</span><div class="step-content">انقر بزر الفأرة الأيمن &larr; اختر <span class="code-inline">Paste</span> أو اضغط <span class="code-inline">Ctrl+V</span>.</div></li>
-  </ul>
-  <div class="note-box"><div class="box-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>سلة المحذوفات</div>عند الحذف العادي يذهب الملف إلى سلة المحذوفات. يمكن استرجاعه بالنقر المزدوج عليها ثم Restore. احرص على تفريغ السلة بانتظام لتوفير مساحة.</div>
-  <div class="activity-box"><div class="box-title"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>تدريب: أكمل الجدول</div>
-    <table class="write-table"><thead><tr><th>الموقف</th><th>العملية المناسبة</th><th>الاختصار</th></tr></thead>
-    <tbody>
-      <tr><td>تريد نسخة احتياطية من ملف مهم</td><td><div class="write-cell">&nbsp;</div></td><td><div class="write-cell">&nbsp;</div></td></tr>
-      <tr><td>تريد نقل صور من مجلد التنزيلات إلى مجلد الصور</td><td><div class="write-cell">&nbsp;</div></td><td><div class="write-cell">&nbsp;</div></td></tr>
-      <tr><td>تريد إزالة ملف قديم لا تحتاجه</td><td><div class="write-cell">&nbsp;</div></td><td><div class="write-cell">&nbsp;</div></td></tr>
-    </tbody></table>
-  </div>
-  <div class="creative-box"><div class="box-title"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>مهمة للمبدعين</div>صمّم هيكل مجلدات لتنظيم ملفاتك الدراسية. اكتبه هنا:<div class="answer-box-lg"></div></div>
-  <div class="page-num">21</div>
-</section>
-
 <!-- ==================== PAGE 22 ==================== -->
 <section class="page">
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
     <div><h1>المراجعة التأسيسية الشاملة</h1><div class="header-sub">اختبر ما تعلّمته في هذه الدوسية</div></div>
-    <span class="header-badge">صفحة 22</span>
+    <span class="header-badge">صفحة 23</span>
   </div>
   <div class="info-box"><div class="box-title">تعليمات</div>أجب على الأسئلة التالية بجملة كاملة أو أكثر. الإجابات من ذاكرتك أولاً ثم راجع الدوسية.</div>
   <p style="font-weight:700;font-size:13px;color:var(--c1);">السؤال 1: ما الفرق بين المعالج (CPU) والذاكرة العشوائية (RAM)؟</p>
@@ -1166,7 +1344,7 @@
   <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
   <p style="font-weight:700;font-size:13px;color:var(--c1);">السؤال 10: كيف تبحث بأمان على الإنترنت؟ اذكر 3 خطوات.</p>
   <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div>
-  <div class="page-num">22</div>
+  <div class="page-num">23</div>
 </section>
 
 <!-- ==================== PAGE 23 ==================== -->
@@ -1174,7 +1352,7 @@
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
     <div><h1>مختبر المهارات — الجزء الأول</h1><div class="header-sub">طبّق ما تعلّمته على الحاسوب الفعلي</div></div>
-    <span class="header-badge">صفحة 23</span>
+    <span class="header-badge">صفحة 24</span>
   </div>
   <div class="info-box"><div class="box-title">تعليمات المختبر</div>نفّذ كل مهمة على الحاسوب. بعد الانتهاء من كل خطوة ضع علامة &#10003;. اسأل معلمك إن احتجت مساعدة.</div>
   <div class="section-title"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>المهمة الأولى: تنظيم الملفات</div>
@@ -1207,7 +1385,7 @@
       <span style="border:2px solid var(--c-mid);border-radius:50%;width:32px;height:32px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;">5</span>
     </div>
   </div>
-  <div class="page-num">23</div>
+  <div class="page-num">24</div>
 </section>
 
 <!-- ==================== PAGE 24 ==================== -->
@@ -1215,7 +1393,7 @@
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
     <div><h1>مختبر المهارات — الجزء الثاني</h1><div class="header-sub">Google Docs وDrive وكلمات المرور</div></div>
-    <span class="header-badge">صفحة 24</span>
+    <span class="header-badge">صفحة 25</span>
   </div>
   <div class="section-title"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>المهمة الثالثة: كتابة وتنسيق نص في Google Docs</div>
   <ul class="checklist">
@@ -1243,7 +1421,7 @@
   </div>
   <div class="section-title"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>ماذا تعلّمت في هذا المختبر؟</div>
   <div class="answer-box"></div>
-  <div class="page-num">24</div>
+  <div class="page-num">25</div>
 </section>
 
 <!-- ==================== PAGE 25 ==================== -->
@@ -1251,7 +1429,7 @@
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
     <div><h1>المشروع النهائي — التخطيط</h1><div class="header-sub">أنشئ مستنداً تعليمياً عن موضوع تختاره</div></div>
-    <span class="header-badge">صفحة 25</span>
+    <span class="header-badge">صفحة 26</span>
   </div>
   <div class="info-box"><div class="box-title">وصف المشروع</div>ستُنشئ مستنداً في Google Docs أو Word يتضمن: عنواناً، مقدمة، محتوى منظّماً، وخاتمة، ثم تشاركه في Google Drive. الموضوع من اختيارك.</div>
   <div class="section-title"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>خطط لمشروعك</div>
@@ -1282,7 +1460,7 @@
     <li><span class="check-circle"></span><span>خاتمة أو ملخص</span></li>
     <li><span class="check-circle"></span><span>حفظ في Drive ومشاركة مع المعلم</span></li>
   </ul>
-  <div class="page-num">25</div>
+  <div class="page-num">26</div>
 </section>
 
 <!-- ==================== PAGE 26 ==================== -->
@@ -1290,7 +1468,7 @@
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
     <div><h1>المشروع النهائي — التنفيذ والتقديم</h1><div class="header-sub">نفّذ مشروعك وشارك نتائجك</div></div>
-    <span class="header-badge">صفحة 26</span>
+    <span class="header-badge">صفحة 27</span>
   </div>
   <div class="section-title"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>قائمة تحقق التنفيذ</div>
   <ul class="checklist">
@@ -1314,7 +1492,7 @@
   <div class="answer-box-lg"></div>
   <div class="creative-box"><div class="box-title"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>مهمة للمبدعين</div>حسّن مشروعك بإضافة جدول مقارنة أو رسم توضيحي. اشرح ما أضفته ولماذا:<div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div></div>
   <div class="note-box"><div class="box-title">ملاحظة للمعلم</div>يمكن مراجعة المشروع مباشرة من رابط Drive. اطلب من الطالب عرضه شفهياً لمدة دقيقتين.<div class="answer-lines"><div class="answer-line"></div></div></div>
-  <div class="page-num">26</div>
+  <div class="page-num">27</div>
 </section>
 
 <!-- ==================== PAGE 27 ==================== -->
@@ -1322,7 +1500,7 @@
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
     <div><h1>التقييم الذاتي الشامل</h1><div class="header-sub">قيّم نفسك بصدق في كل مهارات هذا المستوى</div></div>
-    <span class="header-badge">صفحة 27</span>
+    <span class="header-badge">صفحة 28</span>
   </div>
   <p style="font-size:12.5px;color:#555;margin-bottom:6px;">ضع علامة في الخانة المناسبة: <span class="badge badge-green">أتقنت</span> <span class="badge badge-blue">أستطيع</span> <span class="badge badge-orange">أحتاج تدريب</span></p>
   <table class="assessment-table">
@@ -1347,7 +1525,7 @@
     <div><p style="font-size:12.5px;font-weight:700;color:var(--c1);">المهارة التي أريد تطويرها:</p><div class="answer-lines"><div class="answer-line"></div></div></div>
   </div>
   <div class="activity-box"><div class="box-title"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>خطتي لتحسين المهارات الضعيفة:</div><div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div></div></div>
-  <div class="page-num">27</div>
+  <div class="page-num">28</div>
 </section>
 
 <!-- ==================== PAGE 28 ==================== -->
@@ -1355,7 +1533,7 @@
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
     <div><h1>شهادة الإنجاز</h1><div class="header-sub">أكملت المستوى الأول بنجاح — هنيئاً لك!</div></div>
-    <span class="header-badge">صفحة 28</span>
+    <span class="header-badge">صفحة 29</span>
   </div>
   <div class="certificate-box">
     <div style="font-size:28px;margin-bottom:8px;">&#9733;</div>
@@ -1381,7 +1559,7 @@
   <div class="answer-lines"><div class="answer-line"></div><div class="answer-line"></div><div class="answer-line"></div></div>
   <div class="section-title"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>ملاحظة المعلم</div>
   <div class="answer-box-lg"></div>
-  <div class="page-num">28</div>
+  <div class="page-num">29</div>
 </section>
 
 <!-- ==================== PAGE 29 ==================== -->
@@ -1389,7 +1567,7 @@
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
     <div><h1>مسرد المصطلحات التقنية</h1><div class="header-sub">المرجع السريع لأهم مصطلحات هذا المستوى</div></div>
-    <span class="header-badge">صفحة 29</span>
+    <span class="header-badge">صفحة 30</span>
   </div>
   <div class="glossary-grid">
     <div class="glossary-item"><div class="term-ar">الحاسوب</div><span class="term-en">Computer</span><div class="term-def">جهاز إلكتروني يعالج البيانات ويخزّنها وينفّذ البرامج بسرعة فائقة.</div></div>
@@ -1407,7 +1585,7 @@
     <div class="glossary-item"><div class="term-ar">المكونات المادية</div><span class="term-en">Hardware</span><div class="term-def">الأجزاء المادية الملموسة: الشاشة، لوحة المفاتيح، الفأرة، المعالج.</div></div>
     <div class="glossary-item"><div class="term-ar">التنسيق</div><span class="term-en">Formatting</span><div class="term-def">تغيير شكل النص أو الصفحة: حجم الخط، لونه، محاذاته، عناوينه.</div></div>
   </div>
-  <div class="page-num">29</div>
+  <div class="page-num">30</div>
 </section>
 
 <!-- ==================== PAGE 30 ==================== -->
@@ -1415,7 +1593,7 @@
   <div class="page-header">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
     <div><h1>الخاتمة وكلمة أخيرة</h1><div class="header-sub">أنت الآن تملك أساساً رقمياً متيناً</div></div>
-    <span class="header-badge">صفحة 30</span>
+    <span class="header-badge">صفحة 31</span>
   </div>
   <div style="border:3px solid var(--c1);border-radius:12px;padding:18px 22px;text-align:center;margin-bottom:14px;position:relative;">
     <div style="position:absolute;top:-16px;left:50%;transform:translateX(-50%);background:white;padding:0 12px;">
@@ -1443,7 +1621,7 @@
       <div><strong>عدد الصفحات:</strong> 30 صفحة تدريبية</div>
     </div>
   </div>
-  <div class="page-num">30</div>
+  <div class="page-num">31</div>
 </section>
 
 </body>
